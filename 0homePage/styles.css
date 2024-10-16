@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 .main-desktop-banner {
@@ -15,9 +16,15 @@ body {
 
 .whole-mobile-app {
     visibility: hidden;
+    height: 0;
 }
 
 @media (max-width: 768px) {
+
+    body {
+        overflow: scroll;
+    }
+
     .main-desktop-banner {
         visibility: hidden;
         height: 0;
@@ -68,7 +75,7 @@ body {
     }
 
     .textContainer {
-        width: 56vw;
+        width: 50vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -78,7 +85,7 @@ body {
 
     .textWrapper {
         text-wrap: wrap;
-        width: 56vw;
+        width: 50vw;
         height: 40px;
     }
 

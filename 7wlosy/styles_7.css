@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.main-desktop-banner {
+    background-image: url(images_7/dektop_INFO.png);
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    visibility: visible;
+    background-repeat: no-repeat;
+    align-items: center top;
+}
+
+.whole-mobile-app {
+    visibility: hidden;
+    height: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: scroll;
+    }
+
+    .main-desktop-banner {
+        visibility: hidden;
+        height: 0;
+    }
+
+    .whole-mobile-app {
+        visibility: visible;
+    }
+}

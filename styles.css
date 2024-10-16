@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
 }
 
@@ -6,8 +6,8 @@ body{
     background-image: url(images/dektop_INFO.png);
     background-position: center;
     width: 100vw;
-    height:100vh;
-    background-size:contain;
+    height: 100vh;
+    background-size: contain;
     visibility: visible;
     background-repeat: no-repeat;
     align-items: center top;
@@ -20,8 +20,155 @@ body{
 @media (max-width: 768px) {
     .main-desktop-banner {
         visibility: hidden;
+        height: 0;
     }
-    .mainMobileImage {
+
+    .whole-mobile-app {
         visibility: visible;
+    }
+
+    h3 {
+        margin-top: 10px;
+        margin-bottom: 6px;
+        color: #000;
+        text-align: center;
+        font-family: "Myriad Pro";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.4px;
+    }
+
+    h4 {
+        margin: 6px 0;
+        color: #000;
+        text-align: center;
+        font-family: "Myriad Pro";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0.96px;
+    }
+
+
+    a {
+        margin-top: 40px;
+        color: #000;
+        text-align: center;
+        font-family: "Myriad Pro";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0.96px;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+    }
+
+    .textContainer {
+        width: 56vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 2vw;
+        position: relative;
+    }
+
+    .textWrapper {
+        text-wrap: wrap;
+        width: 56vw;
+        height: 40px;
+    }
+
+    .menuBox {
+        height: 253px;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 12px;
+        position: relative;
+    }
+
+    .box1 {
+        background-color: #D6C7B0;
+    }
+
+    .box2 {
+        background-color: #87DBD4;
+    }
+
+    .box3 {
+        background-color: #FAB584;
+    }
+
+    .box4 {
+        background-color: #F8AFB3;
+    }
+
+    .box5 {
+        background-color: #4E5F39;
+    }
+
+    .box6 {
+        background-color: #D3DADE;
+    }
+
+    .box7 {
+        background-color: #B9B6B8;
+    }
+
+    .box8 {
+        background-color: #F49AC1;
+    }
+
+    .boxImage {
+        height: 253px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .image1 {
+        background-image: url(./images/MENU_Pielegnacja1.png);
+        width: 209.024px;
+    }
+
+    .image2 {
+        background-image: url(./images/MENU_dermo1.png);
+        width: 208.209px;
+    }
+
+    .image3 {
+        background-image: url(./images/MENU_SPF1.png);
+        width: 180.366px;
+    }
+
+    .image4 {
+        background-image: url(./images/MENU_KOREA1.png);
+        width: 339.45px;
+    }
+
+    .image5 {
+        background-image: url(./images/MENU_Naturalne1.png);
+        width: 194.365px;
+    }
+
+    .image6 {
+        background-image: url(./images/MENU_PROFESJONALNE1.png);
+        width: 238px;
+    }
+
+    .image7 {
+        background-image: url(./images/MENU_Wlosy1.png);
+        width: 227px;
+    }
+
+    .image8 {
+        background-image: url(./images/MENU_Makijaz1.png);
+        width: 321px;
     }
 }

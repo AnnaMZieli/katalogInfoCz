@@ -37,6 +37,11 @@ body {
         visibility: visible;
     }
 
+    video {
+        width: 100%;
+        height: auto;
+      }
+
     h1 {
         margin: 0;
         padding: 5vw 0 2vw 0;

@@ -34,6 +34,11 @@ body {
         visibility: visible;
     }
 
+    video {
+        width: 100%;
+        height: auto;
+      }
+
     h3 {
         margin-top: 10px;
         margin-bottom: 6px;

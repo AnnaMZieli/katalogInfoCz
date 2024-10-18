@@ -1,6 +1,14 @@
 :root {
   --mainColor: #E2DBCF;
+  --mainColorDarker: #cabfaa;
   --basicPink: #EB008C;
+  --lightPink: #f77ac5;
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  font-family: 'myriad-pro', 'arial', sans-serif;
 }
 
 body {
@@ -14,29 +22,49 @@ body {
   width: 100vw;
   height: 100vh;
   background-size: contain;
-  visibility: visible;
+  /* visibility: visible; */
   background-repeat: no-repeat;
   align-items: center top;
+  display: block;
 }
 
 .whole-mobile-app {
-  visibility: hidden;
-  height: 0;
+  /* visibility: hidden;
+  height: 0; */
+  display: none;
 }
 
-@media (max-width: 768px) {
+/* @media (max-device-width: 768px) { */
+@media only screen and (max-width: 600px) {
   body {
     overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
 
-  .main-desktop-banner {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* .main-desktop-banner {
     visibility: hidden;
     height: 0;
   }
 
   .whole-mobile-app {
     visibility: visible;
-  }
+  } */
+
+  .main-desktop-banner {
+    /* visibility: hidden;
+    height: 0; */
+    display: none;
+}
+
+.whole-mobile-app {
+    /* visibility: visible; */
+    display: block;
+}
 
   video {
     /* width: 100%;
@@ -51,7 +79,7 @@ body {
     padding: 5vw 0 2vw 0;
     color: #000;
     text-align: center;
-    font-family: "Myriad Pro";
+    font-family: "myriad-pro", sans-serif;
     font-size: 8vw;
     font-style: normal;
     font-weight: 700;
@@ -64,7 +92,7 @@ body {
     padding: 2vw;
     color: #000;
     text-align: center;
-    font-family: "Myriad Pro";
+    font-family: "myriad-pro", sans-serif;
     font-size: 5vw;
     font-style: normal;
     font-weight: 300;
@@ -75,7 +103,7 @@ body {
   h5 {
     color: var(--basicPink);
     text-align: center;
-    font-family: "Myriad Pro";
+    font-family: "myriad-pro", sans-serif;
     font-size: 8vw;
     font-style: normal;
     font-weight: 600;
@@ -106,12 +134,15 @@ body {
     scroll-snap-type: x mandatory;
     gap: 10vw;
     scroll-behavior: smooth;
-    scrollbar-width: none; /* For Firefox */
-    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
   }
 
   .slideshowContainer::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Opera */
+    display: none;
+    /* For Chrome, Safari, and Opera */
   }
 
   .scrollBox {
@@ -121,11 +152,10 @@ body {
     scroll-snap-align: center;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.80);
-    margin: 4vw 10vw 10vw 7vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 7vw;
+    margin: 0 8vw;
     position: relative;
   }
 
@@ -148,8 +178,8 @@ body {
     position: absolute;
     bottom: 3vw;
     margin: 2vw 0 2vw 0;
-    color: #FFF;
-    font-family: "Myriad Pro";
+    color: var(--white);
+    font-family: "myriad-pro", sans-serif;
     font-size: 4vw;
     font-style: normal;
     font-weight: 900;
@@ -163,30 +193,203 @@ body {
     border: none;
     border-radius: 20px;
     background: var(--basicPink);
+    cursor: pointer;
   }
 
-.dots {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  margin-top: 20px;
-}
+  .pinkButton:hover {
+    background: var(--lightPink);
+  }
 
-.dot {
-  display: inline-block;
-  height: 4vw;
-  width: 4vw;
-  margin: 0 2vw;
-  background-color: #bbb;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
+  .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 20px;
+  }
 
-.dot:hover, .dot.active {
-  background-color: #717171;
-}
+  .dot {
+    display: inline-block;
+    height: 4vw;
+    width: 4vw;
+    margin: 0 2vw;
+    background-color: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .dot:hover,
+  .dot.active {
+    background-color: var(--mainColorDarker);
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .popup {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60vw;
+    max-width: 400px;
+    position: relative;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    color: #000;
+  }
+
+  .overlay.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  h6 {
+    margin: 8vw;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .slideshowProductContainer {
+    width: 100%;
+    /* position: absolute; */
+    /* left: 0px;
+     bottom: 50px; */
+    overflow-x: scroll;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    gap: 10vw;
+    scroll-behavior: smooth;
+  }
+
+  .scrollProductBox {
+    width: 74vw;
+    height: auto;
+    padding: 4vw;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    border: 2px solid var(--mainColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 8vw;
+    position: relative;
+  }
+
+  .numbers {
+    position: absolute;
+    top: -1px;
+    width: 30vw;
+    height: auto;
+  }
+
+  .number1 {
+    content: url('./images_1/numb1.png');
+  }
+
+  .scrollProductBox h6 {
+    margin: 16vw 0 0 0;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 6vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  p {
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 4.4vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  .productSectors{
+    display:flex;
+    flex-direction: row;
+  }
+
+  .oneProductSector {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 4px 50px 2px;
+  }
+
+  .productImages {
+    height: 50vw;
+    width: auto;
+  }
+
+  .productImg1 {
+    content: url('./images_1/Magazyn_400x600_produkt.png');
+  }
+
+  .productImg2 {
+    content: url('./images_1/Magazyn_400x600_produkt2.png');
+  }
+
+  .oneProductSector .pinkButton {
+    padding: 2vw 3vw;
+  }
+
+  .secondMobileImage {
+    /* display: flex;
+    flex-direction: column; */
+    height: 200vw;
+    position: relative;
+
+  }
+
+  .secondMobileImage .dots {
+    /* position:relative; */
+  }
+
+  .secondMobileImage .dot {
+    background-color: #cabfaa;
+  }
+
+  .footerBtns {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    align-items: center;
+    position: relative;
+  }
 
 }

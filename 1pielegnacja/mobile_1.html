@@ -1,78 +1,193 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles_1.css">
-        <link rel="stylesheet" href="https://use.typekit.net/aid0eyt.css">
-    </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles_1.css">
+  <link rel="stylesheet" href="https://use.typekit.net/aid0eyt.css">
+</head>
+
 <body>
-<div class="main-desktop-banner">
+  <div class="main-desktop-banner">
 
-</div>
-
-<div class="whole-mobile-app">
-  <div class="titleBox">
-    <h1>PÉČE O OBLIČEJ</h1>
-    <h2>ZJISTĚTE, JAKÝ<br>JE VÁŠ TYP PLETI</h2>
   </div>
-  <div class="mainMobileImage">
-    <video id="myVideo" preload="auto" autoplay loop muted>
-      <source src="./images_1/Pielegnacja_Twarzy.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-    <div class="slideshowContainer">
 
-      <div class="scrollBox">
-        <h5>SUCHÁ</h5>
-        <ul>
-          <li>kůže na obličeji je drsná a šupinatá</li>
-          <li>je matná a nevýrazná</li>
-          <li>je po umytí napjatá</li>
-        </ul>
-        <button class="pinkButton">tipy</button>
+  <div class="whole-mobile-app">
+    <div class="titleBox">
+      <h1>PÉČE O OBLIČEJ</h1>
+      <h2>ZJISTĚTE, JAKÝ<br>JE VÁŠ TYP PLETI</h2>
+    </div>
+    <div class="mainMobileImage">
+      <video id="myVideo" preload="auto" autoplay muted playsinline loop>
+        <source src="./images_1/Pielegnacja_Twarzy.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="slideshowContainer">
+
+        <div class="scrollBox">
+          <h5>SUCHÁ</h5>
+          <ul>
+            <li>kůže na obličeji je drsná a šupinatá</li>
+            <li>je matná a nevýrazná</li>
+            <li>je po umytí napjatá</li>
+          </ul>
+          <button class="pinkButton" data-popup="popup1">tipy</button>
+        </div>
+
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <h5>SUCHÁ</h5>
+            <a class="close" id="closePopup1">&times;</a>
+            <div class="content">
+              <ul>
+                <li>zvolte hydratační čisticí kosmetiku</li>
+                <li>používejte denní krémy s lehkou texturou a noční krémy s bohatší texturou</li>
+                <li>každé 3 dny používejte peeling, aplikujte hydratační masky</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="scrollBox">
+          <h5>MASTNÁ</h5>
+          <ul>
+            <li>vaše tvář se leskne od přebytečného kožního mazu</li>
+            <li>vaše póry jsou rozšířené</li>
+            <li>máte černé tečky a pupínky</li>
+          </ul>
+          <button class="pinkButton" data-popup="popup2">tipy</button>
+        </div>
+
+
+        <div id="popup2" class="overlay">
+          <div class="popup">
+            <h5>MASTNÁ</h5>
+            <a class="close" id="closePopup1">&times;</a>
+            <div class="content">
+              <ul>
+                <li>vždy si ráno umyjte obličej a večer důkladně odstraňte make-up</li>
+                <li>každé dva dny si udělejte peeling</li>
+                <li>vyhýbejte se mastné kosmetice, protože ucpává póry</li>
+                <li>každé dva dny použijte čisticí nebo hydratační masku</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="scrollBox">
+          <h5>SMÍŠENÁ</h5>
+          <ul>
+            <li>vaše pleť je mastná na čele, nose, bradě, suchá na tvářích</li>
+            <li>máte rozšířené póry a černé tečky</li>
+          </ul>
+          <button class="pinkButton" data-popup="popup3">tipy</button>
+        </div>
+
+        <div id="popup3" class="overlay">
+          <div class="popup">
+            <h5>SMÍŠENÁ</h5>
+            <a class="close" id="closePopup1">&times;</a>
+            <div class="content">
+              <ul>
+                <li>po vyčištění a odstranění make-upu použijte tonikum pro smíšenou pleť</li>
+                <li>na čelo, nos a bradu používejte matující kosmetiku</li>
+                <li>každé 2-3 dny si udělejte enzymatický peeling a hydratační masku</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="scrollBox">
+          <h5>NORMÁLNÍ</h5>
+          <ul>
+            <li>obličej je hladký, bez viditelných nedokonalostí</li>
+            <li>pleť je pevná a hydratovaná</li>
+            <li>není náchylná k podráždění</li>
+          </ul>
+          <button class="pinkButton" data-popup="popup4">tipy</button>
+        </div>
+
+        <div id="popup4" class="overlay">
+          <div class="popup">
+            <h5>NORMÁLNÍ</h5>
+            <a class="close" id="closePopup1">&times;</a>
+            <div class="content">
+              <ul>
+                <li>pravidelně čistěte a řádně hydratujte</li>
+                <li>používejte lehkou kosmetiku bez nadměrného množství složek</li>
+                <li>vyhýbejte se kosmetickým přípravkům s obsahem alkoholu a vyhýbejte se slunečnímu záření</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="scrollBox">
-        <h5>MASTNÁ</h5>
-        <ul>
-          <li>vaše tvář se leskne od přebytečného kožního mazu</li>
-          <li>vaše póry jsou rozšířené</li>
-          <li>máte černé tečky a pupínky</li>
-        </ul>
-        <button class="pinkButton">tipy</button>
-      </div>
-
-      <div class="scrollBox">
-        <h5>SMÍŠENÁ</h5>
-        <ul>
-          <li>vaše pleť je mastná na čele, nose, bradě, suchá na tvářích</li>
-          <li>máte rozšířené póry a černé tečky</li>
-        </ul>
-        <button class="pinkButton">tipy</button>
-      </div>
-
-      <div class="scrollBox">
-        <h5>NORMÁLNÍ</h5>
-        <ul>
-          <li>obličej je hladký, bez viditelných nedokonalostí</li>
-          <li>pleť je pevná a hydratovaná</li>
-          <li>není náchylná k podráždění</li>
-        </ul>
-        <button class="pinkButton">tipy</button>
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
 
     </div>
 
-<div class="dots">
-  <span class="dot active"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>
+    <div class="secondMobileImage">
 
+      <h6>3 ZÁSADY PŘI PÉČI O PLEŤ <br>– POZNEJTE JE A POUŽÍVEJTE JE</h6>
+
+      <div class="slideshowProductContainer">
+
+        <div class="scrollProductBox">
+          <img class="numbers number1">
+          <h6>ČIŠTĚNÍ</h6>
+          <p>Pro ranní čištění používejte vodu a jemný
+            čisticí prostředek (pěnu, gel, emulzi) a pro
+            večerní odlíčení micelární vodu, olej nebo
+            emulzi. Používejte jemný čisticí přípravek,
+            vatové tampony, tenké kapesníčky a nikdy
+            pleť netřete ručníkem nebo kapesníkem.
+            Na závěr vždy obličej otřete tonikem
+            - obnoví rovnováhu pleti
+            a připraví ji na použití dalších produktů.</p>
+          <div class="productSectors">
+            <div class="oneProductSector">
+              <img class="productImg1 productImages">
+              <button class="pinkButton">kup nyní</button>
+            </div>
+            <div class="oneProductSector">
+              <img class="productImg2 productImages">
+              <button class="pinkButton">kup nyní</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+      </div>
+      <!-- <div class="scrollBox">
+      <h5>MASTNÁ</h5>
+      <ul>
+        <li>vaše tvář se leskne od přebytečného kožního mazu</li>
+        <li>vaše póry jsou rozšířené</li>
+        <li>máte černé tečky a pupínky</li>
+      </ul>
+      <button class="pinkButton" data-popup="popup2">tipy</button>
+    </div> -->
+
+
+    </div>
+    <div class="footerBtns">
+      <button class="pinkButton">VÍCE KOSMETIKY</button>
+
+    </div>
   </div>
-
-</div>
-<script src="script_1.js"></script>
+    <script src="script_1.js"></script>
 </body>
+
 </html>

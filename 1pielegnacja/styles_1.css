@@ -454,13 +454,14 @@ body {
   .footerBtns {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 40px;
     align-items: center;
     position: relative;
   }
 
   .footerBtns .pinkButton {
     position: relative;
+    justify-content: flex-end;
   }
 
   .viteZe {

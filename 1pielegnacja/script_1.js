@@ -1,12 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
     const slideshowContainer = document.querySelector('.slideshowContainer');
-    const productSlodeshowContainer = document.querySelector('.slideshowProductContainer');
     const scrollBoxes = document.querySelectorAll('.scrollBox');
-    const scrollProductBox = document.querySelectorAll('.scrollProductBox');
     const dots = document.querySelectorAll('.dot');
-    // const dots2
-    const pinkButtons = document.querySelectorAll('.pinkButton');
+
+    const pinkButtons = document.querySelectorAll('.infoBtn');
     const overlays = document.querySelectorAll('.overlay');
+
+    const productSlodeshowContainer = document.querySelector('.slideshowProductContainer');
+    const scrollProductBoxes = document.querySelectorAll('.scrollProductBox');
+    const dots2 = document.querySelectorAll('.dot2');
+
+
+/////////////////////////////////////dots1
 
     function scrollToSlide(index) {
         const scrollPosition = scrollBoxes[index].offsetLeft;
@@ -38,6 +43,39 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
+//////////////////////dots1
+
+function scrollToSlide2(index) {
+  const scrollPosition2 = scrollProductBoxes[index].offsetLeft;
+  productSlodeshowContainer.scrollTo({
+    left: scrollPosition2,
+    behavior: 'smooth'
+  });
+  activateDot2(index);
+}
+
+function activateDot2(index) {
+  dots2.forEach(dot => dot.classList.remove('active'));
+  dots2[index].classList.add('active');
+}
+
+dots2.forEach((dot, index) => {
+  dot.addEventListener('click', function () {
+    console.log(`Dot ${index} clicked`);
+    scrollToSlide2(index);
+  });
+});
+
+productSlodeshowContainer.addEventListener('scroll', function () {
+  const scrollLeft = productSlodeshowContainer.scrollLeft;
+  scrollProductBoxes.forEach((box, index) => {
+    if (scrollLeft >= box.offsetLeft - box.offsetWidth / 2 && scrollLeft < box.offsetLeft + box.offsetWidth / 2) {
+      activateDot2(index);
+    }
+  });
+});
+
+//////////////////////////////////////popups
 
   function openPopup(popupId) {
     const popup = document.getElementById(popupId);
@@ -55,7 +93,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-
   overlays.forEach(overlay => {
     overlay.addEventListener('click', function(event) {
       if (event.target === overlay || event.target.classList.contains('close')) {
@@ -63,6 +100,8 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  
 
 });
 

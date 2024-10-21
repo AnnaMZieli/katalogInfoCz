@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     const slideshowContainer = document.querySelector('.slideshowContainer');
+    const productSlodeshowContainer = document.querySelector('.slideshowProductContainer');
     const scrollBoxes = document.querySelectorAll('.scrollBox');
+    const scrollProductBox = document.querySelectorAll('.scrollProductBox');
     const dots = document.querySelectorAll('.dot');
+    // const dots2
     const pinkButtons = document.querySelectorAll('.pinkButton');
     const overlays = document.querySelectorAll('.overlay');
 

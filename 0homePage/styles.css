@@ -69,8 +69,8 @@ body {
     }
 
 
-    a {
-        margin-top: 40px;
+    p {
+        margin-bottom: 20px;
         color: #000;
         text-align: center;
         font-family: "myriad-pro", sans-serif;
@@ -83,12 +83,18 @@ body {
         text-transform: uppercase;
     }
 
+    a.fill-div {
+        height: 100%;
+        text-decoration: none;
+    }
+
     .textContainer {
+        height: 90%;
         width: 50vw;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding: 20px 2vw;
+        justify-content: space-around;
+        margin: 10px 2vw;
         position: relative;
     }
 
@@ -108,7 +114,8 @@ body {
     .textWrapper {
         text-wrap: wrap;
         width: 50vw;
-        height: 40px;
+        margin-top: 20px;
+        /* height: 90px; */
     }
 
     .menuBox {
@@ -170,16 +177,19 @@ body {
 
     .image1 {
         background-image: url(./images/MENU_Pielegnacja1.png);
+        height: 254px;
         width: 209.024px;
     }
 
     .image2 {
         background-image: url(./images/MENU_dermo1.png);
+        height: 254px;
         width: 208.209px;
     }
 
     .image3 {
         background-image: url(./images/MENU_SPF1.png);
+        height: 254px;
         width: 180.366px;
     }
 
@@ -190,6 +200,7 @@ body {
 
     .image5 {
         background-image: url(./images/MENU_Naturalne1.png);
+        height: 254px;
         width: 194.365px;
     }
 

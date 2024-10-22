@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const scrollProductBoxes = document.querySelectorAll('.scrollProductBox');
     const dots2 = document.querySelectorAll('.dot2');
 
+    const whiteButton = document.querySelector('.whiteButton');
+    const overlay2 = document.getElementById('imagePopup');
+    const closeButton = document.querySelector('.close'); 
+
 
 /////////////////////////////////////dots1
 
@@ -100,6 +104,30 @@ productSlodeshowContainer.addEventListener('scroll', function () {
       }
     });
   });
+
+  ////////////////////////popup
+
+  function openPopup2(popup) {
+    popup.classList.add('active');
+}
+
+function closePopup2(popup) {
+    popup.classList.remove('active');
+}
+
+if (whiteButton) {
+    whiteButton.addEventListener('click', function () {
+        openPopup2(overlay2);
+    });
+}
+
+if (overlay2) {
+    overlay2.addEventListener('click', function (event) {
+        if (event.target === overlay2 || event.target.classList.contains('close')) {
+            closePopup2(overlay2);
+        }
+    });
+}
 
   
 

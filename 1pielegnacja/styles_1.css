@@ -259,6 +259,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
+    z-index: 1000; 
   }
 
   .close:hover {
@@ -501,5 +502,44 @@ body {
     color: var(--basicPink);
     margin: 20px 0 0 0;
   }
+
+  .overlay2 {
+    display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.overlay2.active {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.imageP {
+  background-color: #F287B7;
+  padding: 0;
+  /* border-radius: 10px; */
+  overflow: hidden;
+}
+
+.imageP img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: match the border radius for better appearance */
+}
+
+.imageP .close {
+  color: #fff;
+  top: 0px;
+  right: 15px;
+}
 
 }

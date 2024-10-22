@@ -50,6 +50,59 @@ body {
     display: block;
 }
 
+.header-container {
+  width: 100%;
+  position: relative;
+}
+
+.sticky-header {
+  background-color: var(--basicPink);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.sticky-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.sticky-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.sticky-header ul::-webkit-scrollbar {
+  display: none;
+}
+
+.sticky-header li {
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.sticky-header a {
+  display: inline-block;
+  color: var(--white);
+  text-align: center;
+  padding: 10px 4px 4px 4px;
+  text-decoration: none;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
   .whole-mobile-app video {
     object-fit: cover;
     width: 100%;
@@ -137,12 +190,12 @@ body {
     position: relative;
   }
 
-  .whole-mobile-app ul {
+  .whole-mobile-app .slideshowContainer ul {
     padding: 2vw 0 2vw 4vw;
     margin: 0 6vw 0 6vw;
   }
 
-  .whole-mobile-app li {
+  .whole-mobile-app .slideshowContainer li {
     padding-left: 4px;
     color: #000;
     font-family: "myriad-pro-condensed", sans-serif;

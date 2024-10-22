@@ -22,19 +22,15 @@ body {
   width: 100vw;
   height: 100vh;
   background-size: contain;
-  /* visibility: visible; */
   background-repeat: no-repeat;
   align-items: center top;
   display: block;
 }
 
 .whole-mobile-app {
-  /* visibility: hidden;
-  height: 0; */
   display: none;
 }
 
-/* @media (max-device-width: 768px) { */
 @media only screen and (max-width: 600px) {
   body {
     overflow-y: scroll;
@@ -46,35 +42,21 @@ body {
     display: none;
   }
 
-  /* .main-desktop-banner {
-    visibility: hidden;
-    height: 0;
-  }
-
-  .whole-mobile-app {
-    visibility: visible;
-  } */
-
   .main-desktop-banner {
-    /* visibility: hidden;
-    height: 0; */
     display: none;
 }
 
 .whole-mobile-app {
-    /* visibility: visible; */
     display: block;
 }
 
-  video {
-    /* width: 100%;
-        height: auto; */
+  .whole-mobile-app video {
     object-fit: cover;
     width: 100%;
     height: 180vw;
   }
 
-  h1 {
+  .whole-mobile-app h1 {
     margin: 0;
     padding: 5vw 0 2vw 0;
     color: #000;
@@ -87,7 +69,7 @@ body {
     letter-spacing: 3.2px;
   }
 
-  h2 {
+  .whole-mobile-app h2 {
     margin: 0;
     padding: 2vw;
     color: #000;
@@ -100,7 +82,7 @@ body {
     letter-spacing: 2.4px;
   }
 
-  h5 {
+  .whole-mobile-app h5 {
     color: var(--basicPink);
     text-align: center;
     font-family: "myriad-pro", sans-serif;
@@ -112,19 +94,18 @@ body {
     margin: 6vw 0 2vw 0;
   }
 
-  .titleBox {
+  .whole-mobile-app .titleBox {
     background-color: var(--mainColor);
     height: 38vw;
     position: relative;
   }
 
-  .mainMobileImage {
+  .whole-mobile-app .mainMobileImage {
     height: 180vw;
     position: relative;
   }
 
-  .slideshowContainer {
-    /* height: 74vw; */
+  .whole-mobile-app .slideshowContainer {
     width: 100%;
     position: absolute;
     left: 0px;
@@ -135,17 +116,14 @@ body {
     gap: 10vw;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    /* For Firefox */
     -ms-overflow-style: none;
-    /* For Internet Explorer and Edge */
   }
 
-  .slideshowContainer::-webkit-scrollbar {
+  .whole-mobile-app .slideshowContainer::-webkit-scrollbar {
     display: none;
-    /* For Chrome, Safari, and Opera */
   }
 
-  .scrollBox {
+  .whole-mobile-app .scrollBox {
     width: 80vw;
     height: 64vw;
     flex-shrink: 0;
@@ -159,12 +137,12 @@ body {
     position: relative;
   }
 
-  ul {
+  .whole-mobile-app ul {
     padding: 2vw 0 2vw 4vw;
     margin: 0 6vw 0 6vw;
   }
 
-  li {
+  .whole-mobile-app li {
     padding-left: 4px;
     color: #000;
     font-family: "myriad-pro-condensed", sans-serif;
@@ -174,7 +152,7 @@ body {
     line-height: 150%;
   }
 
-  .pinkButton {
+  .whole-mobile-app .pinkButton {
     position: absolute;
     bottom: 3vw;
     margin: 2vw 0 2vw 0;
@@ -196,11 +174,11 @@ body {
     cursor: pointer;
   }
 
-  .pinkButton:hover {
+  .whole-mobile-app .pinkButton:hover {
     background: var(--lightPink);
   }
 
-  .dots {
+  .whole-mobile-app .dots {
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -209,7 +187,7 @@ body {
     margin-top: 20px;
   }
 
-  .dot {
+  .whole-mobile-app .dot {
     display: inline-block;
     height: 4vw;
     width: 4vw;
@@ -220,12 +198,12 @@ body {
     transition: background-color 0.3s;
   }
 
-  .dot:hover,
-  .dot.active {
+  .whole-mobile-app .dot:hover,
+  .whole-mobile-app .dot.active {
     background-color: var(--mainColorDarker);
   }
 
-  .overlay {
+  .whole-mobile-app .overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -241,7 +219,7 @@ body {
     z-index: 100;
   }
 
-  .popup {
+  .whole-mobile-app .popup {
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -250,28 +228,26 @@ body {
     position: relative;
   }
 
-  .close {
+ .close {
     position: absolute;
     top: 10px;
     right: 15px;
     color: #aaa;
     font-size: 24px;
     text-decoration: none;
-    font-weight: bold;
     cursor: pointer;
-    z-index: 1000; 
   }
 
-  .close:hover {
+ .close:hover {
     color: #000;
   }
 
-  .overlay.active {
+  .whole-mobile-app .overlay.active {
     visibility: visible;
     opacity: 1;
   }
 
-  h6 {
+  .whole-mobile-app h6 {
     margin: 8vw;
     color: #000;
     text-align: center;
@@ -282,28 +258,22 @@ body {
     line-height: normal;
   }
 
-  .slideshowProductContainer {
+  .whole-mobile-app .slideshowProductContainer {
     width: 100%;
-    /* position: absolute; */
-    /* left: 0px;
-     bottom: 50px; */
     overflow-x: scroll;
     display: flex;
     scroll-snap-type: x mandatory;
     gap: 10vw;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    /* For Firefox */
     -ms-overflow-style: none;
-    /* For Internet Explorer and Edge */
   }
 
-  .slideshowProductContainer::-webkit-scrollbar {
+  .whole-mobile-app .slideshowProductContainer::-webkit-scrollbar {
     display: none;
-    /* For Chrome, Safari, and Opera */
   }
 
-  .scrollProductBox {
+  .whole-mobile-app .scrollProductBox {
     width: 74vw;
     height: auto;
     padding: 4vw;
@@ -317,32 +287,32 @@ body {
     position: relative;
   }
 
-  .numbers {
+  .whole-mobile-app .numbers {
     position: absolute;
     top: -1px;
     width: 30vw;
     height: auto;
   }
 
-  .number1 {
+  .whole-mobile-app .number1 {
     content: url('./images_1/numb1.png');
   }
 
-  .number2 {
+  .whole-mobile-app .number2 {
     content: url('./images_1//numb2.png');
   }
 
-  .number3 {
+  .whole-mobile-app .number3 {
     content: url('./images_1/numb3.png');
   }
 
-  .scrollProductBox{
+  .whole-mobile-app .scrollProductBox{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .scrollProductBox h6 {
+  .whole-mobile-app .scrollProductBox h6 {
     margin: 16vw 0 0 0;
     color: #000;
     text-align: center;
@@ -353,7 +323,7 @@ body {
     line-height: normal;
   }
 
-  p {
+  .whole-mobile-app p {
     color: #000;
     text-align: center;
     font-family: "myriad-pro", sans-serif;
@@ -364,57 +334,55 @@ body {
     margin:0;
   }
 
-  .productSectors{
+  .whole-mobile-app .productSectors{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .oneProductSector {
+  .whole-mobile-app .oneProductSector {
     display:flex;
     flex-direction: column;
     align-items: center;
     margin: 10px 4px 2px 2px;
   }
 
-  .productImages {
+  .whole-mobile-app .productImages {
     height: 44vw;
     width: auto;
   }
 
-  .productImg1 {
+  .whole-mobile-app .productImg1 {
     content: url('./images_1/Magazyn_400x600_produkt.png');
   }
 
-  .productImg2 {
+  .whole-mobile-app .productImg2 {
     content: url('./images_1/Magazyn_400x600_produkt2.png');
   }
 
-  .productImg3 {
+  .whole-mobile-app .productImg3 {
     content: url('./images_1/Magazyn_400x600_produkt3.png');
   }
 
-  .productImg4 {
+  .whole-mobile-app .productImg4 {
     content: url('./images_1/Magazyn_400x600_produkt4.png');
   }
 
-  .productImg5 {
+  .whole-mobile-app .productImg5 {
     content: url('./images_1/Magazyn_400x600_produkt5.png');
   }
 
-  .productImg6 {
+  .whole-mobile-app .productImg6 {
     content: url('./images_1/Magazyn_400x600_produkt6.png');
   }
 
-  .oneProductSector .pinkButton {
+  .whole-mobile-app .oneProductSector .pinkButton {
     padding: 2vw 3vw;
     bottom: 0px;
     position: relative;
   }
 
-  .secondMobileImage {
-    /* display: flex;
-    flex-direction: column; */
+  .whole-mobile-app .secondMobileImage {
     height: 200vw;
     position: relative;
     display: block;
@@ -422,21 +390,21 @@ body {
 
   }
 
-  .slideshowProductContainer h2 {
+  .whole-mobile-app .slideshowProductContainer h2 {
     font-style: normal;
     font-weight: 600;
   }
 
 
-  .dotsSpace {
+  .whole-mobile-app .dotsSpace {
     height:30px;
   }
 
-  .secondMobileImage .dots {
+  .whole-mobile-app .secondMobileImage .dots {
     bottom: 0px;
   }
 
-  .dot2 {
+  .whole-mobile-app .dot2 {
     display: inline-block;
     height: 4vw;
     width: 4vw;
@@ -447,12 +415,12 @@ body {
     transition: background-color 0.3s;
   }
 
-  .dot2:hover,
-  .dot2.active {
+  .whole-mobile-app .dot2:hover,
+  .whole-mobile-app .dot2.active {
     background-color: var(--mainColorDarker);
   }
 
-  .footerBtns {
+  .whole-mobile-app .footerBtns {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
@@ -460,12 +428,12 @@ body {
     position: relative;
   }
 
-  .footerBtns .pinkButton {
+  .whole-mobile-app .footerBtns .pinkButton {
     position: relative;
     justify-content: flex-end;
   }
 
-  .viteZe {
+  .whole-mobile-app .viteZe {
     background-color: var(--basicPink);
     display: flex;
     flex-direction: column;
@@ -475,11 +443,11 @@ body {
     margin: 40px 0 12px 0;
   }
 
-  .i-svg {
+  .whole-mobile-app .i-svg {
     margin:6px;
   }
 
-  .viteZe h5 {
+  .whole-mobile-app .viteZe h5 {
     color: var(--white);
     text-transform: uppercase;
     font-size: 16px;
@@ -488,7 +456,7 @@ body {
     margin: 10px 0 4px 0;
   }
 
-  .viteZe h6 {
+  .whole-mobile-app .viteZe h6 {
     color: var(--white);
     text-transform: uppercase;
     font-size: 16px;
@@ -497,13 +465,13 @@ body {
     margin: 0 0 10px 0;
   }
 
-  .whiteButton {
+  .whole-mobile-app .whiteButton {
     background-color: var(--white);
     color: var(--basicPink);
     margin: 20px 0 0 0;
   }
 
-  .overlay2 {
+  .whole-mobile-app .overlay2 {
     display: none;
     position: fixed; 
     top: 0;
@@ -517,29 +485,32 @@ body {
     transition: all 0.3s;
 }
 
-.overlay2.active {
+.whole-mobile-app .overlay2.active {
     display: flex;
     visibility: visible;
     opacity: 1;
 }
 
-.imageP {
+.whole-mobile-app .imageP {
   background-color: #F287B7;
   padding: 0;
-  /* border-radius: 10px; */
   overflow: hidden;
 }
 
-.imageP img {
+.whole-mobile-app .imageP img {
   width: 100%;
   height: auto;
-  border-radius: 10px; /* Optional: match the border radius for better appearance */
+  border-radius: 10px;
 }
 
-.imageP .close {
+.whole-mobile-app .imageP .close {
   color: #fff;
   top: 0px;
   right: 15px;
+}
+
+.whole-mobile-app .imageP .close:hover {
+  color: #000;
 }
 
 }

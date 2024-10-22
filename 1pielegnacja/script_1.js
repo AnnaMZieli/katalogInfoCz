@@ -12,10 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const whiteButton = document.querySelector('.whiteButton');
     const overlay2 = document.getElementById('imagePopup');
-    const closeButton = document.querySelector('.close'); 
+    // const closeButton = document.querySelector('.close'); 
 
 
-/////////////////////////////////////dots1
 
     function scrollToSlide(index) {
         const scrollPosition = scrollBoxes[index].offsetLeft;
@@ -47,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-//////////////////////dots1
 
 function scrollToSlide2(index) {
   const scrollPosition2 = scrollProductBoxes[index].offsetLeft;
@@ -79,7 +77,7 @@ productSlodeshowContainer.addEventListener('scroll', function () {
   });
 });
 
-//////////////////////////////////////popups
+
 
   function openPopup(popupId) {
     const popup = document.getElementById(popupId);
@@ -105,7 +103,7 @@ productSlodeshowContainer.addEventListener('scroll', function () {
     });
   });
 
-  ////////////////////////popup
+
 
   function openPopup2(popup) {
     popup.classList.add('active');

@@ -48,6 +48,19 @@ body {
 
 .whole-mobile-app {
     display: block;
+    background-color: var(--mainColor);
+}
+
+.whole-mobile-app .title {
+  color: var(--white);
+  background-color: var(--basicPink);
+  text-align: center;
+  font-family: "Myriad Pro";
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  padding: 40px 10px;
 }
 
 .header-container {
@@ -329,21 +342,29 @@ body {
   .whole-mobile-app .scrollProductBox {
     width: 74vw;
     height: auto;
+    border-radius: 15px;
+    /* border: 3px solid #FFF; */
+    background: #FFF;
     padding: 4vw;
     flex-shrink: 0;
     scroll-snap-align: center;
-    border: 2px solid var(--mainColor);
+    /* border: 2px solid var(--mainColor); */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 8vw 20px 8vw;
     position: relative;
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); */
+    /* border-radius: 15px;
+border: 3px solid #FFF;
+background: #FFF;
+box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); */
   }
 
   .whole-mobile-app .numbers {
     position: absolute;
     top: -1px;
-    width: 30vw;
+    width: 20vw;
     height: auto;
   }
 
@@ -366,7 +387,7 @@ body {
   }
 
   .whole-mobile-app .scrollProductBox h6 {
-    margin: 16vw 0 0 0;
+    margin: 9vw 0 0 0;
     color: #000;
     text-align: center;
     font-family: "myriad-pro", sans-serif;
@@ -380,7 +401,7 @@ body {
     color: #000;
     text-align: center;
     font-family: "myriad-pro", sans-serif;
-    font-size: 4.4vw;
+    font-size: 4.2vw;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -401,7 +422,8 @@ body {
   }
 
   .whole-mobile-app .productImages {
-    height: 44vw;
+    margin: 2vw 0 2vw 0;
+    height: 40vw;
     width: auto;
   }
 
@@ -436,11 +458,10 @@ body {
   }
 
   .whole-mobile-app .secondMobileImage {
-    height: 200vw;
+    height: 186vw;
     position: relative;
     display: block;
     justify-content: space-around;
-
   }
 
   .whole-mobile-app .slideshowProductContainer h2 {
@@ -454,7 +475,9 @@ body {
   }
 
   .whole-mobile-app .secondMobileImage .dots {
-    bottom: 0px;
+    bottom: unset;
+    position: relative;
+    margin-top: 1vw;
   }
 
   .whole-mobile-app .dot2 {
@@ -462,7 +485,7 @@ body {
     height: 4vw;
     width: 4vw;
     margin: 0 2vw;
-    background-color: var(--mainColor);
+    background-color: var(--white);
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -512,7 +535,6 @@ body {
   .whole-mobile-app .viteZe h6 {
     color: var(--white);
     text-transform: uppercase;
-    font-size: 16px;
     font-style: normal;
     font-weight: 300;
     margin: 0 0 10px 0;

@@ -40,6 +40,18 @@ body {
         display: block;
     }
 
+    .whole-mobile-app .title {
+        color: var(--white);
+        background-color: var(--basicPink);
+        text-align: center;
+        font-family: "Myriad Pro";
+        font-size: 8vw;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        padding: 40px 10px;
+      }
+
     .header-container {
         width: 100%;
         position: relative;

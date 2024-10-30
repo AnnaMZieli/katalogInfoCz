@@ -343,22 +343,21 @@ body {
     width: 74vw;
     height: auto;
     border-radius: 15px;
-    /* border: 3px solid #FFF; */
     background: #FFF;
     padding: 4vw;
     flex-shrink: 0;
     scroll-snap-align: center;
-    /* border: 2px solid var(--mainColor); */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 8vw 20px 8vw;
     position: relative;
-    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); */
-    /* border-radius: 15px;
-border: 3px solid #FFF;
-background: #FFF;
-box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); */
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .whole-mobile-app .scrollProductBox .productBtnTxt {
+    /* display: flex; */
+    /* align-items: center; */
   }
 
   .whole-mobile-app .numbers {
@@ -411,14 +410,14 @@ box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); */
   .whole-mobile-app .productSectors{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .whole-mobile-app .oneProductSector {
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px 4px 2px 2px;
+    margin: 10px 8px 2px 8px;
   }
 
   .whole-mobile-app .productImages {
@@ -516,7 +515,7 @@ box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); */
     align-items: center;
     width: 100%;
     padding: 10px 4px;
-    margin: 40px 0 12px 0;
+    margin: 40px 0 16px 0;
   }
 
   .whole-mobile-app .i-svg {

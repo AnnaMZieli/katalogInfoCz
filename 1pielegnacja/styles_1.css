@@ -296,12 +296,13 @@ body {
 
  .close {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 2vw;
+    right: 4vw;
     color: #aaa;
-    font-size: 24px;
+    font-size: 7vw;
     text-decoration: none;
     cursor: pointer;
+    position: absolute;
   }
 
  .close:hover {

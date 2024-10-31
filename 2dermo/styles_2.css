@@ -574,10 +574,9 @@ body {
 
     .close {
         position: absolute;
-        top: 6px;
-        right: 15px;
+        right: 4vw;
         color: #fff;
-        font-size: 24px;
+        font-size: 7vw;
         text-decoration: none;
         cursor: pointer;
       }

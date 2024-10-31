@@ -414,6 +414,46 @@ body {
         content: url(./images_2/Magazyn_400x600_produkt12.png);
     }
 
+    .whole-mobile-app .productImg7 {
+        content: url(./images_2/Magazyn_400x600_produkt7.png);
+    }
+
+    .whole-mobile-app .productImg8 {
+        content: url(./images_2/Magazyn_400x600_produkt13.png);
+    }
+
+    .whole-mobile-app .productImg9 {
+        content: url(./images_2/Magazyn_400x600_produkt8.png);
+    }
+
+    .whole-mobile-app .productImg10 {
+        content: url(./images_2/Magazyn_400x600_produkt3.png);
+    }
+
+    .whole-mobile-app .productImg11 {
+        content: url(./images_2/Magazyn_400x600_produkt.png);
+    }
+
+    .whole-mobile-app .productImg12 {
+        content: url(./images_2/Magazyn_400x600_produkt14.png);
+    }
+
+    .whole-mobile-app .productImg13 {
+        content: url(./images_2/Magazyn_400x600_produkt11.png);
+    }
+
+    .whole-mobile-app .productImg14 {
+        content: url(./images_2/Magazyn_400x600_produkt9.png);
+    }
+
+    .whole-mobile-app .productImg15 {
+        content: url(./images_2/Magazyn_400x600_produkt2.png);
+    }
+
+    .whole-mobile-app .productImg16 {
+        content: url(./images_2/Magazyn_400x600_produkt16.png);
+    }
+
     .whole-mobile-app .dots {
         position: inherit;
         /* bottom: 10px;

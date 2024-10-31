@@ -289,7 +289,7 @@ body {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    width: 60vw;
+    width: 70vw;
     max-width: 400px;
     position: relative;
   }
@@ -581,7 +581,6 @@ body {
 .whole-mobile-app .imageP .close:hover {
   color: #000;
 }
-
 
 
 }

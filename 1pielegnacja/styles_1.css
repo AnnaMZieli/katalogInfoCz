@@ -13,7 +13,7 @@
 
 body {
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .main-desktop-banner {
@@ -55,7 +55,7 @@ body {
   color: var(--white);
   background-color: var(--basicPink);
   text-align: center;
-  font-family: "Myriad Pro";
+  font-family: 'myriad-pro', 'arial', sans-serif;
   font-size: 8vw;
   font-style: normal;
   font-weight: 900;
@@ -355,11 +355,6 @@ body {
     box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
   }
 
-  .whole-mobile-app .scrollProductBox .productBtnTxt {
-    /* display: flex; */
-    /* align-items: center; */
-  }
-
   .whole-mobile-app .numbers {
     position: absolute;
     top: -1px;
@@ -514,7 +509,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 10px 4px;
+    padding: 10px 0;
     margin: 40px 0 16px 0;
   }
 
@@ -586,5 +581,7 @@ body {
 .whole-mobile-app .imageP .close:hover {
   color: #000;
 }
+
+
 
 }

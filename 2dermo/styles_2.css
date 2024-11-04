@@ -521,6 +521,8 @@ body {
         font-style: normal;
         font-weight: 300;
         margin: 0 0 10px 0;
+        font-size: 5vw;
+        text-align: center;
       }
     
       .whole-mobile-app .whiteButton {

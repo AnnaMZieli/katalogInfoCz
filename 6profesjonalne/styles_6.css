@@ -1,39 +1,687 @@
+:root {
+  --mainColor: #D3DADE;
+  --mainColorDarker: #b8c3c9;
+  --basicPink: #EB008C;
+  --lightPink: #f77ac5;
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  font-family: 'myriad-pro', 'arial', sans-serif;
+}
+
 body {
-    margin: 0;
-    overflow: hidden;
+  margin: 0;
+  /* overflow: hidden; */
 }
 
 .main-desktop-banner {
-    background-image: url(images_2/dektop_INFO.png);
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    background-size: contain;
-    /* visibility: visible; */
-    background-repeat: no-repeat;
-    align-items: center top;
-    display: block;
+  background-image: url(images_1/dektop_INFO.png);
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-items: center top;
+  display: block;
 }
 
 .whole-mobile-app {
-    /* visibility: hidden;
-    height: 0; */
-    display: none;
+  display: none;
 }
 
-@media (max-device-width: 768px) {
-    body {
-        overflow: scroll;
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .main-desktop-banner {
+    display: none;
+  }
+
+  .whole-mobile-app {
+    display: block;
+    background-color: var(--mainColor);
+  }
+
+  .whole-mobile-app .title {
+    color: var(--white);
+    background-color: var(--basicPink);
+    text-align: center;
+    font-family: 'myriad-pro', 'arial', sans-serif;
+    font-size: 8vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding: 40px 10px;
+  }
+
+  .header-container {
+    width: 100%;
+    position: relative;
+  }
+
+  .sticky-header {
+    background-color: var(--basicPink);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .sticky-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .sticky-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .sticky-header ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sticky-header li {
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+
+  .sticky-header a {
+    display: inline-block;
+    color: var(--white);
+    text-align: center;
+    padding: 10px 4px 4px 4px;
+    text-decoration: none;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .whole-mobile-app h1 {
+    margin: 0;
+    padding: 5vw 0 2vw 0;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 7.4vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.2px;
+  }
+
+  .whole-mobile-app h2 {
+    margin: 0;
+    padding: 2vw;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 4.8vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 2.4px;
+  }
+
+  .whole-mobile-app .pinkButton {
+    position: absolute;
+    bottom: 3vw;
+    margin: 2vw 0 2vw 0;
+    color: var(--white);
+    font-family: "myriad-pro", sans-serif;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120.438%;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding: 2vw 4vw 2vw 4vw;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    background: var(--basicPink);
+    cursor: pointer;
+  }
+
+  .whole-mobile-app .pinkButton:hover {
+    background: var(--lightPink);
+  }
+
+  .whole-mobile-app h5 {
+    color: var(--black);
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2vw;
+    margin: 4vw 0 2vw 0;
+  }
+
+  .whole-mobile-app .titleBox {
+    background-color: var(--mainColor);
+    height: 38vw;
+    position: relative;
+  }
+
+.whole-mobile-app .mainMobileImage {
+  background-image: url('./images_6/MainImage.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 220vw;
+  position: relative;
+}
+
+.whole-mobile-app .mainMobileImage .slideshowContainer {
+  width: 100%;
+  position: absolute;
+  bottom: 10vw;
+  left: 0;
+  overflow-x: scroll;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  gap: 10vw;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+
+  .whole-mobile-app .mainMobileImage .scrollBox {
+    width: 84vw;
+    height: auto;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.80);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 6vw;
+    position: relative;
+  }
+
+  .whole-mobile-app .mainMobileImage .scrollBox .pinkButton {
+    font-size: 2.4vw;
+    margin: 1vw 0 1vw 0;
+    padding: 2vw;
+  }
+
+  .whole-mobile-app .mainMobileImage .scrollBox .textBox {
+    width: 42vw;
+
+  }
+
+  .whole-mobile-app .mainMobileImage p {
+    color: var(--black);
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 3.2vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 2vw 0vw 4vw 3vw;
+  }
+
+.whole-mobile-app .mainMobileImage .slideshowContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.whole-mobile-app .mainMobileImage .svgDots {
+  position: relative;
+  height: 130vw;
+}
+
+.whole-mobile-app .mainMobileImage .svgDots .dot-svg {
+  position: absolute;
+  transition: all 0.3s ease;
+  margin: 4vw;
+  cursor: pointer;
+}
+
+.whole-mobile-app .mainMobileImage .dot-svg:hover circle {
+  stroke-opacity: 1;
+  fill-opacity: 1;
+}
+
+.whole-mobile-app .mainMobileImage .dot-svg.active circle {
+  stroke-opacity: 1;
+  fill-opacity: 1;
+}
+
+.whole-mobile-app .mainMobileImage .dotOne {
+  top: 46vw;
+  left: 16vw;
+}
+
+.whole-mobile-app .mainMobileImage .dotTwo {
+  top: 74vw;
+  left: 70vw;
+}
+
+.whole-mobile-app .mainMobileImage .dotThree {
+  top: 90vw;
+  left: 10vw;
+}
+
+.whole-mobile-app .mainMobileImage .dotFour {
+  top: 108vw;
+  left: 60vw;
+}
+
+.whole-mobile-app .mainMobileImage .dotFive {
+  top: 118vw;
+  left: 14vw;
+}
+
+.whole-mobile-app .mainMobileImage .dots {
+  position: absolute;
+  bottom: 4vw;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+  .whole-mobile-app .mainMobileImage .dot {
+    display: inline-block;
+    height: 4vw;
+    width: 4vw;
+    margin: 0 2vw;
+    background-color: var(--mainColorDarker);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .whole-mobile-app .mainMobileImage .dot:hover,
+  .whole-mobile-app .mainMobileImage .dot.active {
+    background-color: var(--white);
+  }
+
+  .whole-mobile-app .mainMobileImage .productSectors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .whole-mobile-app .mainMobileImage .oneProductSector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 6vw 0;
+  }
+
+  .whole-mobile-app .mainMobileImage .productImages {
+    margin: 0;
+    height: auto;
+    width: 20vw;
+  }
+
+  .whole-mobile-app .mainMobileImage .productImg1 {
+    content: url('./images_6/Magazyn_400x600_produkt5a.png');
+  }
+
+  .whole-mobile-app .mainMobileImage .productImg2 {
+    content: url('./images_6/Magazyn_400x600_produkt6a.png');
+  }
+
+  .whole-mobile-app .mainMobileImage .productImg3 {
+    content: url('./images_6/Magazyn_400x600_produkta.png');
+  }
+
+  .whole-mobile-app .mainMobileImage .productImg4 {
+    content: url('./images_6/Magazyn_400x600_produkt4a.png');
+  }
+
+  .whole-mobile-app .mainMobileImage .productImg5 {
+    content: url('./images_6/Magazyn_400x600_produkt2a.png');
+  }
+
+  .whole-mobile-app .mainMobileImage .productImg6 {
+    content: url('./images_6/Magazyn_400x600_produkt3a.png');
+  }
+
+  .whole-mobile-app .mainMobileImage .productImg7 {
+    content: url('./images_6/Magazyn_400x600_produkt2a.png');
+  }
+
+  .whole-mobile-app .mainMobileImage .productImg8 {
+    content: url('./images_6/Magazyn_400x600_produkt3a.png');
+  }
+
+  .whole-mobile-app .mainMobileImage .productImg9 {
+    content: url('./images_6/Magazyn_400x600_produkt2a.png');
+  }
+
+  .whole-mobile-app .mainMobileImage .productImg10 {
+    content: url('./images_6/Magazyn_400x600_produkt3a.png');
+  }
+
+  .whole-mobile-app .secondMobileImage .slideshowContainer {
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    gap: 10vw;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.whole-mobile-app .secondMobileImage h6 {
+    margin: 6vw;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 5.4vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.3vw;
+}
+
+.whole-mobile-app .secondMobileImage p {
+    margin: 0 6vw 10vw 6vw;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 4.2vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: var(--black);
+
+
+}
+
+.whole-mobile-app .secondMobileImage .inside {
+    margin:0;
+    width: 74vw;
+    background: #ADB8C0;
+    padding: 3vw;
+    margin-bottom: 3vw;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.whole-mobile-app .secondMobileImage .scrollBox h6 {
+    margin: 1vw 0;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.3vw;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.whole-mobile-app .secondMobileImage .scrollBox p {
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro-semi-condensed", sans-serif;
+    font-size: 3.8vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.3vw;
+    margin: 2vw 4vw;
+}
+
+.whole-mobile-app .secondMobileImage .scrollBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 4px solid var(--white);
+}
+
+.whole-mobile-app .secondMobileImage .scrollBox {
+    width: 80vw;
+    height: auto;
+    border-radius: 15px;
+    background: #FFF;
+    /* padding: 4vw; */
+    flex-shrink: 0;
+    text-align: center;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 8vw 20px 8vw;
+    position: relative;
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.whole-mobile-app .secondMobileImage .productSectors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.whole-mobile-app .secondMobileImage .productSectors h5 {
+    font-family: "myriad-pro-semi-condensed", sans-serif;
+    margin: 1vw 0 5vw 0;
+}
+
+.whole-mobile-app .secondMobileImage .oneProductSector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 8px 2px 8px;
+}
+
+.whole-mobile-app .oneProductSector .pinkButton {
+    padding: 2vw 3vw;
+    bottom: 0px;
+    position: relative;
+}
+
+.whole-mobile-app .secondMobileImage .productImages {
+    width: auto;
+}
+
+.whole-mobile-app .productImg11 {
+    content: url(./images_6/Magazyn_400x600_produkt.png);
+    height: 40vw;
+    margin: 2vw 0 2vw 0;
+}
+
+.whole-mobile-app .productImg12 {
+    content: url(./images_6/Magazyn_400x600_produkt.png);
+    height: 40vw;
+    margin: 2vw 0 2vw 0;
+}
+
+.whole-mobile-app .productImg13 {
+    content: url(./images_6/Magazyn_400x600_produkt.png);
+    height: 40vw;
+    margin: 2vw 0 2vw 0;
+}
+
+/* .whole-mobile-app .dots {
+    position: inherit;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+.whole-mobile-app .dot {
+    display: inline-block;
+    height: 4vw;
+    width: 4vw;
+    margin: 0 2vw;
+    background-color: var(--mainColorDarker);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .whole-mobile-app .dot:hover,
+  .whole-mobile-app .dot.active {
+    background-color: var(--white);
+  } */
+
+  .whole-mobile-app .dots2 {
+    position: inherit;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+.whole-mobile-app .dot2 {
+    display: inline-block;
+    height: 4vw;
+    width: 4vw;
+    margin: 0 2vw;
+    background-color: var(--mainColorDarker);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .whole-mobile-app .dot2:hover,
+  .whole-mobile-app .dot2.active {
+    background-color: var(--white);
+  }
+
+  .whole-mobile-app .footerBtns {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+    position: relative;
+  }
+
+  .whole-mobile-app .footerBtns .pinkButton {
+    position: relative;
+    justify-content: flex-end;
+  }
+
+  .whole-mobile-app .viteZe {
+    background-color: var(--basicPink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 40px 0 16px 0;
+  }
+
+  .whole-mobile-app .i-svg {
+    margin:6px;
+  }
+
+  .whole-mobile-app .viteZe h5 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    margin: 10px 0 4px 0;
+  }
+
+  .whole-mobile-app .viteZe h6 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+    font-size: 5vw;
+  }
+
+  .whole-mobile-app .whiteButton {
+    background-color: var(--white);
+    color: var(--basicPink);
+    margin: 20px 0 0 0;
+  }
+
+  .whole-mobile-app .popup {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60vw;
+    max-width: 400px;
+    position: relative;
+}
+
+  .whole-mobile-app .overlay2 {
+    display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.whole-mobile-app .overlay2.active {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.whole-mobile-app .imageP {
+    background-color: #F287B7;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    border-radius: 10px;
+  }
+  
+  .whole-mobile-app .imageP img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .close {
+      position: absolute;
+      right: 4vw;
+      color: #fff;
+      font-size: 7vw;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  
+  .whole-mobile-app .imageP .close:hover {
+    color: #000;
+  }
+
+  .whole-mobile-app .imageP1 .close:hover {
+      color: #000;
     }
 
-    .main-desktop-banner {
-        /* visibility: hidden;
-        height: 0; */
-        display: none;
-    }
 
-    .whole-mobile-app {
-        /* visibility: visible; */
-        display: block;
-    }
 }

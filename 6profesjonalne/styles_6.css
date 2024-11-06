@@ -458,13 +458,6 @@ body {
   }
 
   .whole-mobile-app .secondMobileImage .scrollBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 4px solid var(--white);
-  }
-
-  .whole-mobile-app .secondMobileImage .scrollBox {
     width: 80vw;
     height: auto;
     border-radius: 15px;
@@ -479,6 +472,12 @@ body {
     margin: 0 8vw 20px 8vw;
     position: relative;
     box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    border: 4px solid var(--white);
+  }
+
+  .whole-mobile-app .secondMobileImage .slideshowContainer::-webkit-scrollbar {
+    display: none;
   }
 
   .whole-mobile-app .secondMobileImage .productSectors {

@@ -92,7 +92,7 @@ body {
         color: var(--white);
         background-color: var(--basicPink);
         text-align: center;
-        font-family: "Myriad Pro";
+        font-family: 'myriad-pro', 'arial', sans-serif;
         font-size: 8vw;
         font-style: normal;
         font-weight: 900;
@@ -445,6 +445,8 @@ body {
     .whole-mobile-app .secondMobileImage .productSectors h5 {
         font-family: "myriad-pro-semi-condensed", sans-serif;
         margin: 1vw 0 5vw 0;
+        font-weight: 400;
+        font-size: 6vw;
     }
 
     .whole-mobile-app .secondMobileImage .oneProductSector {
@@ -564,6 +566,12 @@ body {
         line-height: normal;
         letter-spacing: 0.3vw;
         text-transform: uppercase;
+      }
+
+      .whole-mobile-app .thirdImage p {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 4vw;
       }
 
       .whole-mobile-app .footerBtns {

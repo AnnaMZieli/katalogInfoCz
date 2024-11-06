@@ -258,7 +258,7 @@ body {
     height: 4vw;
     width: 4vw;
     margin: 0 2vw;
-    background-color: var(--white);
+    background-color: var(--mainColorDarker);
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -266,7 +266,7 @@ body {
 
   .whole-mobile-app .dot:hover,
   .whole-mobile-app .dot.active {
-    background-color: var(--mainColorDarker);
+    background-color: var(--white);
   }
 
   .whole-mobile-app .overlay {
@@ -462,6 +462,7 @@ body {
   .whole-mobile-app .slideshowProductContainer h2 {
     font-style: normal;
     font-weight: 600;
+    letter-spacing: 0;
   }
 
 
@@ -480,7 +481,7 @@ body {
     height: 4vw;
     width: 4vw;
     margin: 0 2vw;
-    background-color: var(--white);
+    background-color: var(--mainColorDarker);
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -488,7 +489,7 @@ body {
 
   .whole-mobile-app .dot2:hover,
   .whole-mobile-app .dot2.active {
-    background-color: var(--mainColorDarker);
+    background-color: var(--white);
   }
 
   .whole-mobile-app .footerBtns {

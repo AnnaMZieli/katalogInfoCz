@@ -92,7 +92,7 @@ body {
         color: var(--white);
         background-color: var(--basicPink);
         text-align: center;
-        font-family: "Myriad Pro";
+        font-family: 'myriad-pro', 'arial', sans-serif;
         font-size: 8vw;
         font-style: normal;
         font-weight: 900;
@@ -237,7 +237,7 @@ body {
         font-family: "myriad-pro", sans-serif;
         font-size: 5.2vw;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 600;
         letter-spacing: 0.3vw;
         line-height: normal;
         text-transform: uppercase;
@@ -251,7 +251,7 @@ body {
         font-style: normal;
         font-weight: 300;
         line-height: normal;
-        letter-spacing: 0.3vw;
+        letter-spacing: 0.2vw;
         margin: 0;
     }
 

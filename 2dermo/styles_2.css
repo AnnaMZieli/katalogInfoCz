@@ -93,7 +93,7 @@ body {
         color: var(--white);
         background-color: var(--basicPink);
         text-align: center;
-        font-family: "Myriad Pro";
+        font-family: "myriad-pro", sans-serif;
         font-size: 8vw;
         font-style: normal;
         font-weight: 900;
@@ -338,7 +338,7 @@ body {
         font-style: normal;
         font-weight: 300;
         line-height: normal;
-        letter-spacing: 0.3vw;
+        letter-spacing: 0.2vw;
         margin: 0 4vw 0 4vw;
     }
 
@@ -456,9 +456,6 @@ body {
 
     .whole-mobile-app .dots {
         position: inherit;
-        /* bottom: 10px;
-        left: 50%; */
-        /* transform: translateX(-50%); */
         text-align: center;
         margin-top: 0px;
       }
@@ -468,7 +465,7 @@ body {
         height: 4vw;
         width: 4vw;
         margin: 0 2vw;
-        background-color: var(--white);
+        background-color: var(--mainColorDarker);
         border-radius: 50%;
         cursor: pointer;
         transition: background-color 0.3s;
@@ -476,7 +473,7 @@ body {
     
       .whole-mobile-app .dot:hover,
       .whole-mobile-app .dot.active {
-        background-color: var(--mainColorDarker);
+        background-color: var(--white);
       }
 
       .whole-mobile-app .footerBtns {

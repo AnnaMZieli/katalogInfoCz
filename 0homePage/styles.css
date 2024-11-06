@@ -7,6 +7,10 @@
     --black: #000;
   }
 
+  * {
+    font-family: 'myriad-pro', 'arial', sans-serif;
+}
+
 body {
     margin: 0;
     /* overflow: hidden; */
@@ -44,7 +48,7 @@ body {
         color: var(--white);
         background-color: var(--basicPink);
         text-align: center;
-        font-family: "Myriad Pro";
+        font-family: "myriad-pro", sans-serif;
         font-size: 8vw;
         font-style: normal;
         font-weight: 900;

@@ -449,11 +449,11 @@ body {
     color: #000;
     text-align: center;
     font-family: "myriad-pro-semi-condensed", sans-serif;
-    font-size: 3.8vw;
+    font-size: 4vw;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    letter-spacing: 0.3vw;
+    letter-spacing: 0;
     margin: 2vw 4vw;
   }
 

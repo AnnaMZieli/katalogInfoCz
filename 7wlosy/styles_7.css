@@ -289,6 +289,122 @@
         content: url('./images_7/image3.png');
     }
 
+    .whole-mobile-app .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.7);
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+    }
+
+    .whole-mobile-app .mainMobileImage .popup {
+      background: transparent;
+      padding: 0px;
+      border-radius: 0px;
+      width: 60vw;
+      max-width: 400px;
+      position: relative;
+  }
+
+  .whole-mobile-app .mainMobileImage .overlay {
+      display: none;
+      position: fixed; 
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+  }
+  
+  .whole-mobile-app .mainMobileImage .overlay.active {
+      display: flex;
+      visibility: visible;
+      opacity: 1;
+  }
+
+  .whole-mobile-app .mainMobileImage .imageP1 {
+      /* background-color: #F287B7; */
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+      width: 70%;
+      /* border-radius: 10px; */
+    }
+    
+    .whole-mobile-app .imageP1 img {
+      width: 100%;
+      height: auto;
+      /* border-radius: 10px; */
+    }
+
+    .whole-mobile-app .mainMobileImage .popup .pinkButton {
+      position: absolute;
+      bottom: 4vw;
+    }
+
+    .whole-mobile-app .mainMobileImage .oneProductSector {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .whole-mobile-app .mainMobileImage .productImages {
+      position: absolute;
+      margin: 0;
+      height: auto;
+    }
+  
+    .whole-mobile-app .mainMobileImage .productPopupImg1 {
+      content: url('./images_7/Magazyn_400x600_produkt5.png');
+      width: 30vw;
+      bottom: 10vw;
+    }
+
+    .whole-mobile-app .mainMobileImage .productPopupImg2 {
+      content: url('./images_7/Magazyn_400x600_produkt8.png');
+      width: 20vw;
+      bottom: 20vw;
+    }
+
+    .whole-mobile-app .mainMobileImage .productPopupImg3 {
+      content: url('./images_7/Magazyn_400x600_produkt2.png');
+      width: 20vw;
+      bottom: 20vw;
+    }
+  
+    .whole-mobile-app .mainMobileImage .close {
+      position: absolute;
+      top: 0.2vw;
+      right: 4vw;
+      color: var(--basicPink);
+      font-size: 7vw;
+      text-decoration: none;
+      cursor: pointer;
+      position: absolute;
+    }
+  
+    .whole-mobile-app .mainMobileImage .close:hover {
+      color: #000;
+    }
+  
+    .whole-mobile-app .overlay.active {
+      visibility: visible;
+      opacity: 1;
+    }
+  
+
     .whole-mobile-app p {
         color: #000;
         text-align: center;
@@ -451,7 +567,7 @@
       }
     
       .whole-mobile-app .productImg1 {
-        content: url(./images_7/Magazyn_400x600_produkt12.png);
+        content: url(./images_7/Magazyn_400x600_produkt16.png);
         height: 40vw;
         margin: 2vw 0 2vw 0;
       }
@@ -463,7 +579,7 @@
       }
     
       .whole-mobile-app .productImg3 {
-        content: url(./images_7/Magazyn_400x600_produkt14.png);
+        content: url(./images_7/Magazyn_400x600_produkt15.png);
         height: 40vw;
         margin: 2vw 0 2vw 0;
       }
@@ -475,7 +591,7 @@
       }
 
       .whole-mobile-app .productImg5 {
-        content: url(./images_7/Magazyn_400x600_produkt7.png);
+        content: url(./images_7/Magazyn_400x600_produkt17.png);
         height: 40vw;
         margin: 2vw 0 2vw 0;
       }
@@ -487,7 +603,7 @@
       }
 
       .whole-mobile-app .productImg7 {
-        content: url(./images_7/Magazyn_400x600_produkt11.png);
+        content: url(./images_7/Magazyn_400x600_produkt18.png);
         height: 40vw;
         margin: 2vw 0 2vw 0;
       }
@@ -518,6 +634,20 @@
       .whole-mobile-app .dot2:hover,
       .whole-mobile-app .dot2.active {
         background-color: var(--white);
+      }
+
+      .whole-mobile-app .middleImage {
+        margin: 6vw 0 0 0;
+        padding: 2vw 0 4vw 0;
+        display: flex;
+        background-color: #F1F0F1;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .whole-mobile-app .middleImage h5 {
+        color: var(--black);
+        font-size: 4vw;
       }
     
       .whole-mobile-app .thirdMobileImage .slideshowProduct2Container {
@@ -695,19 +825,19 @@
       }
 
       .whole-mobile-app .productImg16 {
-        content: url(./images_7/Magazyn_400x600_produkt13.png);
+        content: url(./images_7/Magazyn_400x600_produkt20.png);
         height: 40vw;
         margin: 2vw 0 2vw 0;
       }
 
       .whole-mobile-app .productImg17 {
-        content: url(./images_7/Magazyn_400x600_produkt13.png);
+        content: url(./images_7/Magazyn_400x600_produkt21.png);
         height: 40vw;
         margin: 2vw 0 2vw 0;
       }
 
       .whole-mobile-app .productImg18 {
-        content: url(./images_7/Magazyn_400x600_produkt13.png);
+        content: url(./images_7/Magazyn_400x600_produkt19.png);
         height: 40vw;
         margin: 2vw 0 2vw 0;
       }
@@ -880,5 +1010,21 @@
       .whole-mobile-app .imageP1 .close:hover {
           color: #000;
         }
+
+      .whole-mobile-app .imageP .pinkButton {
+        position: absolute;
+        padding: 2vw 3vw;
+        font-size: 3vw;
+      }
+
+      .whole-mobile-app .imageP .btn1 {
+        right: 2.2vw;
+        bottom: 47vw;
+      }
+
+      .whole-mobile-app .imageP .btn2 {
+        right: 2.2vw;
+        bottom: 4vw;
+      }
 
 }

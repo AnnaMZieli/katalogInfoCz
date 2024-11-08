@@ -1,6 +1,7 @@
 :root {
     --mainColor: #F49AC1;
     --mainColorDarker: #D37983;
+    --mainColorDarker2: #dd7fa8;
     --basicPink: #EB008C;
     --lightPink: #f77ac5;
     --backgroundpink: #F9B2DC;
@@ -369,7 +370,7 @@ body {
         color: var(--black);
         text-align: center;
         font-family: "myriad-pro", sans-serif;
-        font-size: 5vw;
+        font-size: 6vw;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -379,13 +380,13 @@ body {
     }
 
     .whole-mobile-app .secondImage .threeBoxes {
-        margin:0;
+        margin: 0;
         display: flex;
         flex-direction: column;
     }
 
     .whole-mobile-app .secondImage .twoBoxes {
-        margin:0;
+        margin: 0;
         display: flex;
         flex-direction: row;
     }
@@ -396,7 +397,7 @@ body {
         align-items: center;
         flex-direction: column;
         text-align: center;
-        
+
     }
 
     .whole-mobile-app .secondImage p {
@@ -446,4 +447,631 @@ body {
         margin: 0 0 0 6vw;
         padding: 3vw;
     }
+
+    .whole-mobile-app .thirdImage {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 6vw 0 6vw 0;
+        background-color: var(--white);
+        align-items: center;
+    }
+
+    .whole-mobile-app .thirdImage .productImage {
+        content: url(./images_8/Hebe_Collection.png);
+        width: 94vw;
+        height: auto;
+    }
+
+    .whole-mobile-app .thirdImage h6 {
+        margin: 0 0 1vw 0;
+        color: #000;
+        text-align: center;
+        font-family: "myriad-pro", sans-serif;
+        font-size: 5vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.2vw;
+        text-transform: uppercase;
+    }
+
+    .whole-mobile-app .thirdImage .pinkButton {
+        margin-top: -6vw;
+    }
+
+
+
+
+
+    .whole-mobile-app .fourthMobileImage .slideshowProduct2Container {
+        width: 100%;
+        overflow-x: scroll;
+        display: flex;
+        scroll-snap-type: x mandatory;
+        gap: 10vw;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .whole-mobile-app .fourthMobileImage h6 {
+        margin: 6vw;
+        color: #000;
+        text-align: center;
+        font-family: "myriad-pro", sans-serif;
+        font-size: 5.4vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.3vw;
+    }
+
+    .whole-mobile-app .fourthMobileImage h5 {
+        margin: 0;
+        color: var(--black);
+        font-size: 5vw;
+        font-family: "myriad-pro-condensed", sans-serif;
+        font-weight: 400;
+    }
+
+    .whole-mobile-app .fourthMobileImage .scrollProduct2Box .oneEyeImg1 {
+        content: url(./images_8/eye1.png);
+        width: 100%;
+        height: auto;
+    }
+
+    .whole-mobile-app .fourthMobileImage .scrollProduct2Box .oneEyeImg2 {
+        content: url(./images_8/eye2.png);
+        width: 100%;
+        height: auto;
+    }
+
+    .whole-mobile-app .fourthMobileImage .scrollProduct2Box .oneEyeImg3 {
+        content: url(./images_8/eye3.png);
+        width: 100%;
+        height: auto;
+    }
+
+    .whole-mobile-app .fourthMobileImage .numbers {
+        margin-top: -3px;
+        width: 20vw;
+        height: auto;
+    }
+
+    .whole-mobile-app .fourthMobileImage .scrollProduct2Box3 p {
+        margin: 4vw 6vw 6vw 8vw;
+    }
+
+    .whole-mobile-app .fourthMobileImage .number1 {
+        content: url('./images_8/numb1.png');
+    }
+
+    .whole-mobile-app .fourthMobileImage .number2 {
+        content: url('./images_8/numb2.png');
+    }
+
+    .whole-mobile-app .fourthMobileImage .number3 {
+        content: url('./images_8/numb3.png');
+    }
+
+    .whole-mobile-app .fourthMobileImage .scrollProduct2Box h6 {
+        margin: 1vw 0;
+        color: #000;
+        text-align: center;
+        font-family: "myriad-pro", sans-serif;
+        font-size: 6vw;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 0.3vw;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .whole-mobile-app .fourthMobileImage .scrollProduct2Box {
+        width: 80vw;
+        height: auto;
+        border-radius: 15px;
+        background: #FFF;
+        /* padding: 4vw; */
+        flex-shrink: 0;
+        text-align: center;
+        scroll-snap-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 8vw 20px 8vw;
+        position: relative;
+        box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
+        justify-content: space-between;
+    }
+
+    .whole-mobile-app .fourthMobileImage .titleBoxText {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .whole-mobile-app .fourthMobileImage .liekeItImg {
+        width: 7vw;
+        height: auto;
+        margin-right: 2vw;
+    }
+
+    .whole-mobile-app .fourthMobileImage .slideshowProduct2Container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .whole-mobile-app .fourthMobileImage .productSectors {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .whole-mobile-app .fourthMobileImage .productSectors h4 {
+        font-size: 20vw;
+        color: var(--basicPink);
+        margin: 10vw -2vw;
+    }
+
+    .whole-mobile-app .fourthMobileImage ul {
+        text-align: left;
+        color: #000;
+        font-family: "myriad-pro-semi-condensed", sans-serif;
+        font-size: 4vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0;
+        padding-left: 8vw;
+        margin: 2vw 4vw;
+    }
+
+    .whole-mobile-app .fourthMobileImage .contentBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .whole-mobile-app .fourthMobileImage .scrollProduct2Box1 .contentBox .pinkButton {
+        font-size: 3vw;
+        padding: 1.8vw 2vw;
+        position: absolute;
+    }
+
+    .whole-mobile-app .fourthMobileImage .scrollProduct2Box1 .oneProductSector {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2vw;
+        width: 22vw;
+    }
+
+    .whole-mobile-app .fourthMobileImage .scrollProduct2Box2 .oneProductSector {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2vw;
+    }
+
+    .whole-mobile-app .fourthMobileImage p {
+        font-family: "myriad-pro-semi-condensed", sans-serif;
+        font-weight: 300;
+        font-size: 4vw;
+        margin: 2vw 0;
+    }
+
+    .whole-mobile-app .fourthMobileImage .scrollProduct2Box1 .productImages {
+        width: auto;
+        height: 40vw;
+        margin: 2vw 0 2vw 0;
+        position: absolute;
+        bottom: 12vw;
+    }
+
+    .whole-mobile-app .fourthMobileImage .emptyBox {
+        height: 54vw;
+    }
+
+    .whole-mobile-app .fourthMobileImage .productImg1 {
+        content: url(./images_8/Magazyn_400x600_produkt8b.png);
+
+    }
+
+    .whole-mobile-app .fourthMobileImage .productImg2 {
+        content: url(./images_8/Magazyn_400x600_produkt9b.png);
+    }
+
+    .whole-mobile-app .fourthMobileImage .productImg3 {
+        content: url(./images_8/Magazyn_400x600_produkt10b.png);
+    }
+
+    .whole-mobile-app .fourthMobileImage .productImg4 {
+        content: url(./images_8/Magazyn_400x600_produkt12b.png);
+        height: 24vw;
+    }
+
+
+
+    .whole-mobile-app .dots3 {
+        position: inherit;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .whole-mobile-app .dot3 {
+        display: inline-block;
+        height: 4vw;
+        width: 4vw;
+        margin: 0 2vw;
+        background-color: var(--mainColorDarker2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .whole-mobile-app .dot3:hover,
+    .whole-mobile-app .dot3.active {
+        background-color: var(--white);
+    }
+
+    .whole-mobile-app .fifthMobileImage {
+        background-image: url('./images_8/red_face.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 140vw;
+        position: relative;
+        margin-top: 4vw;
+        padding-top: 1vw;
+    }
+
+    .whole-mobile-app .fifthMobileImage h6 {
+        font-family: "myriad-pro-semi-condensed", sans-serif;
+        font-weight: 600;
+        font-size: 5vw;
+        color: var(--black);
+        background-color: var(--white);
+        padding: 2vw 4vw;
+        margin: 4vw 6vw;
+        border-radius: 10px;
+        letter-spacing: 0.6vw;
+        text-align: center;
+    }
+
+    .whole-mobile-app .fifthMobileImage .slideshowProductContainer {
+        width: 100%;
+        bottom: 10vw;
+        left: 0;
+        overflow-x: scroll;
+        display: flex;
+        scroll-snap-type: x mandatory;
+        gap: 10vw;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+
+    .whole-mobile-app .fifthMobileImage .scrollProductBox {
+        width: 84vw;
+        height: auto;
+        flex-shrink: 0;
+        scroll-snap-align: center;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 6vw;
+        position: relative;
+    }
+
+    .whole-mobile-app .fifthMobileImage .scrollProductBox .pinkButton {
+        font-size: 2.4vw;
+        margin: 3vw 0 1vw 0;
+        padding: 2vw;
+    }
+
+    .whole-mobile-app .fifthMobileImage .emptyBox {
+        width: 34vw;
+    }
+
+    .whole-mobile-app .fifthMobileImage .slideshowProductContainer::-webkit-scrollbar {
+        display: none;
+    }
+
+    .whole-mobile-app .fifthMobileImage .svgDots2 {
+        position: relative;
+        height: 60vw;
+    }
+
+    .whole-mobile-app .fifthMobileImage .svgDots2 .dot-svg2 {
+        position: absolute;
+        transition: all 0.3s ease;
+        margin: 4vw;
+        cursor: pointer;
+    }
+
+    .whole-mobile-app .fifthMobileImage .dot-svg2:hover circle {
+        stroke-opacity: 1;
+        fill-opacity: 1;
+    }
+
+    .whole-mobile-app .fifthMobileImage .dot-svg2.active circle {
+        stroke-opacity: 1;
+        fill-opacity: 1;
+    }
+
+    .whole-mobile-app .fifthMobileImage .dotOne {
+        top: 8vw;
+        left: 59vw;
+    }
+
+    .whole-mobile-app .fifthMobileImage .dotTwo {
+        top: 2vw;
+        left: 16vw;
+    }
+
+    .whole-mobile-app .fifthMobileImage .dotThree {
+        top: 16vw;
+        left: 20vw;
+    }
+
+    .whole-mobile-app .fifthMobileImage .scrollBox {
+        width: 80vw;
+        /* height: 56vw; */
+        flex-shrink: 0;
+        scroll-snap-align: center;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 8vw;
+        position: relative;
+    }
+
+    .whole-mobile-app .fifthMobileImage .textBox {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.80);
+        width: 80vw;
+        height: auto;
+        border-radius: 10px;
+        margin-top: 16vw;
+        bottom: 0;
+    }
+
+    .whole-mobile-app .fifthMobileImage .contentBox {
+        display: flex;
+        flex-direction: column;
+        margin: 4vw;
+    }
+
+    .whole-mobile-app .fifthMobileImage h5 {
+        margin: 4vw 10vw 4vw 0;
+        text-align: center;
+        font-family: "myriad-pro", sans-serif;
+        font-weight: 700;
+        font-size: 3.4vw;
+    }
+
+    .whole-mobile-app .fifthMobileImage .emptyBox {
+        width: 34vw;
+    }
+
+    .whole-mobile-app .fifthMobileImage p {
+        color: #000;
+        text-align: left;
+        font-family: "myriad-pro-semi-condensed", sans-serif;
+        font-size: 4vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin: 0;
+    }
+
+    .whole-mobile-app .fifthMobileImage .dots2 {
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin-top: 20px;
+        width: 80vw;
+    }
+
+    .whole-mobile-app .dot2 {
+        display: inline-block;
+        height: 4vw;
+        width: 4vw;
+        margin: 0 2vw;
+        background-color: var(--mainColorDarker2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .whole-mobile-app .dot2:hover,
+    .whole-mobile-app .dot2.active {
+        background-color: var(--white);
+    }
+
+    .whole-mobile-app .fifthMobileImage .oneProductSector {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        right: 0vw;
+    }
+
+    .whole-mobile-app .fifthMobileImage .pinkButton {
+        padding: 1.4vw 2vw;
+        font-size: 2.8vw;
+        position: relative;
+        bottom: 2vw;
+    }
+
+    .whole-mobile-app .fifthMobileImage .productImages {
+        width: auto;
+    }
+
+    .whole-mobile-app .fifthMobileImage .productImg1 {
+        content: url(./images_8/Magazyn_400x600_produkt11b.png);
+        height: 26vw;
+        margin: 6.2vw 4vw 2vw 4vw;
+    }
+
+    .whole-mobile-app .fifthMobileImage .productImg2 {
+        content: url(./images_8/Magazyn_400x600_produkt13.png);
+        height: 30vw;
+        margin: 2vw 4vw 2vw 0;
+    }
+
+    .whole-mobile-app .fifthMobileImage .productImg3 {
+        content: url(./images_8/Magazyn_400x600_produkt14c.png);
+        height: 24vw;
+        margin: 8vw 0 2vw 0;
+    }
+
+    .whole-mobile-app .fifthMobileImage .button2 {
+        margin-right: 4vw;
+    }
+
+    .whole-mobile-app .fifthMobileImage .button3 {
+        margin-right: 5vw;
+    }
+
+    .whole-mobile-app .footerBtns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+    
+      .whole-mobile-app .footerBtns .pinkButton {
+        position: relative;
+        justify-content: flex-end;
+      }
+    
+      .whole-mobile-app .viteZe {
+        background-color: var(--basicPink);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 40px 0 16px 0;
+      }
+    
+      .whole-mobile-app .i-svg {
+        margin:6px;
+      }
+    
+      .whole-mobile-app .viteZe h5 {
+        color: var(--white);
+        text-transform: uppercase;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 900;
+        margin: 10px 0 4px 0;
+      }
+    
+      .whole-mobile-app .viteZe h6 {
+        color: var(--white);
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 300;
+        margin: 0 0 10px 0;
+        font-size: 5vw;
+      }
+    
+      .whole-mobile-app .whiteButton {
+        background-color: var(--white);
+        color: var(--basicPink);
+        margin: 10px 0 10px 0;
+      }
+
+      .whole-mobile-app .popup {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 60vw;
+        max-width: 400px;
+        position: relative;
+    }
+
+    .whole-mobile-app .overlay2 {
+        display: none;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 999;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+    }
+    
+    .whole-mobile-app .overlay2.active {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .whole-mobile-app .imageP {
+        background-color: #F287B7;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        width: 70%;
+        border-radius: 10px;
+      }
+      
+      .whole-mobile-app .imageP img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+  
+      .close {
+          position: absolute;
+          right: 4vw;
+          color: #fff;
+          font-size: 7vw;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      
+      .whole-mobile-app .imageP .close:hover {
+        color: #000;
+      }
+  
+      .whole-mobile-app .imageP1 .close:hover {
+          color: #000;
+        }
+
+      .whole-mobile-app .imageP .pinkButton {
+        position: absolute;
+        padding: 2vw 3vw;
+        font-size: 3vw;
+      }
+
+      .whole-mobile-app .imageP .btn1 {
+        right: 2.2vw;
+        bottom: 47vw;
+      }
+
+      .whole-mobile-app .imageP .btn2 {
+        right: 2.2vw;
+        bottom: 4vw;
+      }
+
 }

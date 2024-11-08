@@ -540,7 +540,7 @@ body {
     }
 
     .whole-mobile-app .fourthMobileImage .scrollProduct2Box3 p {
-        margin: 4vw 6vw 6vw 8vw;
+        margin: 4vw 6vw 6vw 4vw;
     }
 
     .whole-mobile-app .fourthMobileImage .number1 {
@@ -618,7 +618,7 @@ body {
         text-align: left;
         color: #000;
         font-family: "myriad-pro-semi-condensed", sans-serif;
-        font-size: 4vw;
+        font-size: 3vw;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
@@ -657,7 +657,7 @@ body {
     .whole-mobile-app .fourthMobileImage p {
         font-family: "myriad-pro-semi-condensed", sans-serif;
         font-weight: 300;
-        font-size: 4vw;
+        font-size: 3vw;
         margin: 2vw 0;
     }
 
@@ -740,7 +740,7 @@ body {
         text-align: center;
     }
 
-    .whole-mobile-app .fifthMobileImage .slideshowProductContainer {
+    .whole-mobile-app .fifthMobileImage .slideshowContainer2 {
         width: 100%;
         bottom: 10vw;
         left: 0;
@@ -753,32 +753,11 @@ body {
         -ms-overflow-style: none;
     }
 
-
-    .whole-mobile-app .fifthMobileImage .scrollProductBox {
-        width: 84vw;
-        height: auto;
-        flex-shrink: 0;
-        scroll-snap-align: center;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 6vw;
-        position: relative;
-    }
-
-    .whole-mobile-app .fifthMobileImage .scrollProductBox .pinkButton {
-        font-size: 2.4vw;
-        margin: 3vw 0 1vw 0;
-        padding: 2vw;
-    }
-
     .whole-mobile-app .fifthMobileImage .emptyBox {
         width: 34vw;
     }
 
-    .whole-mobile-app .fifthMobileImage .slideshowProductContainer::-webkit-scrollbar {
+    .whole-mobile-app .fifthMobileImage .slideshowContainer2::-webkit-scrollbar {
         display: none;
     }
 
@@ -819,7 +798,7 @@ body {
         left: 20vw;
     }
 
-    .whole-mobile-app .fifthMobileImage .scrollBox {
+    .whole-mobile-app .fifthMobileImage .scrollBox2 {
         width: 80vw;
         /* height: 56vw; */
         flex-shrink: 0;
@@ -843,7 +822,7 @@ body {
         width: 80vw;
         height: auto;
         border-radius: 10px;
-        margin-top: 16vw;
+        margin-top: 14vw;
         bottom: 0;
     }
 

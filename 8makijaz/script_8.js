@@ -122,6 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function openPopup(popupId) {
         const popup = document.getElementById(popupId);
+        console.log(popup);
         popup.classList.add('active');
       }
     

@@ -352,6 +352,7 @@
     .whole-mobile-app .mainMobileImage .popup .pinkButton {
       position: absolute;
       bottom: 4vw;
+      transform:translate(-50%, -30%); 
     }
 
     .whole-mobile-app .mainMobileImage .oneProductSector {

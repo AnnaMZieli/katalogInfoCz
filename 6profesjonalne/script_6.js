@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     function scrollToSlide2(index) {
-        const scrollPosition = scrollBoxes[index].offsetLeft;
-        slideshowContainer.scrollTo({
+        const scrollPosition = scrollProductBoxes[index].offsetLeft;
+        slideshowProductContainer.scrollTo({
             left: scrollPosition,
             behavior: 'smooth'
         });

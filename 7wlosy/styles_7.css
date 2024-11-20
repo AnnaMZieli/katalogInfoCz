@@ -784,49 +784,49 @@
       }
     
       .whole-mobile-app .productImg9 {
-        content: url(./images_7/Magazyn_400x600_produkt4.png);
+        content: url(./images_7/Magazyn_400x600_produktNowy.png);
         height: 40vw;
         margin: 2vw 0 2vw 0;
       }
     
       .whole-mobile-app .productImg10 {
-        content: url(./images_7/Magazyn_400x600_produkt6.png);
+        content: url(./images_7/Magazyn_400x600_produkt2Nowy.png);
         height: 40vw;
         margin: 2vw 0 2vw 0;
       }
     
       .whole-mobile-app .productImg11 {
-        content: url(./images_7/Magazyn_400x600_produkt9.png);
+        content: url(./images_7/Magazyn_400x600_produkt4.png);
         height: 40vw;
         margin: 2vw 0 2vw 0;
       }
 
       .whole-mobile-app .productImg12 {
-        content: url(./images_7/Magazyn_400x600_produkt3.png);
+        content: url(./images_7/Magazyn_400x600_produkt6.png);
         height: 40vw;
         margin: 2vw 0 2vw 0;
       }
 
       .whole-mobile-app .productImg13 {
-        content: url(./images_7/Magazyn_400x600_produkt10.png);
+        content: url(./images_7/Magazyn_400x600_produkt9.png);
         height: 40vw;
         margin: 2vw 0 2vw 0;
       }
 
       .whole-mobile-app .productImg14 {
-        content: url(./images_7/Magazyn_400x600_produkt13.png);
+        content: url(./images_7/Magazyn_400x600_produkt3.png);
         height: 40vw;
         margin: 2vw 0 2vw 0;
       }
 
       .whole-mobile-app .productImg15 {
-        content: url(./images_7/Magazyn_400x600_produkt13.png);
+        content: url(./images_7/Magazyn_400x600_produkt10.png);
         height: 40vw;
         margin: 2vw 0 2vw 0;
       }
 
       .whole-mobile-app .productImg16 {
-        content: url(./images_7/Magazyn_400x600_produkt20.png);
+        content: url(./images_7/Magazyn_400x600_produkt13.png);
         height: 40vw;
         margin: 2vw 0 2vw 0;
       }
@@ -920,7 +920,7 @@
         align-items: center;
         width: 100%;
         padding: 10px 0;
-        margin: 40px 0 16px 0;
+        margin: 40px 0 30px 0;
       }
     
       .whole-mobile-app .i-svg {

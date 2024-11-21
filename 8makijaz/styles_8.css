@@ -223,11 +223,16 @@ body {
         overflow-x: scroll;
         display: flex;
         scroll-snap-type: x mandatory;
+        -webkit-scroll-snap-type: x mandatory;
         gap: 10vw;
         scroll-behavior: smooth;
         scrollbar-width: none;
         -ms-overflow-style: none;
     }
+
+    .whole-mobile-app .slideshowContainer::-webkit-scrollbar {
+        display: none;
+      }
 
 
     .whole-mobile-app .mainMobileImage .scrollBox {
@@ -235,6 +240,7 @@ body {
         /* height: 56vw; */
         flex-shrink: 0;
         scroll-snap-align: center;
+        -webkit-scroll-snap-align: center;
         border-radius: 10px;
         display: flex;
         flex-direction: column;

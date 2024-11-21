@@ -205,6 +205,11 @@ body {
         -ms-overflow-style: none;
     }
 
+    .whole-mobile-app .slideshowProductContainer::-webkit-scrollbar {
+        display: none;
+      }
+  
+
     .whole-mobile-app .secondMobileImage h6 {
         margin: 4vw;
         color: #000;

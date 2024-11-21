@@ -186,6 +186,10 @@ body {
     -ms-overflow-style: none;
   }
 
+  .whole-mobile-app .slideshowContainer::-webkit-scrollbar {
+    display: none;
+  }
+
 
   .whole-mobile-app .scrollBox {
     width: 80vw;

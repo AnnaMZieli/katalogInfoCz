@@ -113,6 +113,13 @@ body {
         z-index: 100;
     }
 
+    .sticky-header .arrowSvg {
+        position:absolute;
+        right: 2px;
+        top: 18px;
+        opacity: 10;
+    }
+
     .sticky-header nav {
         display: flex;
         justify-content: space-between;

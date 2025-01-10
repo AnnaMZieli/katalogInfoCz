@@ -202,7 +202,7 @@ body {
     }
 
     .whole-mobile-app .secondMobileImage .slideshowProductContainer {
-        width: 100%;
+        width: 82vw;
         overflow-x: scroll;
         display: flex;
         scroll-snap-type: x mandatory;
@@ -215,6 +215,12 @@ body {
     .whole-mobile-app .slideshowProductContainer::-webkit-scrollbar {
         display: none;
       }
+
+    .whole-mobile-app .secondMobileImage {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
   
 
     .whole-mobile-app .secondMobileImage h6 {
@@ -267,11 +273,11 @@ body {
         margin: 0;
     }
 
-    .whole-mobile-app .secondMobileImage .scrollProductBox {
+    /* .whole-mobile-app .secondMobileImage .scrollProductBox {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
+    } */
 
     .whole-mobile-app .secondMobileImage .scrollProductBox {
         width: 74vw;
@@ -284,10 +290,11 @@ body {
         scroll-snap-align: center;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         margin: 0 8vw 20px 8vw;
         position: relative;
-        box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
+        /* box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); */
     }
 
     .whole-mobile-app .secondMobileImage .productSectors {

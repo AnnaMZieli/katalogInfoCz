@@ -176,10 +176,12 @@ body {
   .whole-mobile-app .mainMobileImage {
     height: 180vw;
     position: relative;
+    display: flex;
+    justify-content: center;
   }
  
   .whole-mobile-app .slideshowContainer {
-    width: 100%;
+    /* width: 100%;
     position: absolute;
     left: 0px;
     bottom: 50px;
@@ -189,7 +191,18 @@ body {
     gap: 10vw;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    -ms-overflow-style: none;
+    -ms-overflow-style: none; */
+    width: 80vw;
+    position: absolute;
+    /* left: 0px; */
+    bottom: 50px;
+    overflow-x: scroll;
+    display: flex
+;
+    scroll-snap-type: x mandatory;
+    gap: 10vw;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
   }
 
   .whole-mobile-app .slideshowContainer::-webkit-scrollbar {
@@ -197,7 +210,7 @@ body {
   }
 
   .whole-mobile-app .scrollBox {
-    width: 80vw;
+    /* width: 80vw;
     height: 64vw;
     flex-shrink: 0;
     scroll-snap-align: center;
@@ -207,6 +220,17 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0 8vw;
+    position: relative; */
+    width: 80vw;
+    height: 64vw;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.80);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 0 8vw; */
     position: relative;
   }
 
@@ -254,8 +278,8 @@ body {
   .whole-mobile-app .dots {
     position: absolute;
     bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
     text-align: center;
     margin-top: 20px;
   }
@@ -333,7 +357,7 @@ body {
   }
 
   .whole-mobile-app .slideshowProductContainer {
-    width: 100%;
+    width: 82vw;
     overflow-x: scroll;
     display: flex;
     scroll-snap-type: x mandatory;
@@ -358,9 +382,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 8vw 20px 8vw;
+    margin-bottom: 20px;
     position: relative;
-    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); */
   }
 
   .whole-mobile-app .numbers {
@@ -461,9 +485,12 @@ body {
 
   .whole-mobile-app .secondMobileImage {
     height: 186vw;
+    /* width: 100%; */
     position: relative;
-    display: block;
-    justify-content: space-around;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
   }
 
   .whole-mobile-app .slideshowProductContainer h2 {

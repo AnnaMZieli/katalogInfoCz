@@ -63,7 +63,6 @@ function activateDot2(index) {
 
 dots2.forEach((dot, index) => {
   dot.addEventListener('click', function () {
-    console.log(`Dot ${index} clicked`);
     scrollToSlide2(index);
   });
 });

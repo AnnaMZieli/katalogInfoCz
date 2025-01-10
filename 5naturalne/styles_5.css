@@ -212,12 +212,15 @@ body {
     .whole-mobile-app .mainMobileImage {
         height: 180vw;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .whole-mobile-app .slideshowContainer {
-        width: 100%;
+        width: 80vw;
         position: absolute;
-        left: 0px;
+        /* left: 0px; */
         bottom: 12vw;
         overflow-x: scroll;
         display: flex;
@@ -243,7 +246,6 @@ body {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin: 0 8vw;
         position: relative;
     }
 
@@ -260,6 +262,9 @@ body {
 
     .whole-mobile-app .secondMobileImage {
         padding-bottom: 8vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .whole-mobile-app .secondMobileImage .pinkButton {
@@ -355,7 +360,7 @@ body {
     }
 
     .whole-mobile-app .secondMobileImage .slideshowProductContainer {
-        width: 100%;
+        width: 80vw;
         overflow-x: scroll;
         display: flex;
         scroll-snap-type: x mandatory;
@@ -445,9 +450,9 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 8vw 20px 8vw;
+        margin-bottom: 20px;
         position: relative;
-        box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
+        /* box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); */
     }
 
     .whole-mobile-app .secondMobileImage .productSectors {

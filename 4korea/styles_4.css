@@ -127,7 +127,7 @@ body {
   .whole-mobile-app video {
     object-fit: cover;
     width: 100%;
-    height: 180vw;
+    height: 240vw;
   }
 
   .whole-mobile-app h1 {
@@ -177,12 +177,16 @@ body {
   .whole-mobile-app .mainMobileImage {
     height: 240vw;
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .whole-mobile-app .slideshowContainer {
-    width: 100%;
+    width: 80vw;
     position: absolute;
-    left: 0px;
+    /* left: 0px; */
     bottom: 50px;
     overflow-x: scroll;
     display: flex;
@@ -209,7 +213,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 0 8vw;
+    /* margin: 0 8vw; */
     position: relative;
   }
 
@@ -253,8 +257,8 @@ body {
   .whole-mobile-app .dots {
     position: absolute;
     bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%;
+    transform: translateX(-50%); */
     text-align: center;
     margin-top: 20px;
     width: 80vw;

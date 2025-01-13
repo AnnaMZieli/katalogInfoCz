@@ -218,7 +218,7 @@ body {
     padding-left: 4px;
     color: #000;
     font-family: "myriad-pro-condensed", sans-serif;
-    font-size: 4.4vw;
+    font-size: 5vw;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
@@ -291,22 +291,23 @@ body {
 
   .whole-mobile-app .popup {
     background: white;
-    padding: 4vw;
+    padding: 4vw 4vw 6vw 4vw;
     border-radius: 10px;
-    width: 70vw;
+    width: 74vw;
     max-width: 400px;
     position: relative;
   }
 
  .close {
-    position: absolute;
-    top: 2vw;
-    right: 4vw;
-    color: #aaa;
-    font-size: 7vw;
-    text-decoration: none;
-    cursor: pointer;
-    position: absolute;
+  position: absolute;
+  top: 2vw;
+  right: 4vw;
+  color: #aaa;
+  font-size: 9vw;
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  margin: 0 1vw;
   }
 
  .close:hover {
@@ -571,6 +572,7 @@ body {
   background-color: #F287B7;
   padding: 0;
   overflow: hidden;
+  width: 90vw;
 }
 
 .whole-mobile-app .imageP img {

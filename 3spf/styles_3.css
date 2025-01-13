@@ -452,7 +452,7 @@ body {
         padding: 0;
         position: relative;
         overflow: hidden;
-        width: 70%;
+        width: 90%;
         border-radius: 10px;
       }
       
@@ -463,12 +463,13 @@ body {
       }
   
       .close {
-          position: absolute;
-          right: 4vw;
-          color: #fff;
-          font-size: 7vw;
-          text-decoration: none;
-          cursor: pointer;
+        position: absolute;
+        right: 4vw;
+        color: #fff;
+        font-size: 9vw;
+        text-decoration: none;
+        cursor: pointer;
+        margin: 0 1vw;
         }
       
       .whole-mobile-app .imageP .close:hover {

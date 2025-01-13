@@ -18,7 +18,7 @@
   }
   
   .main-desktop-banner {
-    background-image: url(images_1/dektop_INFO.png);
+    background-image: url(images_7/dektop_INFO.png);
     background-position: center;
     width: 100vw;
     height: 100vh;
@@ -346,7 +346,7 @@
       padding: 0;
       position: relative;
       overflow: hidden;
-      width: 70%;
+      width: 90%;
     }
     
     .whole-mobile-app .imageP1 img {
@@ -374,20 +374,20 @@
   
     .whole-mobile-app .mainMobileImage .productPopupImg1 {
       content: url('./images_7/Magazyn_400x600_produkt5.png');
-      width: 30vw;
-      bottom: 10vw;
+      width: 40vw;
+      bottom: 12vw;
     }
 
     .whole-mobile-app .mainMobileImage .productPopupImg2 {
       content: url('./images_7/Magazyn_400x600_produkt8.png');
-      width: 20vw;
-      bottom: 20vw;
+      width: 28vw;
+      bottom: 21vw;
     }
 
     .whole-mobile-app .mainMobileImage .productPopupImg3 {
       content: url('./images_7/Magazyn_400x600_produkt2.png');
-      width: 20vw;
-      bottom: 20vw;
+      width: 28vw;
+      bottom: 22vw;
     }
   
     .whole-mobile-app .mainMobileImage .close {
@@ -395,7 +395,6 @@
       top: 0.2vw;
       right: 4vw;
       color: var(--basicPink);
-      font-size: 7vw;
       text-decoration: none;
       cursor: pointer;
       position: absolute;
@@ -997,7 +996,7 @@
         padding: 0;
         position: relative;
         overflow: hidden;
-        width: 70%;
+        width: 90%;
         border-radius: 10px;
       }
       
@@ -1011,9 +1010,10 @@
           position: absolute;
           right: 4vw;
           color: #fff;
-          font-size: 7vw;
+          font-size: 9vw;
           text-decoration: none;
           cursor: pointer;
+          margin: 0 1vw;
         }
       
       .whole-mobile-app .imageP .close:hover {
@@ -1027,17 +1027,17 @@
       .whole-mobile-app .imageP .pinkButton {
         position: absolute;
         padding: 2vw 3vw;
-        font-size: 3vw;
+        font-size: 3.2vw;
       }
 
       .whole-mobile-app .imageP .btn1 {
-        right: 2.2vw;
-        bottom: 47vw;
+        right: 5%;
+        bottom: 46%;
       }
 
       .whole-mobile-app .imageP .btn2 {
-        right: 2.2vw;
-        bottom: 4vw;
+        right: 5%;
+        bottom: 5%;
       }
 
 }

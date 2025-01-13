@@ -19,7 +19,7 @@ body {
 }
 
 .main-desktop-banner {
-    background-image: url(images_1/dektop_INFO.png);
+    background-image: url(images_8/dektop_INFO.png);
     background-position: center;
     width: 100vw;
     height: 100vh;
@@ -494,7 +494,7 @@ body {
         padding: 0;
         position: relative;
         overflow: hidden;
-        width: 70%;
+        width: 90%;
         content: src("./images_8/tipy1.png");
     }
 
@@ -505,10 +505,8 @@ body {
 
     .whole-mobile-app .secondImage .close {
         position: absolute;
-        top: 0.2vw;
         right: 4vw;
         color: var(--basicPink);
-        font-size: 7vw;
         text-decoration: none;
         cursor: pointer;
         position: absolute;
@@ -530,7 +528,7 @@ body {
     }
 
     .whole-mobile-app .thirdImage .productImage {
-        content: url(./images_8/Hebe_Collection.png);
+        content: url(./images_8/Hebe_Collection_2.png);
         width: 94vw;
         height: auto;
     }
@@ -1085,7 +1083,7 @@ body {
         padding: 0;
         position: relative;
         overflow: hidden;
-        width: 70%;
+        width: 90%;
         border-radius: 10px;
     }
 
@@ -1099,9 +1097,10 @@ body {
         position: absolute;
         right: 4vw;
         color: #fff;
-        font-size: 7vw;
+        font-size: 9vw;
         text-decoration: none;
         cursor: pointer;
+        margin: 0 1vw;
     }
 
     .whole-mobile-app .imageP .close:hover {

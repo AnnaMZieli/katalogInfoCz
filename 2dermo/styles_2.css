@@ -593,7 +593,7 @@ body {
         padding: 0;
         position: relative;
         overflow: hidden;
-        width:80%;
+        width:90%;
         border-radius: 10px;
       }
       
@@ -604,12 +604,12 @@ body {
       }
 
     .whole-mobile-app .imageP {
-      background-color: #F287B7;
-      padding: 0;
-      position: relative;
-      overflow: hidden;
-      width:80%;
-      border-radius: 10px;
+        background-color: #F287B7;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        width: 90%;
+        border-radius: 10px;
     }
     
     .whole-mobile-app .imageP img {
@@ -622,9 +622,10 @@ body {
         position: absolute;
         right: 4vw;
         color: #fff;
-        font-size: 7vw;
+        font-size: 9vw;
         text-decoration: none;
         cursor: pointer;
+        margin: 0 1vw;
       }
     
     .whole-mobile-app .imageP .close:hover {
@@ -637,7 +638,7 @@ body {
 
       .imageP1 .close {
         color: var(--secondColor);
-        top: 2px;
+        /* top: -2px; */
       }
       
 

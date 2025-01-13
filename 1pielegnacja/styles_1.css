@@ -181,27 +181,14 @@ body {
   }
  
   .whole-mobile-app .slideshowContainer {
-    /* width: 100%;
+    width: 80vw;
     position: absolute;
-    left: 0px;
     bottom: 50px;
     overflow-x: scroll;
     display: flex;
     scroll-snap-type: x mandatory;
     gap: 10vw;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    -ms-overflow-style: none; */
-    width: 80vw;
-    position: absolute;
-    /* left: 0px; */
-    bottom: 50px;
-    overflow-x: scroll;
-    display: flex
-;
-    scroll-snap-type: x mandatory;
-    gap: 10vw;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     scrollbar-width: none;
   }
 
@@ -210,17 +197,6 @@ body {
   }
 
   .whole-mobile-app .scrollBox {
-    /* width: 80vw;
-    height: 64vw;
-    flex-shrink: 0;
-    scroll-snap-align: center;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.80);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 8vw;
-    position: relative; */
     width: 80vw;
     height: 64vw;
     flex-shrink: 0;
@@ -230,7 +206,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin: 0 8vw; */
     position: relative;
   }
 
@@ -278,8 +253,6 @@ body {
   .whole-mobile-app .dots {
     position: absolute;
     bottom: 10px;
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
     text-align: center;
     margin-top: 20px;
   }
@@ -362,7 +335,7 @@ body {
     display: flex;
     scroll-snap-type: x mandatory;
     gap: 10vw;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
@@ -384,7 +357,6 @@ body {
     align-items: center;
     margin-bottom: 20px;
     position: relative;
-    /* box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); */
   }
 
   .whole-mobile-app .numbers {
@@ -485,10 +457,8 @@ body {
 
   .whole-mobile-app .secondMobileImage {
     height: 186vw;
-    /* width: 100%; */
     position: relative;
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
   }

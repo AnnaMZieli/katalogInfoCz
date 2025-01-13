@@ -223,16 +223,15 @@ body {
     }
 
     .whole-mobile-app .slideshowContainer {
-        width: 100%;
+        width: 80vw;
         position: absolute;
-        left: 0px;
         bottom: 14vw;
         overflow-x: scroll;
         display: flex;
         scroll-snap-type: x mandatory;
         -webkit-scroll-snap-type: x mandatory;
         gap: 10vw;
-        scroll-behavior: smooth;
+        scroll-behavior: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
     }
@@ -244,7 +243,6 @@ body {
 
     .whole-mobile-app .mainMobileImage .scrollBox {
         width: 80vw;
-        /* height: 56vw; */
         flex-shrink: 0;
         scroll-snap-align: center;
         -webkit-scroll-snap-align: center;
@@ -253,7 +251,6 @@ body {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin: 0 8vw;
         position: relative;
     }
 
@@ -494,19 +491,16 @@ body {
     }
 
     .whole-mobile-app .secondImage .imageP1 {
-        /* background-color: #F287B7; */
         padding: 0;
         position: relative;
         overflow: hidden;
         width: 70%;
         content: src("./images_8/tipy1.png");
-        /* border-radius: 10px; */
     }
 
     .whole-mobile-app .imageP1 img {
         width: 100%;
         height: auto;
-        /* border-radius: 10px; */
     }
 
     .whole-mobile-app .secondImage .close {
@@ -558,17 +552,19 @@ body {
         margin-top: -6vw;
     }
 
-
-
-
+    .whole-mobile-app .fourthMobileImage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .whole-mobile-app .fourthMobileImage .slideshowProduct2Container {
-        width: 100%;
+        width: 80vw;
         overflow-x: scroll;
         display: flex;
         scroll-snap-type: x mandatory;
         gap: 10vw;
-        scroll-behavior: smooth;
+        scroll-behavior: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
     }
@@ -651,16 +647,14 @@ body {
         height: auto;
         border-radius: 15px;
         background: #FFF;
-        /* padding: 4vw; */
         flex-shrink: 0;
         text-align: center;
         scroll-snap-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 8vw 20px 8vw;
+        margin-bottom: 5vw;
         position: relative;
-        box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
         justify-content: space-between;
     }
 
@@ -797,7 +791,7 @@ body {
     }
 
     .whole-mobile-app .fifthMobileImage {
-        background-image: url('./images_8/red_face.png');
+        background-image: url(./images_8/red_face.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -806,6 +800,9 @@ body {
         position: relative;
         margin-top: 4vw;
         padding-top: 1vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .whole-mobile-app .fifthMobileImage h6 {
@@ -822,14 +819,12 @@ body {
     }
 
     .whole-mobile-app .fifthMobileImage .slideshowContainer2 {
-        width: 100%;
-        bottom: 10vw;
-        left: 0;
+        width: 80vw;
         overflow-x: scroll;
         display: flex;
         scroll-snap-type: x mandatory;
         gap: 10vw;
-        scroll-behavior: smooth;
+        scroll-behavior: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
     }
@@ -845,6 +840,7 @@ body {
     .whole-mobile-app .fifthMobileImage .svgDots2 {
         position: relative;
         height: 60vw;
+        width: 100%;
     }
 
     .whole-mobile-app .fifthMobileImage .svgDots2 .dot-svg2 {
@@ -881,7 +877,6 @@ body {
 
     .whole-mobile-app .fifthMobileImage .scrollBox2 {
         width: 80vw;
-        /* height: 56vw; */
         flex-shrink: 0;
         scroll-snap-align: center;
         border-radius: 10px;
@@ -889,7 +884,6 @@ body {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin: 0 8vw;
         position: relative;
     }
 

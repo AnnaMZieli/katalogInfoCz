@@ -152,7 +152,6 @@
     }
   
     .whole-mobile-app .pinkButton {
-      /* position: absolute; */
       bottom: 3vw;
       margin: 2vw 0 2vw 0;
       color: var(--white);
@@ -224,16 +223,15 @@
     }
 
     .whole-mobile-app .slideshowContainer {
-        width: 100%;
-        position: absolute;
-        left: 0px;
-        bottom: 12vw;
-        overflow-x: scroll;
-        display: flex;
-        scroll-snap-type: x mandatory;
-        gap: 10vw;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
+      width: 80vw;
+      position: absolute;
+      bottom: 12vw;
+      overflow-x: scroll;
+      display: flex;
+      scroll-snap-type: x mandatory;
+      gap: 10vw;
+      scroll-behavior: auto;
+      scrollbar-width: none;
         -ms-overflow-style: none;
     }
 
@@ -253,7 +251,6 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin: 0 8vw;
         position: relative;
     }
 
@@ -346,18 +343,15 @@
   }
 
   .whole-mobile-app .mainMobileImage .imageP1 {
-      /* background-color: #F287B7; */
       padding: 0;
       position: relative;
       overflow: hidden;
       width: 70%;
-      /* border-radius: 10px; */
     }
     
     .whole-mobile-app .imageP1 img {
       width: 100%;
       height: auto;
-      /* border-radius: 10px; */
     }
 
     .whole-mobile-app .mainMobileImage .popup .pinkButton {
@@ -426,7 +420,6 @@
         font-weight: 300;
         line-height: normal;
         margin: 0;
-        /* margin: 2vw 1vw 4vw 3vw; */
     }
   
     .whole-mobile-app .mainMobileImage .dots {
@@ -455,14 +448,20 @@
         background-color: var(--white);
     }
 
+    .whole-mobile-app .secondMobileImage {
+      display: flex;
+              flex-direction: column;
+              align-items: center;
+    }
+
     .whole-mobile-app .secondMobileImage .slideshowProductContainer {
-        width: 100%;
-        overflow-x: scroll;
-        display: flex;
-        scroll-snap-type: x mandatory;
-        gap: 10vw;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
+      width: 82vw;
+      overflow-x: scroll;
+      display: flex;
+      scroll-snap-type: x mandatory;
+      gap: 10vw;
+      scroll-behavior: auto;
+      scrollbar-width: none;
         -ms-overflow-style: none;
       }
     
@@ -525,18 +524,16 @@
         height: auto;
         border-radius: 15px;
         background: #FFF;
-        /* padding: 4vw; */
         flex-shrink: 0;
         text-align: center;
         scroll-snap-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 8vw 20px 8vw;
+        margin-bottom: 5vw;
         position: relative;
-        box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
         justify-content: space-between;
-        border: 4px solid var(--white);
+        border: 1vw solid var(--white);
       }
     
       .whole-mobile-app .secondMobileImage .slideshowProductContainer::-webkit-scrollbar {
@@ -661,14 +658,20 @@
         color: var(--black);
         font-size: 4vw;
       }
+
+      .whole-mobile-app .thirdMobileImage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     
       .whole-mobile-app .thirdMobileImage .slideshowProduct2Container {
-        width: 100%;
+        width: 82vw;
         overflow-x: scroll;
         display: flex;
         scroll-snap-type: x mandatory;
         gap: 10vw;
-        scroll-behavior: smooth;
+        scroll-behavior: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
       }
@@ -722,18 +725,16 @@
         height: auto;
         border-radius: 15px;
         background: #FFF;
-        /* padding: 4vw; */
         flex-shrink: 0;
         text-align: center;
         scroll-snap-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 8vw 20px 8vw;
+        margin-bottom: 5vw;
         position: relative;
-        box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
         justify-content: space-between;
-        border: 4px solid var(--white);
+        border: 1vw solid var(--white);
       }
 
       .whole-mobile-app .thirdMobileImage .titleBoxText {

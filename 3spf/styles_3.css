@@ -207,7 +207,7 @@ body {
         display: flex;
         scroll-snap-type: x mandatory;
         gap: 10vw;
-        scroll-behavior: smooth;
+        scroll-behavior: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
     }
@@ -294,7 +294,6 @@ body {
         align-items: center;
         margin: 0 8vw 20px 8vw;
         position: relative;
-        /* box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); */
     }
 
     .whole-mobile-app .secondMobileImage .productSectors {

@@ -194,25 +194,26 @@ body {
   }
 
   .whole-mobile-app .mainMobileImage {
-    background-image: url('./images_6/MainImage.png');
+    background-image: url(./images_6/MainImage.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 220vw;
     position: relative;
+    display: flex;
+    justify-content: center;
   }
 
   .whole-mobile-app .mainMobileImage .slideshowProductContainer {
-    width: 100%;
+    width: 84vw;
     position: absolute;
     bottom: 10vw;
-    left: 0;
     overflow-x: scroll;
     display: flex;
     scroll-snap-type: x mandatory;
     gap: 10vw;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
@@ -229,7 +230,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 6vw;
     position: relative;
   }
 
@@ -257,11 +257,6 @@ body {
 
   .whole-mobile-app .mainMobileImage .slideshowProductContainer::-webkit-scrollbar {
     display: none;
-  }
-
-  .whole-mobile-app .mainMobileImage .svgDots {
-    position: relative;
-    height: 130vw;
   }
 
   .whole-mobile-app .mainMobileImage .svgDots .dot-svg {
@@ -393,13 +388,19 @@ body {
     content: url('./images_6/Magazyn_400x600_produkt3a.png');
   }
 
+  .whole-mobile-app .secondMobileImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .whole-mobile-app .secondMobileImage .slideshowContainer {
-    width: 100%;
+    width: 82vw;
     overflow-x: scroll;
     display: flex;
     scroll-snap-type: x mandatory;
     gap: 10vw;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
@@ -469,18 +470,16 @@ body {
     height: auto;
     border-radius: 15px;
     background: #FFF;
-    /* padding: 4vw; */
     flex-shrink: 0;
     text-align: center;
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 8vw 20px 8vw;
+    margin-bottom: 5vw;
     position: relative;
-    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
     justify-content: space-between;
-    border: 4px solid var(--white);
+    border: 1vw solid var(--white);
   }
 
   .whole-mobile-app .secondMobileImage .slideshowContainer::-webkit-scrollbar {

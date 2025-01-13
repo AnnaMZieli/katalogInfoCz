@@ -186,13 +186,12 @@ body {
   .whole-mobile-app .slideshowContainer {
     width: 80vw;
     position: absolute;
-    /* left: 0px; */
     bottom: 50px;
     overflow-x: scroll;
     display: flex;
     scroll-snap-type: x mandatory;
     gap: 10vw;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
@@ -213,7 +212,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* margin: 0 8vw; */
     position: relative;
   }
 
@@ -257,8 +255,6 @@ body {
   .whole-mobile-app .dots {
     position: absolute;
     bottom: 10px;
-    /* left: 50%;
-    transform: translateX(-50%); */
     text-align: center;
     margin-top: 20px;
     width: 80vw;

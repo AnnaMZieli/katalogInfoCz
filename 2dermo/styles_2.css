@@ -314,7 +314,7 @@ body {
         display: flex;
         scroll-snap-type: x mandatory;
         gap: 10vw;
-        scroll-behavior: smooth;
+        scroll-behavior: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
     }

@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const scrollPosition = scrollBoxes[index].offsetLeft;
         slideshowContainer.scrollTo({
             left: scrollPosition,
-            behavior: 'smooth'
+            behavior: 'auto'
         });
         activateDot(index);
     }

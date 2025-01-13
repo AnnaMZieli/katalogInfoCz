@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const scrollPosition = scrollBoxes[index].offsetLeft;
         slideshowContainer.scrollTo({
             left: scrollPosition,
-            behavior: 'smooth'
+            behavior: 'auto'
         });
         activateDot(index);
     }
@@ -51,7 +51,7 @@ function scrollToSlide2(index) {
   const scrollPosition2 = scrollProductBoxes[index].offsetLeft;
   productSlodeshowContainer.scrollTo({
     left: scrollPosition2,
-    behavior: 'smooth'
+    behavior: 'auto'
   });
   activateDot2(index);
 }

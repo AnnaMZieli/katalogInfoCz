@@ -148,8 +148,6 @@ body {
     }
 
     .whole-mobile-app .pinkButton {
-        /* position: absolute; */
-        /* bottom: 3vw; */
         margin: 2vw 0 2vw 0;
         color: var(--white);
         font-family: "myriad-pro", sans-serif;
@@ -220,13 +218,12 @@ body {
     .whole-mobile-app .slideshowContainer {
         width: 80vw;
         position: absolute;
-        /* left: 0px; */
         bottom: 12vw;
         overflow-x: scroll;
         display: flex;
         scroll-snap-type: x mandatory;
         gap: 10vw;
-        scroll-behavior: smooth;
+        scroll-behavior: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
     }
@@ -365,7 +362,7 @@ body {
         display: flex;
         scroll-snap-type: x mandatory;
         gap: 10vw;
-        scroll-behavior: smooth;
+        scroll-behavior: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
     }
@@ -443,7 +440,6 @@ body {
         height: auto;
         border-radius: 15px;
         background: #FFF;
-        /* padding: 4vw; */
         flex-shrink: 0;
         text-align: center;
         scroll-snap-align: center;
@@ -452,7 +448,6 @@ body {
         align-items: center;
         margin-bottom: 20px;
         position: relative;
-        /* box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); */
     }
 
     .whole-mobile-app .secondMobileImage .productSectors {

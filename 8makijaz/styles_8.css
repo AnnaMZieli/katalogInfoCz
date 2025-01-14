@@ -486,7 +486,7 @@ body {
         padding: 0px;
         border-radius: 0px;
         width: 60vw;
-        max-width: 400px;
+        max-width: 450px;
         position: relative;
     }
 
@@ -494,7 +494,7 @@ body {
         padding: 0;
         position: relative;
         overflow: hidden;
-        width: 90%;
+        width: 80%;
         content: src("./images_8/tipy1.png");
     }
 
@@ -1054,7 +1054,7 @@ body {
         padding: 20px;
         border-radius: 10px;
         width: 60vw;
-        max-width: 400px;
+        max-width: 450px;
         position: relative;
     }
 
@@ -1097,10 +1097,11 @@ body {
         position: absolute;
         right: 4vw;
         color: #fff;
-        font-size: 9vw;
+        font-size: 10vw;
         text-decoration: none;
         cursor: pointer;
-        margin: 0 1vw;
+        font-weight: 600;
+        margin: 0 2vw;
     }
 
     .whole-mobile-app .imageP .close:hover {

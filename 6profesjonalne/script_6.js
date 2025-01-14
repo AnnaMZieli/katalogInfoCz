@@ -97,14 +97,6 @@ if (whiteButton) {
     });
 }
 
-// if (overlay2) {
-//     overlay2.addEventListener('click', function (event) {
-//         if (event.target === overlay2 || event.target.classList.contains('close')) {
-//             closePopup2(overlay2);
-//         }
-//     });
-// }
-
 if (overlay2) {
     const handleEvent = function (event) {
         if (event.target === overlay2 || event.target.classList.contains('close')) {
@@ -115,7 +107,5 @@ if (overlay2) {
     overlay2.addEventListener('click', handleEvent);
     overlay2.addEventListener('touchend', handleEvent);
 }
-
-  
 
 });

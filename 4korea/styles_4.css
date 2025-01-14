@@ -410,8 +410,6 @@ body {
     margin-top: 6vw;
   }
 
-  .whole-mobile-app .secondImageContainer .infoBox {}
-
   .whole-mobile-app .secondImageContainer .textBox {
     background-color: var(--backgroundColor);
     width: 80vw;
@@ -524,7 +522,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     width: 60vw;
-    max-width: 400px;
+    max-width: 450px;
     position: relative;
   }
 
@@ -567,10 +565,11 @@ body {
     position: absolute;
     right: 4vw;
     color: #fff;
-    font-size: 9vw;
+    font-size: 10vw;
     text-decoration: none;
     cursor: pointer;
-    margin: 0 1vw;
+    font-weight: 600;
+    margin: 0 2vw;
   }
 
   .whole-mobile-app .imageP .close:hover {

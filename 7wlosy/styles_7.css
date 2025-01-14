@@ -346,7 +346,7 @@
       padding: 0;
       position: relative;
       overflow: hidden;
-      width: 90%;
+      width: 80%;
     }
     
     .whole-mobile-app .imageP1 img {
@@ -374,20 +374,23 @@
   
     .whole-mobile-app .mainMobileImage .productPopupImg1 {
       content: url('./images_7/Magazyn_400x600_produkt5.png');
-      width: 40vw;
+      width: 36vw;
       bottom: 12vw;
+      max-width: 160px;
     }
 
     .whole-mobile-app .mainMobileImage .productPopupImg2 {
       content: url('./images_7/Magazyn_400x600_produkt8.png');
-      width: 28vw;
-      bottom: 21vw;
+      width: 24vw;
+      bottom: 20vw;
+      max-width: 130px;
     }
 
     .whole-mobile-app .mainMobileImage .productPopupImg3 {
       content: url('./images_7/Magazyn_400x600_produkt2.png');
-      width: 28vw;
-      bottom: 22vw;
+      width: 24vw;
+      bottom: 20vw;
+      max-width: 120px;
     }
   
     .whole-mobile-app .mainMobileImage .close {
@@ -967,7 +970,7 @@
         padding: 20px;
         border-radius: 10px;
         width: 60vw;
-        max-width: 400px;
+        max-width: 450px;
         position: relative;
     }
 
@@ -1010,10 +1013,11 @@
           position: absolute;
           right: 4vw;
           color: #fff;
-          font-size: 9vw;
+          font-size: 10vw;
           text-decoration: none;
           cursor: pointer;
-          margin: 0 1vw;
+          font-weight: 600;
+          margin: 0 2vw;
         }
       
       .whole-mobile-app .imageP .close:hover {
@@ -1031,12 +1035,12 @@
       }
 
       .whole-mobile-app .imageP .btn1 {
-        right: 5%;
+        right: 7%;
         bottom: 46%;
       }
 
       .whole-mobile-app .imageP .btn2 {
-        right: 5%;
+        right: 7%;
         bottom: 5%;
       }
 

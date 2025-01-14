@@ -164,7 +164,7 @@ body {
     font-weight: 600;
     line-height: normal;
     letter-spacing: 3px;
-    margin: 6vw 0 2vw 0;
+    margin: 5vw 0 2vw 0;
   }
 
   .whole-mobile-app .titleBox {
@@ -294,7 +294,7 @@ body {
     padding: 4vw 4vw 6vw 4vw;
     border-radius: 10px;
     width: 74vw;
-    max-width: 400px;
+    max-width: 450px;
     position: relative;
   }
 
@@ -303,11 +303,12 @@ body {
   top: 2vw;
   right: 4vw;
   color: #aaa;
-  font-size: 9vw;
+  font-size: 10vw;
+  font-weight: 600;
   text-decoration: none;
   cursor: pointer;
   position: absolute;
-  margin: 0 1vw;
+  margin: 0 2vw;
   }
 
  .close:hover {

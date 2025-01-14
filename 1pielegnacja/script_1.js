@@ -94,13 +94,24 @@ productSlodeshowContainer.addEventListener('scroll', function () {
     });
   });
 
+  // overlays.forEach(overlay => {
+  //   overlay.addEventListener('click', function(event) {
+  //     if (event.target === overlay || event.target.classList.contains('close')) {
+  //       closePopup(overlay);
+  //     }
+  //   });
+  // });
+
   overlays.forEach(overlay => {
-    overlay.addEventListener('click', function(event) {
-      if (event.target === overlay || event.target.classList.contains('close')) {
-        closePopup(overlay);
-      }
+    ['click', 'touchstart'].forEach(eventType => {
+      overlay.addEventListener(eventType, function(event) {
+        if (event.target === overlay || event.target.classList.contains('close')) {
+          closePopup(overlay);
+        }
+      });
     });
   });
+  
 
 
 
@@ -117,14 +128,6 @@ if (whiteButton) {
         openPopup2(overlay2);
     });
 }
-
-// if (overlay2) {
-//     overlay2.addEventListener('click', function (event) {
-//         if (event.target === overlay2 || event.target.classList.contains('close')) {
-//             closePopup2(overlay2);
-//         }
-//     });
-// }
 
 if (overlay2) {
   const handleEvent = function (event) {

@@ -622,10 +622,11 @@ body {
         position: absolute;
         right: 4vw;
         color: #fff;
-        font-size: 9vw;
+        font-size: 10vw;
         text-decoration: none;
+        font-weight: 600;
         cursor: pointer;
-        margin: 0 1vw;
+        margin: 0 2vw;
       }
     
     .whole-mobile-app .imageP .close:hover {

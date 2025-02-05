@@ -266,11 +266,6 @@ body {
     cursor: pointer;
   }
 
-  .whole-mobile-app .mainMobileImage .dot-svg:hover circle {
-    stroke-opacity: 1;
-    fill-opacity: 1;
-  }
-
   .whole-mobile-app .mainMobileImage .dot-svg.active circle {
     stroke-opacity: 1;
     fill-opacity: 1;
@@ -324,7 +319,6 @@ body {
     transition: background-color 0.3s;
   }
 
-  .whole-mobile-app .mainMobileImage .dot:hover,
   .whole-mobile-app .mainMobileImage .dot.active {
     background-color: var(--white);
   }
@@ -549,7 +543,6 @@ body {
     transition: background-color 0.3s;
   }
 
-  .whole-mobile-app .dot2:hover,
   .whole-mobile-app .dot2.active {
     background-color: var(--white);
   }

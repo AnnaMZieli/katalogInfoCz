@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function activateDot(index) {
         dots.forEach(dot => dot.classList.remove('active'));
         svgDots.forEach(dot => dot.classList.remove('active'));
+        console.log(index)
+        console.log(dots)
 
         dots[index].classList.add('active');
         svgDots[index].classList.add('active');

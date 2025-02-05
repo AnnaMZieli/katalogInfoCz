@@ -445,7 +445,6 @@
         transition: background-color 0.3s;
     }
 
-    .whole-mobile-app .dot:hover,
     .whole-mobile-app .dot.active {
         background-color: var(--white);
     }
@@ -642,7 +641,6 @@
         transition: background-color 0.3s;
       }
     
-      .whole-mobile-app .dot2:hover,
       .whole-mobile-app .dot2.active {
         background-color: var(--white);
       }
@@ -874,7 +872,6 @@
         transition: background-color 0.3s;
       }
     
-      .whole-mobile-app .dot3:hover,
       .whole-mobile-app .dot3.active {
         background-color: var(--white);
       }

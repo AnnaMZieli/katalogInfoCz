@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const whiteButton = document.querySelector('.whiteButton');
     const overlay2 = document.getElementById('imagePopup');
-    // const closeButton = document.querySelector('.close'); 
-
 
 
     function scrollToSlide(index) {
@@ -94,13 +92,6 @@ productSlodeshowContainer.addEventListener('scroll', function () {
     });
   });
 
-  // overlays.forEach(overlay => {
-  //   overlay.addEventListener('click', function(event) {
-  //     if (event.target === overlay || event.target.classList.contains('close')) {
-  //       closePopup(overlay);
-  //     }
-  //   });
-  // });
 
   overlays.forEach(overlay => {
     ['click', 'touchstart'].forEach(eventType => {

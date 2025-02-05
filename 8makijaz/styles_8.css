@@ -320,7 +320,6 @@ body {
         transition: background-color 0.3s;
     }
 
-    .whole-mobile-app .dot:hover,
     .whole-mobile-app .dot.active {
         background-color: var(--white);
     }
@@ -783,7 +782,6 @@ body {
         transition: background-color 0.3s;
     }
 
-    .whole-mobile-app .dot3:hover,
     .whole-mobile-app .dot3.active {
         background-color: var(--white);
     }
@@ -846,11 +844,6 @@ body {
         transition: all 0.3s ease;
         margin: 4vw;
         cursor: pointer;
-    }
-
-    .whole-mobile-app .fifthMobileImage .dot-svg2:hover circle {
-        stroke-opacity: 1;
-        fill-opacity: 1;
     }
 
     .whole-mobile-app .fifthMobileImage .dot-svg2.active circle {
@@ -949,7 +942,6 @@ body {
         transition: background-color 0.3s;
     }
 
-    .whole-mobile-app .dot2:hover,
     .whole-mobile-app .dot2.active {
         background-color: var(--white);
     }

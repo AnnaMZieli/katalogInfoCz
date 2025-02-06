@@ -123,10 +123,20 @@ document.addEventListener('DOMContentLoaded', function () {
     function openPopup(popupId) {
         const popup = document.getElementById(popupId);
         popup.classList.add('active');
+
+        pinkButtons.forEach(button => {
+            button.disabled = true;
+          });
       }
     
       function closePopup(popup) {
         popup.classList.remove('active');
+
+        setTimeout(() => {
+            pinkButtons.forEach(button => {
+              button.disabled = false;
+            });
+          }, 500);
       }
     
       pinkButtons.forEach(button => {

@@ -44,10 +44,20 @@ function openPopup(popupId) {
     const popup = document.getElementById(popupId);
     console.log(popup);
     popup.classList.add('active');
+
+    mintButtons.forEach(button => {
+        button.disabled = true;
+      });
   }
 
   function closePopup(popup) {
     popup.classList.remove('active');
+
+    setTimeout(() => {
+        mintButtons.forEach(button => {
+          button.disabled = false;
+        });
+      }, 500);
   }
 
   mintButtons.forEach(button => {
@@ -70,6 +80,7 @@ overlays.forEach(overlay => {
     });
   });
   
+
 
 
 

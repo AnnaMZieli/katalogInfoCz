@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const whiteButton = document.querySelector('.whiteButton');
     const overlay2 = document.getElementById('imagePopup');
 
+    const stickyHeaderLinks = document.querySelectorAll('.sticky-header a');
+
 
     function scrollToSlide(index) {
         const scrollPosition = scrollBoxes[index].offsetLeft;
@@ -104,14 +106,36 @@ productSlodeshowContainer.addEventListener('scroll', function () {
   });
   
 
+  function disableHeaderLinks() {
+    stickyHeaderLinks.forEach(link => {
+      link.classList.add('disabled');
+      link.dataset.href = link.href;
+      link.removeAttribute('href');
+    });
+  }
+
+  function enableHeaderLinks() {
+    stickyHeaderLinks.forEach(link => {
+      if (link.classList.contains('disabled')) {
+        link.href = link.dataset.href;
+        link.classList.remove('disabled');
+      }
+    });
+  }
 
 
   function openPopup2(popup) {
     popup.classList.add('active');
+
+    disableHeaderLinks();
 }
 
 function closePopup2(popup) {
     popup.classList.remove('active');
+
+    setTimeout(() => {
+      enableHeaderLinks()
+  }, 500)
 }
 
 if (whiteButton) {

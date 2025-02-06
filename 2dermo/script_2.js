@@ -9,6 +9,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const whiteButton = document.querySelector('.whiteButton');
     const overlay2 = document.getElementById('imagePopup');
 
+    const navList = document.querySelector('.sticky-header ul');
+    const targetItem = navList.children[2];
+    
+    const itemOffset = targetItem.offsetLeft;
+    const itemWidth = targetItem.offsetWidth;
+    const containerWidth = navList.offsetWidth;
+  
+    navList.scrollLeft = itemOffset - (containerWidth / 2) + (itemWidth / 2);
+
 
     function scrollToSlide(index) {
         const scrollPosition = scrollBoxes[index].offsetLeft;

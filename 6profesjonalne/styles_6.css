@@ -123,6 +123,15 @@ body {
     line-height: normal;
   }
 
+  .whole-mobile-app #underlined:after {
+    content:""; 
+    float:left; 
+    background: var(--lightPink); 
+    width:100%; 
+    height:4px; 
+    border-radius: 3px;
+  }
+
   .whole-mobile-app h1 {
     margin: 0;
     padding: 5vw 0 2vw 0;

@@ -195,6 +195,15 @@ body {
         line-height: normal;
     }
 
+    .whole-mobile-app #underlined:after {
+        content:""; 
+        float:left; 
+        background: var(--lightPink); 
+        width:100%; 
+        height:4px; 
+        border-radius: 3px;
+      }
+
     .whole-mobile-app .titleBox {
         background-color: var(--mainColor);
         height: 32vw;

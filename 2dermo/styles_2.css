@@ -624,6 +624,22 @@ body {
         width: 90%;
         border-radius: 10px;
     }
+
+    .whole-mobile-app .imageP .btn1 {
+        left: 20%;
+        bottom: 6%;
+    }
+
+    .whole-mobile-app .imageP .btn2 {
+        right: 20%;
+        bottom: 6%;
+    }
+
+    .whole-mobile-app .imageP .pinkButton {
+        position: absolute;
+        padding: 2vw 3vw;
+        font-size: 3.2vw;
+    }
     
     .whole-mobile-app .imageP img {
       width: 100%;

@@ -662,6 +662,17 @@ body {
     margin: 0 2vw;
   }
 
+  .whole-mobile-app .imageP .pinkButton {
+    position: absolute;
+    padding: 2vw 3vw;
+    font-size: 3.2vw;
+}
+
+.whole-mobile-app .imageP .btn1 {
+  left: 40%;
+  bottom: 2%;
+}
+
   .whole-mobile-app .imageP .close:hover {
     color: #000;
   }

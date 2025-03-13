@@ -42,6 +42,10 @@
     body::-webkit-scrollbar {
       display: none;
     }
+
+    a, a:hover, a:active, a:visited, a:focus {
+      text-decoration:none;
+  }
   
     .main-desktop-banner {
       display: none;

@@ -11,34 +11,336 @@
     font-family: 'myriad-pro', 'arial', sans-serif;
 }
 
-body {
-    margin: 0;
+/* body {
+    margin: 0; */
     /* overflow: hidden; */
+/* } */
+
+body {
+    overflow-y: scroll;
+    margin: 0 auto;
+    background-color: var(--white);
+  }
+
+  a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+  
+  .main-desktop-banner {
+    display: none;
+  }
+  
+  .whole-mobile-app {
+    display: block;
+    max-width: 1312px;
+    margin: 0 auto;
+  }
+
+.whole-mobile-app .title {
+    color: var(--white);
+    background-color: var(--basicPink);
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding: 40px 10px;
+  }
+
+.header-container {
+    width: 100%;
+    position: relative;
 }
 
-.main-desktop-banner {
+  .sticky-header {
+    background-color: var(--basicPink);
+    color: #fff;
+    position: sticky;
+    /* top: 0; */
+    z-index: 100;
+    text-align: center;
+  }
+
+  .sticky-header .arrowSvg {
+    display: none;
+}
+  
+  .sticky-header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .sticky-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .sticky-header ul::-webkit-scrollbar {
+    display: none;
+}
+  
+  .sticky-header li {
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+  
+  .sticky-header a {
+    display: inline-block;
+    color: var(--white);
+    text-align: center;
+    padding: 10px 4px 4px 4px;
+    text-decoration: none;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .whole-mobile-app #underlined:after {
+    content:""; 
+    float:left; 
+    background: var(--lightPink); 
+    width:100%; 
+    height:4px; 
+    border-radius: 3px;
+  }
+
+.whole-mobile-app video {
+    width: 100%;
+    height: auto;
+  }
+
+  .whole-mobile-app h3 {
+    margin-top: 10px;
+    margin-bottom: 6px;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.4px;
+}
+
+.whole-mobile-app h4 {
+    margin: 6px 0;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+
+
+.whole-mobile-app p {
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.whole-mobile-app a.fill-div {
+    height: 100%;
+    text-decoration: none;
+}
+
+.whole-mobile-app .textContainer {
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 6px 2vw;
+    position: relative;
+}
+
+.whole-mobile-app .textContainerLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.whole-mobile-app .textContainerLogo h3 {
+    color: #fff;
+    margin: 12px;
+}
+
+.whole-mobile-app .textWrapper {
+    text-wrap: wrap;
+    width: 80vw;
+    justify-content: space-around;
+    display: flex;
+    max-width: 1200px;
+    
+}
+
+.whole-mobile-app .menuBox {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 6px;
+    position: relative;
+}
+
+.whole-mobile-app .box1 {
+    background-color: #D6C7B0;
+}
+
+.whole-mobile-app .box2 {
+    background-color: #87DBD4;
+}
+
+.whole-mobile-app .box3 {
+    background-color: #FAB584;
+}
+
+.whole-mobile-app .box4 {
+    background-color: #F8AFB3;
+}
+
+.whole-mobile-app .box5 {
+    background-color: #4E5F39;
+}
+
+.whole-mobile-app .box6 {
+    background-color: #D3DADE;
+}
+
+.whole-mobile-app .box7 {
+    background-color: #B9B6B8;
+}
+
+.whole-mobile-app .box8 {
+    background-color: #F49AC1;
+}
+
+.whole-mobile-app .box9 {
+    background-color: #EB008C;
+    height: 100px;
+    margin-bottom: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.whole-mobile-app .boxImage {
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.whole-mobile-app .image1 {
+    background-image: url(./images/MENU_Pielegnacja1.png);
+    height: 100px;
+    width: 83px;
+}
+
+.whole-mobile-app .image2 {
+    background-image: url(./images/MENU_dermo1.png);
+    height: 100px;
+    width: 83px;
+}
+
+.whole-mobile-app .image3 {
+    background-image: url(./images/MENU_SPF1.png);
+    height: 100px;
+    width: 74px;
+}
+
+.whole-mobile-app .image4 {
+    background-image: url(./images/MENU_KOREA1.png);
+    width: 132px;
+}
+
+.whole-mobile-app .image5 {
+    background-image: url(./images/MENU_Naturalne1.png);
+    height: 100px;
+    width: 76px;
+}
+
+.whole-mobile-app .image6 {
+    background-image: url(./images/MENU_PROFESJONALNE1.png);
+    width: 96px;
+}
+
+.whole-mobile-app .image7 {
+    background-image: url(./images/MENU_Wlosy1.png);
+    width: 90px;
+}
+
+.whole-mobile-app .image8 {
+    background-image: url(./images/MENU_Makijaz1.png);
+    width: 124px;
+}
+
+.whole-mobile-app .sectorTitle {
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+.whole-mobile-app .sectorDescription {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+}
+
+/* .main-desktop-banner {
     background-image: url(images/dektop_INFO.png);
-    /* background-position: center; */
-    /* width: 100vw; */
     height: 60vw;
     background-size: contain;
     display: block;
     background-repeat: no-repeat;
-    /* align-items: center top; */
 }
 
 .whole-mobile-app {
     display: none;
+} */
+
+@media only screen and (max-width:1030px){
+      .sticky-header .arrowSvg {
+        display:block;
+    position:absolute;
+    right: 2px;
+    top: 18px;
+    opacity: 10;
+}
 }
 
 @media only screen and (max-width: 600px) {
     body {
         overflow-y: scroll;
         scroll-behavior: smooth;
-    }
-
-    a, a:hover, a:active, a:visited, a:focus {
-        text-decoration:none;
     }
 
     .main-desktop-banner {
@@ -124,19 +426,30 @@ body {
           scroll-margin-top: 60px;
       }
 
-      .whole-mobile-app #underlined:after {
+      /* .whole-mobile-app #underlined:after {
         content:""; 
         float:left; 
         background: var(--lightPink); 
         width:100%; 
         height:4px; 
         border-radius: 3px;
-      }
+      } */
 
     .whole-mobile-app video {
         width: 100%;
         height: auto;
       }
+
+      /* .whole-mobile-app #myVideo1 {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+      }
+
+      .whole-mobile-app #myVideo2 {
+        display: none;
+      } */
 
       .whole-mobile-app h3 {
         margin-top: 10px;
@@ -210,6 +523,9 @@ body {
         text-wrap: wrap;
         width: 50vw;
         margin-top: 20px;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .whole-mobile-app .menuBox {
@@ -273,30 +589,30 @@ body {
     .whole-mobile-app .image1 {
         background-image: url(./images/MENU_Pielegnacja1.png);
         height: 254px;
-        width: 209px;
+        width: 209.024px;
     }
 
     .whole-mobile-app .image2 {
         background-image: url(./images/MENU_dermo1.png);
         height: 254px;
-        width: 210px;
+        width: 208.209px;
     }
 
     .whole-mobile-app .image3 {
         background-image: url(./images/MENU_SPF1.png);
         height: 254px;
-        width: 182px;
+        width: 180.366px;
     }
 
     .whole-mobile-app .image4 {
         background-image: url(./images/MENU_KOREA1.png);
-        width: 218px;
+        width: 339.45px;
     }
 
     .whole-mobile-app .image5 {
         background-image: url(./images/MENU_Naturalne1.png);
         height: 254px;
-        width: 148px;
+        width: 194.365px;
     }
 
     .whole-mobile-app .image6 {
@@ -311,7 +627,15 @@ body {
 
     .whole-mobile-app .image8 {
         background-image: url(./images/MENU_Makijaz1.png);
-        width: 301px;
+        width: 321px;
+    }
+
+    .whole-mobile-app .sectorTitle {
+        width: 50vw;
+    }
+
+    .whole-mobile-app .sectorDescription {
+        width: 50vw;
     }
 
 }

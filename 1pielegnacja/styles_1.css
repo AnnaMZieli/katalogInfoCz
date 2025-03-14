@@ -716,11 +716,22 @@ opacity: 10;
   line-height: normal;
 }
 
-  .whole-mobile-app video {
+.whole-mobile-app #myVideo1 {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 180vw;
+}
+
+.whole-mobile-app #myVideo2 {
+  display: none;
+}
+
+  /* .whole-mobile-app video {
     object-fit: cover;
     width: 100%;
     height: 180vw;
-  }
+  } */
 
   .whole-mobile-app h1 {
     margin: 0;

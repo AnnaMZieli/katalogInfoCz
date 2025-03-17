@@ -191,3 +191,83 @@ if (overlay2) {
 
 });
 
+const isMobile = Math.min(window.screen.width) < 768;
+const svgDesktopDots = document.querySelectorAll('.dot-desktop-svg');
+
+
+if(!isMobile){
+  let slideIndex1 = 1; 
+  let slideIndex = 1;
+  showSlides1(slideIndex1);
+  showSlides(slideIndex);
+  
+  function plusSlides1(n) {
+    showSlides1(slideIndex1 += n);
+  }
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide1(n) {
+    showSlides1(slideIndex1 = n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides1(n) {
+    let i;
+    let slides1 = document.getElementsByClassName("scrollBox");
+    let slidesToShow1 = window.innerWidth > 768 ? 3 : 4;
+  
+    if (n > slides1.length - slidesToShow1 + 1) {slideIndex1 = 1}
+    if (n < 1) {slideIndex1 = slides1.length - slidesToShow1 + 1}
+  
+    for (i = 0; i < slides1.length; i++) {
+      slides1[i].style.display = "none";
+    }
+  
+    for (i = 0; i < slidesToShow1; i++) {
+      slides1[(slideIndex1 - 1 + i) % slides1.length].style.display = "flex";
+    }
+    console.log('slidesToShow1:', slidesToShow1);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("scrollBox2");
+    let slidesToShow = window.innerWidth > 768 ? 1 : 5;
+
+    if (n > slides.length - slidesToShow + 1) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length - slidesToShow + 1 }
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < slidesToShow; i++) {
+      slides[(slideIndex - 1 + i) % slides.length].style.display = "flex";
+    }
+
+    svgDesktopDots.forEach(dot => dot.classList.remove('active'));
+    svgDesktopDots[(slideIndex - 1) % svgDesktopDots.length].classList.add('active');
+    console.log('slidesToShow1:', slidesToShow);
+  }
+
+  svgDesktopDots.forEach((dot, i) => {
+    dot.addEventListener('click', function () {
+      currentSlide(i + 1);
+    });
+  });
+  
+  window.addEventListener('resize', () => {
+    showSlides1(slideIndex1);
+  });
+  
+  window.addEventListener('resize', () => {
+    showSlides(slideIndex);
+  });
+  
+}

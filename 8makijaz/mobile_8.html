@@ -46,8 +46,12 @@
 
     <div class="mainMobileImage">
 
-      <video id="myVideo" preload="auto" autoplay muted playsinline loop poster="./images_8/Frame_1012.jpg">
+      <video id="myVideo1" preload="auto" autoplay muted playsinline loop poster="./images_8/Frame_1012.jpg">
         <source src="./images_8/LICENI_Mobile_MR.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video id="myVideo2" preload="auto" autoplay muted playsinline loop poster="./images_8/shutterstock_10690453330.jpg">
+        <source src="./images_8/desktop.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
 
@@ -130,22 +134,29 @@
         <span class="dot"></span>
         <span class="dot"></span>
       </div>
+      <a class="prev" onclick="plusSlides1(-1)">&#129120;</a>
+      <a class="next" onclick="plusSlides1(1)">&#129122;</a>
     </div>
+
     <div class="secondImage">
-      <h4>ZVOLTE SI PODKLADOVOU<br>BÁZI A PUDR</h4>
+      <h4>ZVOLTE SI PODKLADOVOU BÁZI A PUDR</h4>
 
       <div class="threeBoxes">
         <div class="twoBoxes">
           <div class="oneProductSector product1">
             <img class="productImg5 productImages">
+            <div class="contentBox">
             <p>Vaše pokožka má růžový nádech a na slunci se snadno spálí...</p>
             <button class="pinkButton infoBtn" data-popup="popup1">tipy</button>
           </div>
+        </div>
           <div class="oneProductSector product2">
             <img class="productImg6 productImages">
+            <div class="contentBox">
             <p>Vaše pokožka má růžový nádech a na slunci se snadno spálí...</p>
             <button class="pinkButton infoBtn" data-popup="popup2">tipy</button>
           </div>
+        </div>
         </div>
         <div class="oneProductSector product3">
           <img class="productImg7 productImages">
@@ -297,7 +308,7 @@
 
     <div class="fifthMobileImage">
 
-      <h6>UDĚLEJTE SI PŘIROZENÝ MAKE-UP OČÍ</h6>
+      <div class="leftColumn">
 
       <div class="svgDots2">
 
@@ -319,9 +330,32 @@
           <circle cx="4vw" cy="4vw" r="1.5vw" fill="white" fill-opacity="0.4" />
         </svg>
 
-
       </div>
 
+      <div class="svgDotsDesktop">
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="dot-desktop-svg dotDesktopOne" width="34" height="34" viewBox="0 0 34 34" fill="none">
+          <circle cx="17" cy="17" r="15.5" stroke="white" stroke-opacity="0.4" stroke-width="3.6"/>
+          <circle cx="17" cy="17" r="6" fill="white" fill-opacity="0.4"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="dot-desktop-svg dotDesktopThree" width="34" height="34" viewBox="0 0 34 34" fill="none">
+          <circle cx="17" cy="17" r="15.5" stroke="white" stroke-opacity="0.4" stroke-width="3.6"/>
+          <circle cx="17" cy="17" r="6" fill="white" fill-opacity="0.4"/>
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="dot-desktop-svg dotDesktopTwo active" width="34" height="34" viewBox="0 0 34 34" fill="none">
+          <circle cx="17" cy="17" r="15.5" stroke="white" stroke-opacity="0.4" stroke-width="3.6"/>
+          <circle cx="17" cy="17" r="6" fill="white" fill-opacity="0.4"/>
+        </svg>
+
+      </div>
+      
+    </div>
+
+    <div class="rightColumn">
+    
+    <h6>UDĚLEJTE SI PŘIROZENÝ MAKE-UP OČÍ</h6>
 
       <div class="slideshowContainer2">
 
@@ -374,8 +408,11 @@
           </div>
         </div>
 
+        <a class="prev2" onclick="plusSlides(-1)">&#129120;</a>
+        <a class="next2" onclick="plusSlides(1)">&#129122;</a>
 
       </div>
+    </div>
 
       <div class="dots2">
         <span class="dot2 active"></span>

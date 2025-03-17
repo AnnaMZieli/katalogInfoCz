@@ -273,7 +273,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    max-width: 380px;
+    max-width: 420px;
   }
 
   .whole-mobile-app .mainMobileImage .contentBox {
@@ -757,7 +757,6 @@
       align-items: center;
       margin: 0 10px 20px 10px;
       position: relative;
-      box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
       justify-content: space-between;
       border: 4px solid var(--white);
       max-width: 340px;

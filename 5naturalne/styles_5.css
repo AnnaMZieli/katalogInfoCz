@@ -601,6 +601,7 @@ body {
     font-size: 1.2rem;
     width: 380px;
     margin: 0 20px 40px 20px;
+    line-height: 23px;
   }
 
   .whole-mobile-app .footerBtns {

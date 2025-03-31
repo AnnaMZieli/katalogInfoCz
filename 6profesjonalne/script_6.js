@@ -120,3 +120,49 @@ if (overlay2) {
 }
 
 });
+
+const isMobile = Math.min(window.screen.width) < 768;
+const svgDesktopDots = document.querySelectorAll('.dot-desktop-svg');
+
+if (!isMobile) {
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("scrollProductBox");
+    let slidesToShow = window.innerWidth > 768 ? 1 : 5;
+
+    if (n > slides.length - slidesToShow + 1) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length - slidesToShow + 1 }
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < slidesToShow; i++) {
+      slides[(slideIndex - 1 + i) % slides.length].style.display = "flex";
+    }
+
+    svgDesktopDots.forEach(dot => dot.classList.remove('active'));
+    svgDesktopDots[(slideIndex - 1) % svgDesktopDots.length].classList.add('active');
+  }
+
+  svgDesktopDots.forEach((dot, i) => {
+    dot.addEventListener('click', function () {
+      currentSlide(i + 1);
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    showSlides(slideIndex);
+  });
+}

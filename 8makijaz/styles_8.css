@@ -14,26 +14,1230 @@
 }
 
 body {
+    overflow-y: scroll;
+    margin: 0 auto;
+    background-color: var(--mainColor);
+  }
+  
+  .main-desktop-banner {
+    display: none;
+  }
+  
+  .whole-mobile-app {
+    display: block;
+    max-width: 1312px;
+    margin: 0 auto;
+  }
+  
+  .whole-mobile-app .title {
+    color: var(--white);
+    background-color: var(--basicPink);
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding: 40px 10px;
+  }
+  
+  .header-container {
+    width: 100%;
+    position: relative;
+  }
+  
+  .sticky-header {
+    background-color: var(--basicPink);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    text-align: center;
+  }
+  
+  .sticky-header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .sticky-header ul {
+    list-style: none;
     margin: 0;
-    /* overflow: hidden; */
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .sticky-header ul::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .sticky-header li {
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+  
+  .sticky-header a {
+    display: inline-block;
+    color: var(--white);
+    text-align: center;
+    padding: 10px 4px 4px 4px;
+    text-decoration: none;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .whole-mobile-app #underlined:after {
+    content:""; 
+    float:left; 
+    background: var(--lightPink); 
+    width:100%; 
+    height:4px; 
+    border-radius: 3px;
+  }
+  
+  .sticky-header .arrowSvg {
+    display: none;
+  }
+  
+  .main-desktop-banner {
+    display: none;
+  }
+  
+  .whole-mobile-app {
+    display: block;
+    max-width: 1312px;
+    margin: 0 auto;
+  }
+  
+  .whole-mobile-app h1 {
+    margin: 0;
+    padding: 36px 0 16px 0;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.2px;
+  }
+  
+  .whole-mobile-app h2 {
+    margin: 10px 0 10px 0;
+    padding: 0;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+  }
+  
+  .whole-mobile-app h5 {
+    color: var(--black);
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin: 10px 0 10px 0;
+  }
+  
+  .whole-mobile-app .pinkButton {
+    position: relative;
+    bottom: 10px;
+    margin: 20px 10px;
+    color: var(--white);
+    font-family: "myriad-pro", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120.438%;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    background: var(--basicPink);
+    cursor: pointer;
+  }
+  
+  .whole-mobile-app .pinkButton:hover {
+    background: var(--lightPink);
+  }
+  
+  .sticky-header a {
+    display: inline-block;
+    color: var(--white);
+    text-align: center;
+    padding: 10px 4px 4px 4px;
+    text-decoration: none;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .whole-mobile-app .titleBox {
+    background-color: var(--mainColor);
+    height: 180px;
+    position: relative;
+  }
+
+.whole-mobile-app #myVideo1 {
+display: none;
 }
 
-.main-desktop-banner {
-    background-image: url(images_8/dektop_INFO.png);
-    background-position: center;
+.whole-mobile-app #myVideo2 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    max-width: 1312px;
+}
+
+.whole-mobile-app .mainMobileImage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.whole-mobile-app .mainMobileImage h6 {
+    color: var(--basicPink);
+    text-align: left;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 20px 0 10px 0;
+    top: 51%;
+    letter-spacing: 2px;
+}
+
+.whole-mobile-app .slideshowContainer {
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    scroll-snap-type: x mandatory;
+    -webkit-scroll-snap-type: x mandatory;
+    gap: 10px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    margin: 0 0 50px 0;
+    padding-top: 40px;
+    -ms-overflow-style: none;
+}
+
+.whole-mobile-app .slideshowContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.whole-mobile-app .mainMobileImage .scrollBox {
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    -webkit-scroll-snap-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 6px;
+    position: relative;
+    max-width: 400px;
+}
+
+.whole-mobile-app .mainMobileImage .textBox {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.80);
+    width: 30vw;
+    border-radius: 10px;
+    margin-top: 20px;
+    max-width: 400px;
+    bottom: 0;
+}
+
+.whole-mobile-app .mainMobileImage .contentBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px 10px 20px 20px;
+}
+
+
+.whole-mobile-app .mainMobileImage .emptyBox {
+    width: 34vw;
+    max-width: 180px;
+}
+
+.whole-mobile-app .mainMobileImage .plainText {
+    height: 26vw;
+    padding: 0 0 0 3vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whole-mobile-app .mainMobileImage p {
+    color: #000;
+    text-align: left;
+    font-family: "myriad-pro-semi-condensed", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0;
+}
+
+.whole-mobile-app .mainMobileImage .dots {
+display: none;
+}
+
+.whole-mobile-app .dot {
+    display: inline-block;
+    height: 4vw;
+    width: 4vw;
+    margin: 0 2vw;
+    background-color: var(--mainColorDarker);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.whole-mobile-app .dot:hover,
+.whole-mobile-app .dot.active {
+    background-color: var(--white);
+}
+
+.whole-mobile-app .mainMobileImage .oneProductSector {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+    bottom: 20px;
+}
+
+.whole-mobile-app .mainMobileImage .pinkButton {
+    padding: 10px 14px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    margin: 0;
+}
+
+.whole-mobile-app .mainMobileImage .productImages {
+    width: auto;
+}
+
+.whole-mobile-app .mainMobileImage .productImg1 {
+    content: url(./images_8/Magazyn_400x600_produkt.png);
+    height: 18vw;
+    max-height: 250px;
+    margin: 10px 0 10px 0;
+}
+
+.whole-mobile-app .mainMobileImage .productImg2 {
+    content: url(./images_8/Magazyn_400x600_produkt2.png);
+    height: 18vw;
+    max-height: 240px;
+    margin: 10px 0 10px 0;
+}
+
+.whole-mobile-app .mainMobileImage .button2 {
+    margin-left: 2px;
+}
+
+.whole-mobile-app .mainMobileImage .productImg3 {
+    content: url(./images_8/Magazyn_400x600_produkt3.png);
+    height: 18vw;
+    max-height: 250px;
+    margin: 10px 0 10px 0;
+}
+
+.whole-mobile-app .mainMobileImage .productImg4 {
+    content: url(./images_8/Magazyn_400x600_produkt4.png);
+    height: 18vw;
+    max-height: 250px;
+    margin: 10px 0 10px 0;
+}
+
+.whole-mobile-app .mainMobileImage .button4 {
+    margin-left: 10px;
+}
+
+.whole-mobile-app .secondImage h4 {
+    color: var(--black);
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 30px 0 30px 0;
+    margin: 0;
+    background-color: var(--white);
+}
+
+.whole-mobile-app .secondImage .threeBoxes {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.whole-mobile-app .secondImage .twoBoxes {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.whole-mobile-app .secondImage .twoBoxes .oneProductSector {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.whole-mobile-app .secondImage p {
+    color: var(--white);
+    font-family: "myriad-pro-semi-condensed", sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.whole-mobile-app .secondImage .productImg5 {
+    content: url(./images_8/Magazyn_400x600_produkt6.png);
+    height: 18vw;
+    margin: 22px 0;
+    max-height: 220px;
+}
+
+.whole-mobile-app .secondImage .product1 {
+    background-color: #F49AC1;
+    order: 2;
+}
+
+.whole-mobile-app .secondImage .productImg6 {
+    content: url(./images_8/Magazyn_400x600_produkt5.png);
+    height: 22vw;
+    margin: 0 0 0 30px;
+    max-height: 250px;
+}
+
+.whole-mobile-app .secondImage .product2 {
+    background-color: #F9C0C8;
+}
+
+.whole-mobile-app .secondImage .product3 {
+    background-color: #D6B4BA;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.whole-mobile-app .secondImage .contentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.whole-mobile-app .secondImage .product3 .contentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.whole-mobile-app .secondImage .productImg7 {
+    content: url(./images_8/Magazyn_400x600_produkt7.png);
+    height: 22vw;
+    margin: 0 0 0 30px;
+    max-height: 260px;
+}
+
+.whole-mobile-app .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    align-items: center top;
-    display: block;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
 }
 
-.whole-mobile-app {
+.whole-mobile-app .secondImage .overlay.active {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.whole-mobile-app .secondImage .popup {
+    background: transparent;
+    padding: 0px;
+    border-radius: 0px;
+    width: 60vw;
+    max-width: 400px;
+    position: relative;
+}
+
+.whole-mobile-app .secondImage .imageP1 {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    content: src("./images_8/tipy1.png");
+}
+
+.whole-mobile-app .imageP1 img {
+    width: 100%;
+    height: auto;
+}
+
+.whole-mobile-app .secondImage .close {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: var(--basicPink);
+    font-size: 3rem;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.whole-mobile-app .secondImage .close:hover {
+    color: #000;
+}
+
+.whole-mobile-app .thirdImage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 0 40px 0;
+    background-color: var(--white);
+    align-items: center;
+}
+
+.whole-mobile-app .thirdImage .productImage {
+    content: url(./images_8/Hebe_Katalog_Makijaz.png);
+    width: 100%;
+    height: auto;
+}
+
+.whole-mobile-app .thirdImage h6 {
+    margin: 0 0 20px 0;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.whole-mobile-app .fourthMobileImage .slideshowProduct2Container {
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    justify-content: center;
+    gap: 10px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.whole-mobile-app .fourthMobileImage h6 {
+    margin: 60px 0;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.whole-mobile-app .fourthMobileImage h5 {
+    margin: 0;
+    color: var(--black);
+    font-size: 5vw;
+    font-family: "myriad-pro-condensed", sans-serif;
+    font-weight: 400;
+}
+
+.whole-mobile-app .fourthMobileImage .scrollProduct2Box .oneEyeImg1 {
+    content: url(./images_8/eye1.png);
+    width: 100%;
+    height: auto;
+}
+
+.whole-mobile-app .fourthMobileImage .scrollProduct2Box .oneEyeImg2 {
+    content: url(./images_8/eye2.png);
+    width: 100%;
+    height: auto;
+}
+
+.whole-mobile-app .fourthMobileImage .scrollProduct2Box .oneEyeImg3 {
+    content: url(./images_8/eye3.png);
+    width: 100%;
+    height: auto;
+}
+
+.whole-mobile-app .fourthMobileImage .numbers {
+    margin-top: -3px;
+    width: 100px;
+    height: auto;
+}
+
+.whole-mobile-app .fourthMobileImage .scrollProduct2Box3 p {
+    margin: 20px 30px 30px 30px;
+}
+
+.whole-mobile-app .fourthMobileImage .number1 {
+    content: url('./images_8/numb1.png');
+}
+
+.whole-mobile-app .fourthMobileImage .number2 {
+    content: url('./images_8/numb2.png');
+}
+
+.whole-mobile-app .fourthMobileImage .number3 {
+    content: url('./images_8/numb3.png');
+}
+
+.whole-mobile-app .fourthMobileImage .scrollProduct2Box h6 {
+    margin: 20px 0;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.whole-mobile-app .fourthMobileImage .scrollProduct2Box {
+    width: 29vw;
+    border-radius: 15px;
+    background: #FFF;
+    flex-shrink: 0;
+    text-align: center;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px 20px 10px;
+    position: relative;
+    max-width: 400px;
+}
+
+.whole-mobile-app .fourthMobileImage .titleBoxText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.whole-mobile-app .fourthMobileImage .liekeItImg {
+    width: 7vw;
+    height: auto;
+    margin-right: 2vw;
+}
+
+.whole-mobile-app .fourthMobileImage .slideshowProduct2Container::-webkit-scrollbar {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+.whole-mobile-app .fourthMobileImage .productSectors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.whole-mobile-app .fourthMobileImage .productSectors h4 {
+    font-size: 20vw;
+    color: var(--basicPink);
+    margin: 10vw -2vw;
+}
+
+.whole-mobile-app .fourthMobileImage ul {
+    text-align: left;
+    color: #000;
+    font-family: "myriad-pro-semi-condensed", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0;
+    padding-left: 30px;
+    margin: 10px 20px;
+}
+
+.whole-mobile-app .fourthMobileImage .contentBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.whole-mobile-app .fourthMobileImage .scrollProduct2Box1 .contentBox .pinkButton {
+    font-size: 0.8rem;
+    padding: 10px 14px;
+    position: absolute;
+    bottom: 20px;
+    margin-left: -50px;
+    width: 100px;
+}
+
+.whole-mobile-app .fourthMobileImage .scrollProduct2Box1 .oneProductSector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6px;
+    width: 8vw;
+    max-width: 110px;
+}
+
+.whole-mobile-app .fourthMobileImage .scrollProduct2Box2 .oneProductSector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.whole-mobile-app .fourthMobileImage p {
+    font-family: "myriad-pro-semi-condensed", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.whole-mobile-app .fourthMobileImage .scrollProduct2Box1 .productImages {
+    width: auto;
+    margin: 10px 0 10px 0;
+    position: absolute;
+    bottom: 80px;
+}
+
+.whole-mobile-app .fourthMobileImage .productImg1 {
+    content: url(./images_8/Magazyn_400x600_produkt8b.png);
+    height: 18vw;
+    max-height: 170px;
+
+}
+
+.whole-mobile-app .fourthMobileImage .productImg2 {
+    content: url(./images_8/Magazyn_400x600_produkt9b.png);
+    height: 20vw;
+    max-height: 280px;
+}
+
+.whole-mobile-app .fourthMobileImage .productImg3 {
+    content: url(./images_8/Magazyn_400x600_produkt10b.png);
+    height: 20vw;
+    max-height: 270px;
+}
+
+.whole-mobile-app .fourthMobileImage .productImg4 {
+    content: url(./images_8/Magazyn_400x600_produkt12b.png);
+    height: 14vw;
+    max-height: 200px;
+}
+
+
+
+.whole-mobile-app .dots3 {
+    display: none;
+    position: inherit;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.whole-mobile-app .dot3 {
+    display: inline-block;
+    height: 4vw;
+    width: 4vw;
+    margin: 0 2vw;
+    background-color: var(--mainColorDarker2);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.whole-mobile-app .dot3:hover,
+.whole-mobile-app .dot3.active {
+    background-color: var(--white);
+}
+
+.whole-mobile-app .fifthMobileImage {
+    display: flex;
+    flex-direction: row;
+    height: 40vw;
+    max-height: 420px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.whole-mobile-app .fifthMobileImage .leftColumn {
+    display: block;
+    flex: 1;
+    background: url(./images_8/red_face.png) no-repeat center bottom 66%;
+    background-size: cover;
+    position: relative;
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.whole-mobile-app .fifthMobileImage  .rightColumn {
+    display: block;
+    flex: 1;
+    padding: 0 20px 0 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.whole-mobile-app .fifthMobileImage h6 {
+    font-family: "myriad-pro-semi-condensed", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--black);
+    background-color: var(--white);
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.whole-mobile-app .fifthMobileImage .slideshowContainer2 {
+    width: 100%;
+    bottom: 10vw;
+    left: 0;
+    overflow-x: scroll;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    gap: 10vw;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    max-width: 500px;
+    -ms-overflow-style: none;
+}
+
+.whole-mobile-app .fifthMobileImage .emptyBox {
+    width: 50vw;
+    max-width: 180px;
+    height: 20vw;
+    max-height: 200px;
+}
+
+.whole-mobile-app .fifthMobileImage .slideshowContainer2::-webkit-scrollbar {
+    display: none;
+}
+
+.whole-mobile-app .fifthMobileImage .svgDots2 {
+    display: none;
+}
+
+.whole-mobile-app .fifthMobileImage .svgDotsDesktop {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 60%;
+}
+
+.whole-mobile-app .fifthMobileImage .svgDotsDesktop .dot-desktop-svg {
+    position: absolute;
+    transition: all 0.3s ease;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.whole-mobile-app .fifthMobileImage .svgDotsDesktop .dotDesktopOne {
+    top: 24%;
+    left: 20%;
+}
+
+.whole-mobile-app .fifthMobileImage .svgDotsDesktop .dotDesktopThree {
+    top: 50%;
+    left: 20%;
+}
+
+.whole-mobile-app .fifthMobileImage .svgDotsDesktop .dotDesktopTwo {
+    top: 36%;
+    left: 66%;
+}
+
+.whole-mobile-app .fifthMobileImage .dot-desktop-svg:hover circle {
+    stroke-opacity: 1;
+    fill-opacity: 1;
+}
+
+.whole-mobile-app .fifthMobileImage .dot-desktop-svg.active circle {
+    stroke-opacity: 1;
+    fill-opacity: 1;
+}
+
+.whole-mobile-app .fifthMobileImage .scrollBox2 {
+    width: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+}
+
+.whole-mobile-app .fifthMobileImage .textBox {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.80);
+    width: 48vw;
+    height: 18vw;
+    max-height: 200px;
+    border-radius: 10px;
+    margin-top: 60px;
+    bottom: 0;
+    max-width: 500px;
+}
+
+.whole-mobile-app .fifthMobileImage .contentBox {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 20px 10px;
+}
+
+.whole-mobile-app .fifthMobileImage h5 {
+    margin: 10px 20px 10px 10px;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.4px;
+}
+
+.whole-mobile-app .fifthMobileImage .emptyBox {
+    width: 60vw;
+    max-width: 200px;
+    height: 18vw;
+    max-height: 200px;
+}
+
+.whole-mobile-app .fifthMobileImage p {
+    color: #000;
+    text-align: left;
+    font-family: "myriad-pro-semi-condensed", sans-serif;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+}
+
+.whole-mobile-app .fifthMobileImage .dots2 {
+    display: none;
+}
+
+
+.whole-mobile-app .fifthMobileImage .oneProductSector {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+    bottom: 0;
+}
+
+.whole-mobile-app .fifthMobileImage .pinkButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    margin: 0 0 10px 0;
+}
+
+.whole-mobile-app .fifthMobileImage .productImages {
+    width: auto;
+}
+
+.whole-mobile-app .fifthMobileImage .productImg1 {
+    content: url(./images_8/Magazyn_400x600_produkt11b.png);
+    height: 18vw;
+    margin: 10px 20px;
+    max-height: 200px;
+}
+
+.whole-mobile-app .fifthMobileImage .productImg2 {
+    content: url(./images_8/Magazyn_400x600_produkt13.png);
+    height: 18vw;
+    margin: 0vw 10px 10px 0;
+    max-height: 200px;
+}
+
+.whole-mobile-app .fifthMobileImage .productImg3 {
+    content: url(./images_8/Magazyn_400x600_produkt14c.png);
+    height: 18vw;
+    margin: 10px 0 10px 0;
+    max-height: 200px;
+}
+
+.whole-mobile-app .fifthMobileImage .button2 {
+    margin-right: 14px;
+}
+
+.whole-mobile-app .fifthMobileImage .button3 {
+    margin-right: 20px;
+}
+
+.whole-mobile-app .footerBtns {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .whole-mobile-app .footerBtns .pinkButton {
+    position: relative;
+    justify-content: flex-end;
+    bottom: 10px;
+    margin: 20px 0 10px 0;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120.438%;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding: 10px 16px 10px 16px;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .whole-mobile-app .viteZe {
+    background-color: var(--basicPink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 40px 0 30px 0;
+  }
+  
+  .whole-mobile-app .i-svg {
+    margin: 6px;
+  }
+  
+  .whole-mobile-app .viteZe h5 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    margin: 10px 0 4px 0;
+    letter-spacing: 3px;
+  }
+  
+  .whole-mobile-app .viteZe h6 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 300;
+    margin: 10px 0 10px 0;
+    font-size: 1.6rem;
+  }
+  
+  .whole-mobile-app .whiteButton {
+    background-color: var(--white);
+    color: var(--basicPink);
+    margin: 60px 0 0 0;
+  }
+
+.whole-mobile-app .popup {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60vw;
+    max-width: 400px;
+    position: relative;
+}
+
+.whole-mobile-app .overlay2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.whole-mobile-app .overlay2.active {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.whole-mobile-app .imageP {
+    background-color: #F287B7;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.whole-mobile-app .imageP img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    color: #fff;
+    font-size: 3rem;
+    text-decoration: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.whole-mobile-app .imageP .close:hover {
+    color: #000;
+}
+
+.whole-mobile-app .imageP1 .close:hover {
+    color: #000;
+}
+
+.whole-mobile-app .imageP .pinkButton {
+    position: absolute;
+    padding: 2vw 3vw;
+    font-size: 3vw;
+}
+
+.whole-mobile-app .imageP .btn1 {
+    right: 2.2vw;
+    bottom: 47vw;
+}
+
+.whole-mobile-app .imageP .btn2 {
+    right: 2.2vw;
+    bottom: 4vw;
+}
+
+.whole-mobile-app .prev, .whole-mobile-app .next {
+    cursor: pointer;
+    position: absolute;
+    bottom: 15%;
+    width: auto;
+    padding: 0.2rem 0.6rem 0.3rem 0.5rem;
+    color: var(--black);
+    font-size: 1.6rem;
+    transition: 0.6s ease;
+    border-radius: 20vw;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .whole-mobile-app .next {
+    right: 0;
+  }
+  
+  .whole-mobile-app .prev {
+    left: 0;
+  }
+
+  .whole-mobile-app .prev2, .whole-mobile-app .next2 {
+    cursor: pointer;
+    position: absolute;
+    bottom: 15%;
+    width: auto;
+    padding: 0.2rem 0.6rem 0.3rem 0.5rem;
+    color: var(--black);
+    font-size: 1.6rem;
+    transition: 0.6s ease;
+    border-radius: 20vw;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .whole-mobile-app .next2 {
+    right: 2%;
+  }
+  
+  .whole-mobile-app .prev2 {
+    left: 2%;
+  }
+
+  @media only screen and (max-width:1030px){
+    .sticky-header .arrowSvg {
+      display:block;
+  position:absolute;
+  right: 2px;
+  top: 18px;
+  opacity: 10;
+  }
+  }
+
+@media only screen and (max-width: 768px) {
     body {
         overflow-y: scroll;
         scrollbar-width: none;
@@ -82,13 +1286,6 @@ body {
         z-index: 100;
     }
 
-    .sticky-header .arrowSvg {
-        position:absolute;
-        right: 2px;
-        top: 18px;
-        opacity: 10;
-    }
-
     .sticky-header nav {
         display: flex;
         justify-content: space-between;
@@ -129,15 +1326,6 @@ body {
         line-height: normal;
     }
 
-    .whole-mobile-app #underlined:after {
-        content:""; 
-        float:left; 
-        background: var(--lightPink); 
-        width:100%; 
-        height:4px; 
-        border-radius: 3px;
-      }
-
     .whole-mobile-app h1 {
         margin: 0;
         padding: 5vw 0 2vw 0;
@@ -148,7 +1336,7 @@ body {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        letter-spacing: 3.2px;
+        letter-spacing: 1vw;
     }
 
     .whole-mobile-app h2 {
@@ -161,7 +1349,7 @@ body {
         font-style: normal;
         font-weight: 300;
         line-height: normal;
-        letter-spacing: 2.4px;
+        letter-spacing: 0.8vw;
         text-transform: uppercase;
     }
 
@@ -221,7 +1409,22 @@ body {
         position: relative;
     }
 
-    .whole-mobile-app video {
+    .whole-mobile-app .next, .whole-mobile-app .prev {
+        margin:0;
+        visibility: hidden;
+    }
+
+    .whole-mobile-app .next2, .whole-mobile-app .prev2 {
+        margin:0;
+        visibility: hidden;
+    }
+
+    .whole-mobile-app #myVideo2 {
+        display: none;
+    }
+
+    .whole-mobile-app #myVideo1 {
+        display: block;
         object-fit: cover;
         width: 100%;
         height: 180vw;
@@ -244,6 +1447,7 @@ body {
         scroll-snap-type: x mandatory;
         -webkit-scroll-snap-type: x mandatory;
         gap: 10vw;
+        margin: 0;
         scroll-behavior: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
@@ -265,6 +1469,7 @@ body {
         justify-content: space-between;
         align-items: center;
         position: relative;
+        max-width: none;
     }
 
     .whole-mobile-app .mainMobileImage .textBox {
@@ -275,10 +1480,11 @@ body {
         align-items: center;
         background: rgba(255, 255, 255, 0.80);
         width: 80vw;
-        height: 50vw;
+        height: 46vw;
         border-radius: 10px;
         margin-top: 12vw;
         bottom: 0;
+        max-width: none;
     }
 
     .whole-mobile-app .mainMobileImage .contentBox {
@@ -313,6 +1519,7 @@ body {
     }
 
     .whole-mobile-app .mainMobileImage .dots {
+        display: block;
         position: absolute;
         bottom: 4vw;
         left: 50%;
@@ -360,12 +1567,14 @@ body {
     .whole-mobile-app .mainMobileImage .productImg1 {
         content: url(./images_8/Magazyn_400x600_produkt.png);
         height: 40vw;
+        max-height: none;
         margin: 2vw 0 2vw 0;
     }
 
     .whole-mobile-app .mainMobileImage .productImg2 {
         content: url(./images_8/Magazyn_400x600_produkt2.png);
         height: 40vw;
+        max-height: none;
         margin: 2vw 2vw 2vw 0;
     }
 
@@ -376,12 +1585,14 @@ body {
     .whole-mobile-app .mainMobileImage .productImg3 {
         content: url(./images_8/Magazyn_400x600_produkt3.png);
         height: 40vw;
+        max-height: none;
         margin: 2vw 0 2vw 0;
     }
 
     .whole-mobile-app .mainMobileImage .productImg4 {
         content: url(./images_8/Magazyn_400x600_produkt4.png);
         height: 40vw;
+        max-height: none;
         margin: 6vw 6vw 2vw 0;
     }
 
@@ -434,6 +1645,7 @@ body {
         content: url(./images_8/Magazyn_400x600_produkt6.png);
         height: 40vw;
         margin: 2vw 0;
+        max-height: none;
     }
 
     .whole-mobile-app .secondImage .product1 {
@@ -444,6 +1656,7 @@ body {
         content: url(./images_8/Magazyn_400x600_produkt5.png);
         height: 44vw;
         margin: 0 0 0 8vw;
+        max-height: none;
     }
 
     .whole-mobile-app .secondImage .product2 {
@@ -469,6 +1682,7 @@ body {
         height: 44vw;
         margin: 0 0 0 6vw;
         padding: 3vw;
+        max-height: none;
     }
 
     .whole-mobile-app .overlay {
@@ -517,8 +1731,10 @@ body {
 
     .whole-mobile-app .secondImage .close {
         position: absolute;
-        right: 4vw;
         color: var(--basicPink);
+        right: 4vw;
+        font-size: 10vw;
+        margin: 0 2vw;
         text-decoration: none;
         cursor: pointer;
         position: absolute;
@@ -541,12 +1757,12 @@ body {
 
     .whole-mobile-app .thirdImage .productImage {
         content: url(./images_8/Hebe_Collection_2.png);
-        width: 94vw;
+        /* width: 94vw; */
         height: auto;
     }
 
     .whole-mobile-app .thirdImage h6 {
-        margin: 0 0 1vw 0;
+        margin: 0 0 3vw 0;
         color: #000;
         text-align: center;
         font-family: "myriad-pro", sans-serif;
@@ -556,10 +1772,6 @@ body {
         line-height: normal;
         letter-spacing: 0.2vw;
         text-transform: uppercase;
-    }
-
-    .whole-mobile-app .thirdImage .pinkButton {
-        margin-top: -6vw;
     }
 
     .whole-mobile-app .fourthMobileImage {
@@ -574,6 +1786,7 @@ body {
         display: flex;
         scroll-snap-type: x mandatory;
         gap: 10vw;
+        justify-content: flex-start;
         scroll-behavior: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
@@ -666,6 +1879,7 @@ body {
         margin-bottom: 5vw;
         position: relative;
         justify-content: space-between;
+        max-width: none;
     }
 
     .whole-mobile-app .fourthMobileImage .titleBoxText {
@@ -722,6 +1936,7 @@ body {
         bottom: 3vw;
         margin-left: -11vw;
         width: 22vw;
+        max-width: none;
     }
 
     .whole-mobile-app .fourthMobileImage .scrollProduct2Box1 .oneProductSector {
@@ -730,6 +1945,7 @@ body {
         align-items: center;
         margin: 2vw;
         width: 22vw;
+        max-width: none;
     }
 
     .whole-mobile-app .fourthMobileImage .scrollProduct2Box2 .oneProductSector {
@@ -737,6 +1953,7 @@ body {
         flex-direction: column;
         align-items: center;
         margin: 2vw;
+        max-width: none;
     }
 
     .whole-mobile-app .fourthMobileImage p {
@@ -760,25 +1977,34 @@ body {
 
     .whole-mobile-app .fourthMobileImage .productImg1 {
         content: url(./images_8/Magazyn_400x600_produkt8b.png);
-
+        max-height: none;
+        height: 34vw;
     }
 
     .whole-mobile-app .fourthMobileImage .productImg2 {
         content: url(./images_8/Magazyn_400x600_produkt9b.png);
+        max-height: none;
+        height: 40vw;
     }
 
     .whole-mobile-app .fourthMobileImage .productImg3 {
         content: url(./images_8/Magazyn_400x600_produkt10b.png);
+        max-height: none;
+        height: 40vw;
     }
 
     .whole-mobile-app .fourthMobileImage .productImg4 {
         content: url(./images_8/Magazyn_400x600_produkt12b.png);
         height: 24vw;
+        max-height: none;
     }
 
-
+    .whole-mobile-app .fourthMobileImage .pinkButton {
+        bottom: 1vw;
+    }
 
     .whole-mobile-app .dots3 {
+        display: block;
         position: inherit;
         text-align: center;
         margin-top: 0px;
@@ -812,6 +2038,17 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-height: none;
+    }
+
+    .whole-mobile-app .fifthMobileImage .leftColumn {
+        display: none;
+    }
+
+    .whole-mobile-app .fifthMobileImage .rightColumn {
+        padding: 0;
+        margin-bottom: 10vw;
+        width: 100%;
     }
 
     .whole-mobile-app .fifthMobileImage h6 {
@@ -825,6 +2062,7 @@ body {
         border-radius: 10px;
         letter-spacing: 0.6vw;
         text-align: center;
+        max-width: none;
     }
 
     .whole-mobile-app .fifthMobileImage .slideshowContainer2 {
@@ -846,10 +2084,29 @@ body {
         display: none;
     }
 
+    .whole-mobile-app .fifthMobileImage  .svgDotsDesktop {
+        display: none;
+    }
+
     .whole-mobile-app .fifthMobileImage .svgDots2 {
         position: relative;
         height: 60vw;
         width: 100%;
+    }
+
+    /* .whole-mobile-app .fifthMobileImage .svgDots2 .dot-svg2 {
+        position: absolute;
+        transition: all 0.3s ease;
+        margin: 4vw;
+        cursor: pointer;
+    } */
+
+    .whole-mobile-app .fifthMobileImage .svgDots2 {
+        margin-top: 24vw;
+        display: block;
+        position: relative;
+        height: 60vw;
+        cursor: pointer;
     }
 
     .whole-mobile-app .fifthMobileImage .svgDots2 .dot-svg2 {
@@ -862,6 +2119,15 @@ body {
     .whole-mobile-app .fifthMobileImage .dot-svg2.active circle {
         stroke-opacity: 1;
         fill-opacity: 1;
+    }
+
+    .whole-mobile-app .fifthMobileImage .leftColumn {
+        display: block;
+        background: none;
+        position: absolute;
+        z-index: 1;
+        margin-left: 0;
+        left: 0;
     }
 
     .whole-mobile-app .fifthMobileImage .dotOne {
@@ -903,6 +2169,7 @@ body {
         border-radius: 10px;
         margin-top: 14vw;
         bottom: 0;
+        max-width: none;
     }
 
     .whole-mobile-app .fifthMobileImage .contentBox {
@@ -935,8 +2202,9 @@ body {
     }
 
     .whole-mobile-app .fifthMobileImage .dots2 {
+        display: block;
         position: absolute;
-        bottom: 16px;
+        bottom: 2vw;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
@@ -964,14 +2232,15 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        right: 0vw;
+        /* right: 0vw; */
+        right: 4vw;
     }
 
     .whole-mobile-app .fifthMobileImage .pinkButton {
         padding: 1.4vw 2vw;
         font-size: 2.8vw;
         position: relative;
-        bottom: 2vw;
+        /* bottom: 2vw; */
     }
 
     .whole-mobile-app .fifthMobileImage .productImages {
@@ -1014,6 +2283,8 @@ body {
     .whole-mobile-app .footerBtns .pinkButton {
         position: relative;
         justify-content: flex-end;
+        font-size: 4vw;
+        padding: 2vw 3vw;
     }
 
     .whole-mobile-app .viteZe {
@@ -1023,7 +2294,7 @@ body {
         align-items: center;
         width: 100%;
         padding: 10px 0;
-        margin: 40px 0 30px 0;
+        margin: 10vw 0 10vw 0;
     }
 
     .whole-mobile-app .i-svg {

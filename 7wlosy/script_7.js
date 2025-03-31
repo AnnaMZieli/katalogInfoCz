@@ -171,3 +171,71 @@ if (overlay2) {
 
 });
 
+const isMobile = Math.min(window.screen.width) < 768;
+
+
+if(!isMobile){
+  let slideIndex = 1;
+  let slideIndex2 = 1;
+  showSlides(slideIndex);
+  showSlides2(slideIndex2);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function plusSlides2(n) {
+    showSlides2(slideIndex2 += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function currentSlide2(n) {
+    showSlides2(slideIndex2 = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("scrollProductBox");
+    let slidesToShow = window.innerWidth > 768 ? 3 : 5;
+  
+    if (n > slides.length - slidesToShow + 1) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length - slidesToShow + 1}
+  
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+  
+    for (i = 0; i < slidesToShow; i++) {
+      slides[(slideIndex - 1 + i) % slides.length].style.display = "flex";
+    }
+  }
+  
+  window.addEventListener('resize', () => {
+    showSlides(slideIndex);
+  });
+
+  function showSlides2(n) {
+    let i;
+    let slides2 = document.getElementsByClassName("scrollProduct2Box");
+    let slidesToShow2 = window.innerWidth > 768 ? 3 : 5;
+  
+    if (n > slides2.length - slidesToShow2 + 1) {slideIndex2 = 1}
+    if (n < 1) {slideIndex2 = slides2.length - slidesToShow2 + 1}
+  
+    for (i = 0; i < slides2.length; i++) {
+      slides2[i].style.display = "none";
+    }
+  
+    for (i = 0; i < slidesToShow2; i++) {
+      slides2[(slideIndex2 - 1 + i) % slides2.length].style.display = "flex";
+    }
+  }
+  
+  window.addEventListener('resize', () => {
+    showSlides2(slideIndex2);
+  });
+
+}

@@ -12,7 +12,7 @@
     font-family: 'myriad-pro', 'arial', sans-serif;
 }
 
-body {
+/* body {
     margin: 0;
 }
 
@@ -29,9 +29,744 @@ body {
 
 .whole-mobile-app {
     display: none;
+} */
+
+body {
+    overflow-y: scroll;
+    margin: 0 auto;
+    background-color: var(--mainColor);
+  }
+
+  a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+  }
+  
+  .main-desktop-banner {
+    display: none;
+  }
+  
+  .whole-mobile-app {
+    display: block;
+    max-width: 1312px;
+    margin: 0 auto;
+  }
+  
+  .whole-mobile-app .title {
+    color: var(--white);
+    background-color: var(--basicPink);
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding: 40px 10px;
+  }
+  
+  .header-container {
+    width: 100%;
+    position: relative;
+  }
+  
+  .sticky-header {
+    background-color: var(--basicPink);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    text-align: center;
+  }
+  
+  .sticky-header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .sticky-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .sticky-header ul::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .sticky-header li {
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+  
+  .sticky-header a {
+    display: inline-block;
+    color: var(--white);
+    text-align: center;
+    padding: 10px 4px 4px 4px;
+    text-decoration: none;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .sticky-header .arrowSvg {
+    display: none;
 }
 
-@media only screen and (max-width: 600px) {
+.main-desktop-banner {
+    display: none;
+}
+
+.whole-mobile-app {
+    display: block;
+    max-width: 1312px;
+    margin: 0 auto;
+  }
+
+.whole-mobile-app h1 {
+    margin: 0;
+    padding: 36px 0 16px 0;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.2px;
+}
+
+.whole-mobile-app h2 {
+    margin: 10px 0 10px 0;
+    padding: 0;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+.whole-mobile-app h5 {
+    color: var(--basicPink);
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 8vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3px;
+    margin: 6vw 0 2vw 0;
+}
+
+.whole-mobile-app .pinkButton {
+    position: absolute;
+    bottom: 3vw;
+    margin: 10px 0 20px 0;
+    color: var(--white);
+    font-family: "myriad-pro", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120.438%;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding: 2vw 4vw 2vw 4vw;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    background: var(--basicPink);
+    cursor: pointer;
+}
+
+.whole-mobile-app .pinkButton:hover {
+    background: var(--lightPink);
+}
+
+.sticky-header a {
+    display: inline-block;
+    color: var(--white);
+    text-align: center;
+    padding: 10px 4px 4px 4px;
+    text-decoration: none;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.whole-mobile-app #underlined:after {
+    content:""; 
+    float:left; 
+    background: var(--lightPink); 
+    width:100%; 
+    height:4px; 
+    border-radius: 3px;
+  }
+
+.whole-mobile-app .titleBox {
+    background-color: var(--mainColor);
+    height: 180px;
+    position: relative;
+}
+
+.whole-mobile-app .mainMobileImage {
+    background-image: url(./images_2/Group12.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 60px 0;
+    width: 100%;
+    justify-content: end;
+    align-items: flex-end;
+    max-width: 1312px;
+}
+
+.whole-mobile-app .mainMobileImage .mainTextBox {
+    width: 280px;
+    height: 200px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.80);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px 20px;
+    text-align: center;
+    font-family: "myriad-pro";
+    right: 50px;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120.03%;
+}
+
+.whole-mobile-app .middleImage {
+    background-image: url(./images_2/middle_image_desktop.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: 14px;
+}
+
+.whole-mobile-app .middleTextWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 440px;
+}
+
+.whole-mobile-app .contentWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.whole-mobile-app .middleImage .emptyBox {
+    width: 450px;
+}
+
+.whole-mobile-app .middleImage h6 {
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 10px 0 20px 0;
+}
+
+.whole-mobile-app .middleImage .description .middName {
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.whole-mobile-app .middleImage .description .middDescription {
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 240px;
+}
+
+.whole-mobile-app .middleImage .textBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 100px 20px 100px 0;
+    max-width: 380px;
+    min-width: 300px;
+    width: 40vw;
+}
+
+.whole-mobile-app .middleImage .textBox {
+    display: flex;
+    margin: 1vw;
+    height: 80px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: -1px -1px 2px 0px rgba(0, 0, 0, 0.10), 2px 2px 3px 0px rgba(0, 0, 0, 0.25);
+    color: var(--secondColor);
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 900;
+    line-height: normal;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.whole-mobile-app .secondMobileImage .slideshowProductContainer {
+     overflow-x: scroll;
+     display: flex;
+     scroll-snap-type: x mandatory;
+     gap: 20px;
+     scroll-behavior: smooth;
+     padding: 14px;
+     scrollbar-width: none;
+}
+
+.whole-mobile-app .secondMobileImage h6 {
+    margin: 3rem 0 2rem 0;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+
+.whole-mobile-app .secondMobileImage .scrollProductBox h6 {
+    margin: 10px 0;
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    line-height: normal;
+}
+
+.whole-mobile-app .secondMobileImage .scrollProductBox p {
+    color: #000;
+    text-align: center;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 2px;
+    margin: 0 10px;
+}
+
+.whole-mobile-app .secondMobileImage .scrollProductBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.whole-mobile-app .secondMobileImage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.whole-mobile-app .secondMobileImage .scrollProductBox {
+    width: 26vw;
+    max-width: 380px;
+    border-radius: 15px;
+    background: #FFF;
+    padding: 10px;
+    flex-shrink: 0;
+    text-align: center;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 20px 0;
+    position: relative;
+    min-width: 208px;
+}
+
+.whole-mobile-app .secondMobileImage .productSectors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.whole-mobile-app .secondMobileImage .oneProductSector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 1vw 2px 1vw;
+}
+
+.whole-mobile-app .oneProductSector .pinkButton {
+    padding: 8px 12px;
+    bottom: 0px;
+    position: relative;
+}
+
+.whole-mobile-app .secondMobileImage .productImages {
+    margin: 10px 0;
+    height: 20vw;
+    width: auto;
+    max-height: 180px;
+}
+
+.whole-mobile-app .productImg1 {
+    content: url(./images_2/Magazyn_400x600_produkt5.png);
+}
+
+.whole-mobile-app .productImg2 {
+    content: url(./images_2/Magazyn_400x600_produkt15.png);
+}
+
+.whole-mobile-app .productImg3 {
+    content: url(./images_2/Magazyn_400x600_produkt4.png);
+}
+
+.whole-mobile-app .productImg4 {
+    content: url(./images_2/Magazyn_400x600_produkt10.png);
+}
+
+.whole-mobile-app .productImg5 {
+    content: url(./images_2/Magazyn_400x600_produkt6.png);
+}
+
+.whole-mobile-app .productImg6 {
+    content: url(./images_2/Magazyn_400x600_produkt12.png);
+}
+
+.whole-mobile-app .productImg7 {
+    content: url(./images_2/Magazyn_400x600_produkt7.png);
+}
+
+.whole-mobile-app .productImg8 {
+    content: url(./images_2/Magazyn_400x600_produkt13.png);
+}
+
+.whole-mobile-app .productImg9 {
+    content: url(./images_2/Magazyn_400x600_produkt8.png);
+}
+
+.whole-mobile-app .productImg10 {
+    content: url(./images_2/Magazyn_400x600_produkt3.png);
+}
+
+.whole-mobile-app .productImg11 {
+    content: url(./images_2/Magazyn_400x600_produkt.png);
+}
+
+.whole-mobile-app .productImg12 {
+    content: url(./images_2/Magazyn_400x600_produkt14.png);
+}
+
+.whole-mobile-app .productImg13 {
+    content: url(./images_2/Magazyn_400x600_produkt11.png);
+}
+
+.whole-mobile-app .productImg14 {
+    content: url(./images_2/Magazyn_400x600_produkt9.png);
+}
+
+.whole-mobile-app .productImg15 {
+    content: url(./images_2/Magazyn_400x600_produkt2.png);
+}
+
+.whole-mobile-app .productImg16 {
+    content: url(./images_2/Magazyn_400x600_produkt16.png);
+}
+
+.whole-mobile-app .dots {
+    display: none;
+  }
+
+  .whole-mobile-app .dot {
+    display: inline-block;
+    height: 4vw;
+    width: 4vw;
+    margin: 0 2vw;
+    background-color: var(--mainColorDarker);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .whole-mobile-app .dot:hover,
+  .whole-mobile-app .dot.active {
+    background-color: var(--white);
+  }
+
+  .whole-mobile-app .footerBtns {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
+    position: relative;
+    
+  }
+
+  .whole-mobile-app .footerBtns .pinkButton {
+    position: relative;
+    justify-content: flex-end;
+    bottom: 10px;
+    margin: 1vw 0 1vw 0;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120.438%;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding: 10px 16px 10px 16px;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .whole-mobile-app .viteZe {
+    background-color: var(--basicPink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 40px 0 30px 0;
+  }
+
+  .whole-mobile-app .i-svg {
+    margin:6px;
+  }
+
+  .whole-mobile-app .viteZe h5 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    margin: 10px 0 4px 0;
+  }
+
+  .whole-mobile-app .viteZe h6 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 300;
+    margin: 10px 0 10px 0;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .whole-mobile-app .footerBtns  .whiteButton {
+    background-color: var(--white);
+    color: var(--basicPink);
+    margin: 20px 0 10px 0;
+    font-family: "myriad-pro", sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120.438%;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .whole-mobile-app .popup {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60vw;
+    max-width: 400px;
+    position: relative;
+}
+
+  .whole-mobile-app .overlay2 {
+    display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.whole-mobile-app .overlay2.active {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.whole-mobile-app .overlay1 {
+    display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.whole-mobile-app button {
+    border: none;
+}
+
+.whole-mobile-app .overlay1.active {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.whole-mobile-app .imageP1 {
+    background-color: #E9F5F3;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width:80%;
+    border-radius: 10px;
+  }
+  
+  .whole-mobile-app .imageP1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+.whole-mobile-app .imageP {
+  background-color: #F287B7;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  width:80%;
+  border-radius: 10px;
+}
+
+.whole-mobile-app .imageP .btn1 {
+    position: absolute;
+    left: 13%;
+    bottom: 6%;
+}
+
+.whole-mobile-app .imageP .btn2 {
+    position: absolute;
+    right: 14%;
+    bottom: 6%;
+}
+
+.whole-mobile-app .imageP img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.whole-mobile-app .imageP .close:hover {
+  color: #000;
+}
+
+.whole-mobile-app .imageP1 .close:hover {
+    color: #000;
+  }
+
+  .imageP1 .close {
+    color: var(--secondColor);
+  }
+
+  .whole-mobile-app .prev, .whole-mobile-app .next {
+    cursor: pointer;
+    position: absolute;
+    top: 54%;
+    width: auto;
+    padding: 0.2rem 0.6rem 0.3rem 0.5rem;
+    color: var(--black);
+    font-size: 1.6rem;
+    transition: 0.6s ease;
+    border-radius: 20vw;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.whole-mobile-app .next {
+  right: 8px;
+}
+
+.whole-mobile-app .prev {
+  left: 8px;
+}
+
+@media only screen and (max-width:1030px){
+    .sticky-header .arrowSvg {
+      display:block;
+  position:absolute;
+  right: 2px;
+  top: 18px;
+  opacity: 10;
+  }
+  }
+
+@media only screen and (max-width: 768px) {
     body {
         overflow-y: scroll;
         scrollbar-width: none;
@@ -42,10 +777,6 @@ body {
         display: none;
     }
 
-    a, a:hover, a:active, a:visited, a:focus {
-        text-decoration:none;
-    }
-
     .main-desktop-banner {
         display: none;
     }
@@ -53,6 +784,10 @@ body {
     .whole-mobile-app {
         display: block;
         background-color: var(--mainColor);
+    }
+
+    .whole-mobile-app .next, .whole-mobile-app .prev {
+        visibility: hidden;
     }
 
     .whole-mobile-app h1 {
@@ -65,12 +800,12 @@ body {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        letter-spacing: 3.2px;
+        letter-spacing: 1vw;
     }
 
     .whole-mobile-app h2 {
         margin: 0;
-        padding: 2vw;
+        padding: 2vw 10vw;
         color: #000;
         text-align: center;
         font-family: "myriad-pro", sans-serif;
@@ -78,7 +813,7 @@ body {
         font-style: normal;
         font-weight: 300;
         line-height: normal;
-        letter-spacing: 2.4px;
+        letter-spacing: 0.8vw;
     }
 
     .whole-mobile-app h5 {
@@ -117,13 +852,6 @@ body {
         position: sticky;
         top: 0;
         z-index: 100;
-    }
-
-    .sticky-header .arrowSvg {
-        position:absolute;
-        right: 2px;
-        top: 18px;
-        opacity: 10;
     }
 
     .sticky-header nav {
@@ -192,15 +920,6 @@ body {
         line-height: normal;
     }
 
-    .whole-mobile-app #underlined:after {
-        content:""; 
-        float:left; 
-        background: var(--lightPink); 
-        width:100%; 
-        height:4px; 
-        border-radius: 3px;
-      }
-
     .whole-mobile-app .titleBox {
         background-color: var(--mainColor);
         height: 38vw;
@@ -218,7 +937,7 @@ body {
 
     .whole-mobile-app .mainMobileImage .mainTextBox {
         width: 70vw;
-        height: 30vw;
+        height: 28vw;
         flex-shrink: 0;
         scroll-snap-align: center;
         border-radius: 10px;
@@ -228,7 +947,7 @@ body {
         align-items: center;
         margin: 0 auto;
         position: relative;
-        top: 86vw;
+        /* top: 86vw; */
         color: #000;
         padding: 20px 6vw;
         text-align: center;
@@ -237,6 +956,7 @@ body {
         font-style: normal;
         font-weight: 300;
         line-height: 120.03%;
+        right: auto;
     }
 
     .whole-mobile-app .middleImage {
@@ -248,6 +968,12 @@ body {
         height: 100vw;
     }
 
+    .whole-mobile-app .contentWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .whole-mobile-app .middleImage h6 {
         padding: 4vw;
         color: #000;
@@ -257,12 +983,13 @@ body {
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-        margin: 0 0 4vw 0;
+        margin: 0;
     }
 
     .whole-mobile-app .middleImage .description {
         width: 50vw;
         margin-left: 40vw;
+        margin-top: 10px;
     }
 
     .whole-mobile-app .middleImage .description .middName {
@@ -276,6 +1003,14 @@ body {
         margin-bottom: 3vw;
     }
 
+    .whole-mobile-app .middleTextWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: none;
+    }
+
     .whole-mobile-app .middleImage .description .middDescription {
         color: #000;
         text-align: center;
@@ -284,6 +1019,7 @@ body {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        max-width: none;
     }
 
     .whole-mobile-app .middleImage .textBoxes {
@@ -294,6 +1030,8 @@ body {
         gap: 0.6vw;
         margin: 4vw auto;
         max-width: 90vw;
+        min-width: auto;
+        width: auto;
     }
 
     .whole-mobile-app .middleImage .textBox {
@@ -323,7 +1061,7 @@ body {
     }
 
     .whole-mobile-app .secondMobileImage .slideshowProductContainer {
-        width: 82vw;
+        width: 78vw;
         overflow-x: scroll;
         display: flex;
         scroll-snap-type: x mandatory;
@@ -338,7 +1076,7 @@ body {
       }
 
     .whole-mobile-app .secondMobileImage h6 {
-        margin: 4vw;
+        margin: 4vw 13vw;
         color: #000;
         text-align: center;
         font-family: "myriad-pro", sans-serif;
@@ -388,6 +1126,8 @@ body {
         margin: 0 8vw 20px 8vw;
         position: relative;
         justify-content: space-between;
+        max-width: none;
+        min-width: auto;
     }
 
     .whole-mobile-app .secondMobileImage .productSectors {
@@ -480,6 +1220,7 @@ body {
     }
 
     .whole-mobile-app .dots {
+        display: inline;
         position: inherit;
         text-align: center;
         margin-top: 0px;
@@ -503,7 +1244,7 @@ body {
       .whole-mobile-app .footerBtns {
         display: flex;
         flex-direction: column;
-        margin-top: 40px;
+        margin-top: 14vw;
         align-items: center;
         position: relative;
       }
@@ -511,6 +1252,9 @@ body {
       .whole-mobile-app .footerBtns .pinkButton {
         position: relative;
         justify-content: flex-end;
+        font-size: 4vw;
+        padding: 2vw 3vw;
+
       }
     
       .whole-mobile-app .viteZe {
@@ -520,7 +1264,7 @@ body {
         align-items: center;
         width: 100%;
         padding: 10px 0;
-        margin: 40px 0 30px 0;
+        margin: 10vw 0 10vw 0;
       }
     
       .whole-mobile-app .i-svg {
@@ -630,12 +1374,12 @@ body {
     }
 
     .whole-mobile-app .imageP .btn1 {
-        left: 20%;
+        left: 16%;
         bottom: 6%;
     }
 
     .whole-mobile-app .imageP .btn2 {
-        right: 20%;
+        right: 16%;
         bottom: 6%;
     }
 

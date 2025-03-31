@@ -12,9 +12,8 @@
   font-family: 'myriad-pro', 'arial', sans-serif;
 }
 
-body {
+/* body {
   margin: 0;
-  /* overflow: hidden; */
 }
 
 .main-desktop-banner {
@@ -30,9 +29,665 @@ body {
 
 .whole-mobile-app {
   display: none;
+} */
+
+body {
+  overflow-y: scroll;
+  margin: 0 auto;
+  background-color: var(--mainColor);
 }
 
-@media only screen and (max-width: 600px) {
+a, a:hover, a:active, a:visited, a:focus {
+  text-decoration:none;
+}
+
+.main-desktop-banner {
+  display: none;
+}
+
+.whole-mobile-app {
+  display: block;
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+.whole-mobile-app .title {
+  color: var(--white);
+  background-color: var(--basicPink);
+  text-align: center;
+  font-family: "myriad-pro", sans-serif;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  padding: 40px 10px;
+}
+
+.header-container {
+  width: 100%;
+  position: relative;
+}
+
+.sticky-header {
+  background-color: var(--basicPink);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  text-align: center;
+}
+
+.sticky-header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.sticky-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.sticky-header ul::-webkit-scrollbar {
+  display: none;
+}
+
+.sticky-header li {
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.sticky-header a {
+  display: inline-block;
+  color: var(--white);
+  text-align: center;
+  padding: 10px 4px 4px 4px;
+  text-decoration: none;
+  font-family: "myriad-pro", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.sticky-header .arrowSvg {
+  display: none;
+}
+
+.main-desktop-banner {
+  display: none;
+}
+
+.whole-mobile-app {
+  display: block;
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+.whole-mobile-app h1 {
+  margin: 0;
+  padding: 36px 0 16px 0;
+  color: #000;
+  text-align: center;
+  font-family: "myriad-pro", sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.2px;
+}
+
+.whole-mobile-app h2 {
+  margin: 10px 0 10px 0;
+  padding: 0;
+  color: #000;
+  text-align: center;
+  font-family: "myriad-pro", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 2.4px;
+}
+
+.whole-mobile-app h5 {
+  text-align: center;
+  font-family: "myriad-pro", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin: 64px 0 10px 0;
+}
+
+.whole-mobile-app .pinkButton {
+  position: absolute;
+  bottom: 3vw;
+  margin: 10px 0 10px 0;
+  color: var(--white);
+  font-family: "myriad-pro", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120.438%;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  display: inline-flex;
+  padding: 2vw 4vw 2vw 4vw;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  background: var(--basicPink);
+  cursor: pointer;
+}
+
+.whole-mobile-app .pinkButton:hover {
+  background: var(--lightPink);
+}
+
+.sticky-header a {
+  display: inline-block;
+  color: var(--white);
+  text-align: center;
+  padding: 10px 4px 4px 4px;
+  text-decoration: none;
+  font-family: "myriad-pro", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.whole-mobile-app #underlined:after {
+  content:""; 
+  float:left; 
+  background: var(--lightPink); 
+  width:100%; 
+  height:4px; 
+  border-radius: 3px;
+}
+
+
+.whole-mobile-app .titleBox {
+  background-color: var(--mainColor);
+  height: 180px;
+  position: relative;
+}
+
+.whole-mobile-app .mainMobileImage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whole-mobile-app #myVideo2 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  max-width: 1312px;
+}
+
+.whole-mobile-app #myVideo1 {
+  display: none;
+}
+
+.whole-mobile-app .slideshowContainer {
+  width: 100%;
+  margin-top: 80px;
+  position: relative;
+  bottom: 50px;
+  overflow-x: scroll;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  justify-content: space-around;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.whole-mobile-app .slideshowContainer::-webkit-scrollbar {
+  display: none;
+}
+
+
+.whole-mobile-app .scrollBox {
+  width: 28vw;
+  height: auto;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.80);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 14px;
+  position: relative;
+  max-width: 380px;
+}
+
+.whole-mobile-app p {
+  color: #000;
+  text-align: center;
+  font-family: "myriad-pro", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin: 6px 30px;
+}
+
+.whole-mobile-app .pinkButton {
+  position: absolute;
+  bottom: 10px;
+  color: var(--white);
+  font-family: "myriad-pro", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120.438%;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  display: inline-flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  background: var(--basicPink);
+  cursor: pointer;
+}
+
+.whole-mobile-app .pinkButton:hover {
+  background: var(--lightPink);
+}
+
+.whole-mobile-app .dots {
+  display: none;
+}
+
+.whole-mobile-app .dot {
+  display: inline-block;
+  height: 4vw;
+  width: 4vw;
+  margin: 0 1vw;
+  background-color: var(--mainColorDarker);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.whole-mobile-app .dot:hover,
+.whole-mobile-app .dot.active {
+  background-color: var(--white);
+}
+
+.whole-mobile-app .numbers {
+  position: absolute;
+  top: -1px;
+  width: 100px;
+  height: auto;
+}
+
+.whole-mobile-app .mainMobileImage .pinkButton {
+  transform: translate(-50%, -20%);
+  font-size: 0.8rem;
+}
+
+.whole-mobile-app .number1 {
+  content: url('./images_4/numb1.png');
+}
+
+.whole-mobile-app .number2 {
+  content: url('./images_4/numb2.png');
+}
+
+.whole-mobile-app .number3 {
+  content: url('./images_4/numb3.png');
+}
+
+.whole-mobile-app .number4 {
+  content: url('./images_4/numb4.png');
+}
+
+.whole-mobile-app .number5 {
+  content: url('./images_4/numb5.png');
+}
+
+.whole-mobile-app .number6 {
+  content: url('./images_4/numb6.png');
+}
+
+.whole-mobile-app .number7 {
+  content: url('./images_4/numb7.png');
+}
+
+.whole-mobile-app .number8 {
+  content: url('./images_4/numb8.png');
+}
+
+.whole-mobile-app .number9 {
+  content: url('./images_4/numb9.png');
+}
+
+.whole-mobile-app .number10 {
+  content: url('./images_4/numb10.png');
+}
+
+.whole-mobile-app .productSectors {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.whole-mobile-app .oneProductSector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 8px 2px 8px;
+}
+
+.whole-mobile-app .productImages {
+  margin: 0vw 0 80px 0;
+  height: 200px;
+  width: auto;
+}
+
+.whole-mobile-app .productImg1 {
+  content: url('./images_4/Magazyn_400x600_produkta.png');
+  height: 100px;
+}
+
+.whole-mobile-app .productImg2 {
+  content: url('./images_4/Magazyn_400x600_produkt6.png');
+}
+
+.whole-mobile-app .productImg3 {
+  content: url('./images_4/Magazyn_400x600_produkt7.png');
+}
+
+.whole-mobile-app .productImg4 {
+  content: url('./images_4/Magazyn_400x600_produkt3.png');
+}
+
+.whole-mobile-app .productImg5 {
+  content: url('./images_4/Magazyn_400x600_produkt2.png');
+}
+
+.whole-mobile-app .productImg6 {
+  content: url('./images_4/Magazyn_400x600_produkt5.png');
+}
+
+.whole-mobile-app .productImg7 {
+  content: url('./images_4/Magazyn_400x600_produkt9.png');
+}
+
+.whole-mobile-app .productImg8 {
+  content: url('./images_4/Magazyn_400x600_produkt8.png');
+}
+
+.whole-mobile-app .productImg9 {
+  content: url('./images_4/Magazyn_400x600_produkt4a.png');
+  height: 100px;
+}
+
+.whole-mobile-app .productImg10 {
+  content: url('./images_4/Magazyn_400x600_produkt10.png');
+}
+
+.whole-mobile-app .secondImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 0 0;
+}
+
+.whole-mobile-app .vice {
+  position: relative;
+}
+
+.whole-mobile-app .secondImageContainer h5 {
+  font-size: 1.8rem;
+  margin-top: 40px;
+  color: var(--black);
+}
+
+.contentBox {
+  display: flex;
+      flex-direction: row;
+      justify-content: center;
+}
+
+.whole-mobile-app .secondImageContainer .infoBox {
+  margin: 20px;
+  display: flex;
+  background-color: var(--backgroundColor);
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+.whole-mobile-app .secondImageContainer .textBox {
+    height: auto;
+    margin-top: 20px;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.whole-mobile-app .secondImageContainer .infoBox p {
+  text-align: left;
+  margin: 20px 0 20px 20px;
+  max-width: 500px;
+}
+
+.whole-mobile-app .secondImageContainer .infoBox h5 {
+  font-family: "myriad-pro-semi-condensed", sans-serif;
+  text-align: left;
+  margin-top: 0;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.whole-mobile-app .secondImageContainer .infoBox .infoProduct {
+  position: relative;
+}
+
+.whole-mobile-app .secondImageContainer .infoBox .product1 {
+  content: url('./images_4/product1.png');
+  height: 110px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.whole-mobile-app .secondImageContainer .infoBox .product2 {
+  content: url('./images_4/product2.png');
+  height: 180px;
+  order: 2;
+}
+
+.whole-mobile-app .secondImageContainer .poznajText {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  letter-spacing: 0;
+}
+
+.whole-mobile-app .secondImageContainer .poznajButton {
+padding: 10px 40px;
+}
+
+.whole-mobile-app .footerBtns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.whole-mobile-app .footerBtns .pinkButton {
+  position: relative;
+  justify-content: flex-end;
+  bottom: 10px;
+  margin: 20px 0 10px 0;
+  font-family: "myriad-pro", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120.438%;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  display: inline-flex;
+  padding: 10px 16px 10px 16px;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.whole-mobile-app .viteZe {
+  background-color: var(--basicPink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  margin: 40px 0 30px 0;
+}
+
+.whole-mobile-app .i-svg {
+  margin: 6px;
+}
+
+.whole-mobile-app .viteZe h5 {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin: 10px 0 4px 0;
+}
+
+.whole-mobile-app .viteZe h6 {
+  color: var(--white);
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 300;
+  margin: 10px 0 10px 0;
+  font-size: 1.6rem;
+}
+
+.whole-mobile-app .whiteButton {
+  background-color: var(--white);
+  color: var(--basicPink);
+  margin: 60px 0 0 0;
+}
+
+.whole-mobile-app .popup {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60vw;
+  max-width: 400px;
+  position: relative;
+}
+
+.whole-mobile-app .overlay2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.whole-mobile-app .overlay2.active {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+
+.whole-mobile-app .imageP {
+  background-color: #F287B7;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+  border-radius: 10px;
+}
+
+.whole-mobile-app .imageP img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  color: #fff;
+  font-size: 40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.whole-mobile-app .imageP .close:hover {
+  color: #000;
+}
+
+.whole-mobile-app .imageP1 .close:hover {
+  color: #000;
+}
+
+.whole-mobile-app .prev, .whole-mobile-app .next {
+    top: 50%;
+    cursor: pointer;
+    display: inherit;
+    position: absolute;
+    width: auto;
+    padding: 0.2rem 0.6rem 0.3rem 0.5rem;
+    color: var(--black);
+    font-size: 1.6rem;
+    transition: 0.6s ease;
+    border-radius: 20vw;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 1);
+
+}
+
+.whole-mobile-app .next {
+right: 8px;
+}
+
+.whole-mobile-app .prev {
+left: 8px;
+}
+
+@media only screen and (max-width:1030px){
+  .sticky-header .arrowSvg {
+    display:block;
+position:absolute;
+right: 2px;
+top: 18px;
+opacity: 10;
+}
+}
+
+@media only screen and (max-width: 768px) {
   body {
     overflow-y: scroll;
     scrollbar-width: none;
@@ -42,10 +697,6 @@ body {
   body::-webkit-scrollbar {
     display: none;
   }
-
-  a, a:hover, a:active, a:visited, a:focus {
-    text-decoration:none;
-}
 
   .main-desktop-banner {
     display: none;
@@ -80,13 +731,6 @@ body {
     top: 0;
     z-index: 100;
   }
-
-  .sticky-header .arrowSvg {
-    position:absolute;
-    right: 2px;
-    top: 18px;
-    opacity: 10;
-}
 
   .sticky-header nav {
     display: flex;
@@ -128,19 +772,15 @@ body {
     line-height: normal;
   }
 
-  .whole-mobile-app #underlined:after {
-    content:""; 
-    float:left; 
-    background: var(--lightPink); 
-    width:100%; 
-    height:4px; 
-    border-radius: 3px;
-  }
-
-  .whole-mobile-app video {
+  .whole-mobile-app #myVideo1 {
+    display: block;
     object-fit: cover;
     width: 100%;
-    height: 240vw;
+    height: 180vw;
+  }
+  
+  .whole-mobile-app #myVideo2 {
+    display: none;
   }
 
   .whole-mobile-app h1 {
@@ -153,7 +793,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 3.2px;
+    letter-spacing: 1vw;
   }
 
   .whole-mobile-app h2 {
@@ -166,7 +806,7 @@ body {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    letter-spacing: 2.4px;
+    letter-spacing: 0.8vw;
   }
 
   .whole-mobile-app h5 {
@@ -190,10 +830,6 @@ body {
   .whole-mobile-app .mainMobileImage {
     height: 240vw;
     position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
   }
 
   .whole-mobile-app .slideshowContainer {
@@ -213,6 +849,14 @@ body {
     display: none;
   }
 
+  .whole-mobile-app .next, .whole-mobile-app .prev {
+    visibility: hidden;
+}
+
+.whole-mobile-app .mainMobileImage .pinkButton {
+  transform: translate(-50%, -20%);
+  font-size: 4vw;
+}
 
   .whole-mobile-app .scrollBox {
     width: 80vw;
@@ -225,6 +869,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: 0 8vw;
+    max-width: none;
     position: relative;
   }
 
@@ -266,6 +912,7 @@ body {
   }
 
   .whole-mobile-app .dots {
+    display: block;
     position: absolute;
     bottom: 10px;
     text-align: center;
@@ -422,6 +1069,15 @@ body {
     margin-top: 6vw;
   }
 
+  .whole-mobile-app .secondImageContainer .infoBox {
+    display: block;
+    margin: 0;
+  }
+
+  .contentBox {
+    display:block;
+  }
+
   .whole-mobile-app .secondImageContainer .textBox {
     background-color: var(--backgroundColor);
     width: 80vw;
@@ -436,7 +1092,8 @@ body {
 
   .whole-mobile-app .secondImageContainer .infoBox p {
     text-align: left;
-    margin: 5vw
+    margin: 5vw;
+    max-width: none;
   }
 
   .whole-mobile-app .secondImageContainer .infoBox h5 {
@@ -454,18 +1111,18 @@ body {
   .whole-mobile-app .secondImageContainer .infoBox .product1 {
     position: absolute;
     content: url(./images_4/product1.png);
-    height: 30vw;
+    height: 26vw;
     transform: translateY(-12vw);
     left: 58%;
   }
 
   .whole-mobile-app .secondImageContainer .infoBox .product2 {
-    content: url('./images_4/produkt2a.png');
+    content: url('./images_4/product2.png');
     position: absolute;
-    height: 56vw;
-    left: -8%;
-    transform: translateX(36vw);
-    rotate: -50deg;
+    height: 36vw;
+    left: 30%;
+    transform: translateY(-22vw);
+    /* rotate: -50deg; */
   }
 
   .whole-mobile-app .secondImageContainer .poznajText {
@@ -489,6 +1146,8 @@ body {
   .whole-mobile-app .footerBtns .pinkButton {
     position: relative;
     justify-content: flex-end;
+    font-size: 4vw;
+    padding: 2vw 3vw;
   }
 
   .whole-mobile-app .viteZe {
@@ -498,7 +1157,7 @@ body {
     align-items: center;
     width: 100%;
     padding: 10px 0;
-    margin: 40px 0 30px 0;
+    margin: 10vw 0 10vw 0;
   }
 
   .whole-mobile-app .i-svg {

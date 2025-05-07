@@ -313,15 +313,15 @@ a, a:hover, a:active, a:visited, a:focus {
   background: var(--lightPink);
 }
 
-.whole-mobile-app .dots {
+/* .whole-mobile-app .dots {
   display: none;
-}
+} */
 
 .whole-mobile-app .dot {
   display: inline-block;
-  height: 4vw;
-  width: 4vw;
-  margin: 0 1vw;
+  height: 20px;
+  width: 20px;
+  margin: 0 10px 20px 10px;
   background-color: var(--mainColorDarker);
   border-radius: 50%;
   cursor: pointer;

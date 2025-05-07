@@ -108,6 +108,7 @@ if(!isMobile){
   
   window.addEventListener('resize', () => {
     showSlides(slideIndex);
+
   });
 
 }

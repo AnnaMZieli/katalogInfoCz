@@ -839,6 +839,7 @@ opacity: 10;
     overflow-x: scroll;
     display: flex;
     scroll-snap-type: x mandatory;
+    justify-content: start;
     gap: 10vw;
     scroll-behavior: auto;
     scrollbar-width: none;
